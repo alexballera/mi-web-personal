@@ -1,0 +1,42 @@
+/** Customizando Estilos */
+body{
+  font-size: 16px;
+  font-family: $font-awesome;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+h1{
+  font-size: 1.8rem;
+  @media screen and (min-width: $screen-md) {
+    font-size: 2rem;
+  }
+}
+h2{
+  font-size: 1.4em;
+  @media screen and (min-width: $screen-md) {
+    font-size: 1.5em;
+  }
+}
+h3{
+  font-size: 1.2em;
+  @media screen and (min-width: $screen-md) {
+    font-size: 1.3em;
+  }
+}
+.facebook{
+  background-color: $facebook;
+}
+.twitter{
+  background-color: $twitter;
+}
+.github{
+  background-color: $github;
+}
+.google{
+  background-color: $google;
+}
+.linkedin{
+  background-color: $linkedin;
+}

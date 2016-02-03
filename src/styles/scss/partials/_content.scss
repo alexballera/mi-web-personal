@@ -1,0 +1,43 @@
+/** Content */
+.container{
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: $background;
+  @include respond-to(sm)  {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    padding: 1em;
+  }
+}
+.content{
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  &__title{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 1rem 2rem 1rem;
+    letter-spacing: 1.2px;
+    color: grey;
+    font-size: 1.4rem;
+    line-height: 1.75rem;
+    @include respond-to(xs) {
+      font-size: 1.5rem;
+    }
+    @include respond-to(md) {
+      font-size: 1.75rem;
+      line-height: 2rem;
+    }
+  }
+  figcaption{
+    display: none;
+  }
+}
+@import './responsive';
+@import './articles';

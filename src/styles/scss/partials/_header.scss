@@ -1,0 +1,112 @@
+/** Header */
+.header{
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 3em 0;
+    margin-top: $header-height;
+    @include background('../images/background-header.jpg', $background);
+    background-attachment: fixed;
+    @include respond-to(md) {
+      margin-top: $header-height*$header-mult;
+    }
+    &__picture{
+      height: 0;
+      & img{
+        border-radius: 50%;
+        width: 6rem;
+        height: 6rem;
+        border: .2rem solid $white;
+        transition: all 1.2s ease;
+        @include respond-to(xs) {
+            width: 8rem;
+            height: 8rem;
+        }
+        @include respond-to(md) {
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+    & img:hover{
+        transform: rotate(45deg);
+        transition: all 1.2s ease;
+        border: .2rem solid $orange;
+    }
+    & figcaption{
+        font-size: 1.2em;
+        color: $white;
+        margin-top: 1em;
+        & a{
+          display: flex;
+          flex-direction: column;
+          line-height: 2.5rem;
+          & span{
+            &:nth-child(1){
+              & span{
+                &::before{
+                  content: "() => { ";
+                    color: $twitter;
+                  }
+                &::after{
+                  content: " }";
+                  color: $twitter;
+                }
+              }
+            }
+            &:nth-child(2){
+              font-size: 80%;
+              &::before{
+                content: "< ";
+                color: $twitter;
+              }
+              &::after{
+                content: " />";
+                color: $twitter;
+              }
+            }
+            &:hover{
+              color:  $orange;
+            }
+          }
+        }
+        @include respond-to(xs) {
+            font-size: 1.5em;
+            font-weight: 400;
+        }
+        @include respond-to(md) {
+            font-size: 2em;
+        }
+    }
+}
+&__languages{
+    padding-top: 2em;
+    &--container{
+      margin: 0 auto;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: stretch;
+      width: 200px;
+      @include respond-to(xs) {
+        width: 250px;
+      }
+    }
+    &--picture{
+      height: 0;
+      margin: 0;
+      padding: 0;
+      & figcaption{
+        display: none;
+      }
+      & img{
+        width: 40px;
+        height: 40px;
+        @include respond-to(xs) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

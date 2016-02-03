@@ -1,0 +1,16 @@
+@charset "UTF-8"; 
+// Este es el archivo principal de Estilos,'preferiblemente
+// con archivos para cada bloque o archivo html e importarlo
+// con @import
+
+// @import './fonts/css/font-awesome.min.css'; //Comentar si se está online
+// @import './vendors/normalize';
+@import './customs/reset';
+@import './vendors/spinners';
+@import './customs/var';
+@import './customs/breakpoints';
+@import './customs/customs';
+@import './partials/navbar';
+@import './partials/header';
+@import './partials/content';
+@import './partials/footer';

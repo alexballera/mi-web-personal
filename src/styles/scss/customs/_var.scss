@@ -1,0 +1,35 @@
+// Variables Globales
+// Colores
+$black: #1E1E1E;
+$white: #F1FFF9;
+$brown: #B29163;
+$green: #65FF92;
+$orange: #FFB040;
+$purple: #8344CC;
+$purpleLight: #9780B2;
+$facebook: #3B5998;
+$twitter: #55ACEE;
+$github: #010101;
+$google: #DC4E41;
+$linkedin: #0177B5;
+$background: #EEEEEE;
+
+$socialheigt: 45px;
+$font-awesome: 'FontAwesome', Arial, sans-serif;
+
+// Breakpoints
+// $screen-xs: 30em; // 480px
+// $screen-sm: 37.5em; // 600px 
+// $screen-mm: 42.5em; // 680px 
+// $screen-md: 48em; // 768px 
+// $screen-lg: 64em; // 1024px
+// $screen-xl: 90em; // 1440px
+// $screen-landscape: landscape; // landscape
+
+// Images Articles & Projects
+$w: 600px;
+$h: 300px;
+$ratio: ($w/$h);
+$width: 100px;
+$height: ($width/$ratio);
+$multip: 3;
