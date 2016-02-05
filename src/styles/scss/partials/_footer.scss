@@ -10,8 +10,11 @@ $item: 3;
   letter-spacing: 1.1px;
   font-size: 0.85rem;
   line-height: 1.2rem;
-  @include respond-to(md) {
-    display: flex;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  @include respond-to(mm) {
   }
   & a{
     color: grey;
@@ -26,7 +29,8 @@ $item: 3;
     padding: 1rem 0;
   }
   &__contact{
-    @include respond-to(md) {
+    width: 100%;
+    @include respond-to(mm) {
         width: 40%;
     }
     & p{
@@ -34,17 +38,23 @@ $item: 3;
     }
   }
   &__content{
-    @include respond-to(md) {
+    width: 100%;
+    @include respond-to(xs) {
+        width: 50%;
+    }
+    @include respond-to(mm) {
         width: 20%;
     }
   }
   &__social{
-    padding-bottom: 47px;
-    @include respond-to(mm) {
-      padding-bottom: 0;
+    width: 100%;
+    // padding-bottom: 47px;
+    @include respond-to(xs) {
+        width: 50%;
     }
-    @include respond-to(md) {
-        width: 40%;
+    @include respond-to(mm) {
+      // padding-bottom: 0;
+      width: 40%;
     }
     & ul li{
       display: inline-block;
