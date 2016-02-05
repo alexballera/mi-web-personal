@@ -20,17 +20,21 @@
     & input[type="email"] {
         border-radius: 6px;
         padding: 0 .5rem;
-        width: 350px;
-        font-size: 22px;
+        width: 75%;
         line-height: 40px;
         height: 100%;
         margin: .25rem;
+        @include respond-to(mm) {
+          font-size: 22px;
+        }
+        @include respond-to(md) {
+          width: 50%;
+        }
     }
-    & input[type="submit"] {
+    & button[type="submit"] {
         height: 100%;
         line-height: 40px;
         width: 200px;
-        font-size: 22px;
         border-radius: 5px;
         margin: .25rem .25rem .5rem .25rem;
         color: $white;
@@ -40,9 +44,11 @@
         @include respond-to(sm) {
           margin-bottom: 0;
         }
+        @include respond-to(mm) {
+          font-size: 22px;
+        }
         &:hover{
-          background-color: $black;
-          color: $orange;
+          background-color: $purple;
         }
     }
   }

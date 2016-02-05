@@ -19,20 +19,20 @@
         border: .2rem solid $white;
         transition: all 1.2s ease;
         @include respond-to(xs) {
-            width: 8rem;
-            height: 8rem;
+          width: 8rem;
+          height: 8rem;
         }
         @include respond-to(md) {
-            width: 10rem;
-            height: 10rem;
+          width: 10rem;
+          height: 10rem;
         }
+        &:hover{
+          transform: rotate(45deg);
+          transition: all 1.2s ease;
+          border: .2rem solid $orange;
+      }
     }
-    & img:hover{
-        transform: rotate(45deg);
-        transition: all 1.2s ease;
-        border: .2rem solid $orange;
-    }
-    & figcaption{
+    &--figcaption{
         font-size: 1.2em;
         color: $white;
         margin-top: 1em;

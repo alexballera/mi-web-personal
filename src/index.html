@@ -91,11 +91,53 @@
                       <li class="nav__menu--list--item"><a href="#responsive">Responsive</a></li>
                       <li class="nav__menu--list--item"><a href="#projects">Proyectos</a></li>
                       <li class="nav__menu--list--item"><a href="#articles">Artículos</a></li>
-                      <li class="nav__menu--list--item"><a href="#footer">Contacto</a></li>
+                      <li class="nav__menu--list--item"><a href="#openModal">Contáctame</a></li>
                   </ul>
             </nav>
         </nav>
     <!-- Fin de Barra de Navegación -->
+    <!-- Modal Contact -->
+    <div id="openModal" class="modalDialog">
+      <!-- <div> -->
+        <div>
+          <picture class="nav__mobile--logo--picture">
+            <source
+            srcset="images/alex-ballera.svg,
+            images/alex-ballera@2x.svg 2x">
+            <img
+            src="images/alex-ballera.jpg"
+            srcset="images/alex-ballera.svg,
+            images/alex-ballera@2x.svg 2x"
+            alt="Alex Ballera | Web Developer">
+            <figcaption>AlexBallera</figcaption>
+          </picture>
+          <p>Entrepreneur, Marketer & Front End Developer en tecnologías HTML5, CSS3, JavaScript & Ruby on Rails</p>
+          <ul>
+            <li name="facebook"><a href="https://www.facebook.com/alexballera" target="_blank"><i class="fa fa-facebook"></a></li>
+            <li><a href="https://twitter.com/AlexBallera" target="_blank"><i class="fa fa-twitter"></a></li>
+            <li><a href="https://www.linkedin.com/in/alexballera" target="_blank"><i class="fa fa-linkedin"></a></li>
+            <li><a href="https://plus.google.com/u/0/+AlexBallera/posts" target="_blank"><i class="fa fa-google-plus"></a></li>
+            <li><a href="https://github.com/alexballera" target="_blank"><i class="fa fa-github-alt"></a></li>
+          </ul>
+          <form action="//alexballera.us8.list-manage.com/subscribe/post?u=8d7312e4347b5791968e24e78&amp;id=d7ed361251" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll" class="form__email">
+                <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Tu email aquí..." required>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_8d7312e4347b5791968e24e78_d7ed361251" tabindex="-1" value="">
+                </div>
+                <div class="clear form__email--button">
+                <a href="#close" title="Cerrar" class="close">X</a>
+                <a href="#close" title="Cerrar" class="close__boton">
+                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"><i class="fa fa-envelope-o"></i> Contáctame</button>
+                 <!--  <input type="submit" value="✉ Registrarme" name="subscribe" id="mc-embedded-subscribe" class="button"> -->
+                </div>
+            </div>
+          </form>
+        </div>
+      <!-- </div> -->
+    </div>
+    <!-- Fin Modal Contact -->
     <!-- Header -->
         <header class="header">
               <picture class="header__picture">
@@ -107,7 +149,7 @@
                   srcset="images/alex-ballera.svg,
                   images/alex-ballera@2x.svg 2x"
                   alt="Alex Ballera | Web Developer">
-                  <figcaption>
+                  <figcaption class="header__picture--figcaption">
                     <a href="https://es.gravatar.com/alexballera" target="_blank" class="header__link">
                       <span>Alex Ballera
                       <span>Front End Developer</span></span>
@@ -295,9 +337,9 @@
                                       <input type="text" name="b_8d7312e4347b5791968e24e78_d7ed361251" tabindex="-1" value="">
                                     </div>
                                     <div class="clear form__email--button">
-                                      <input type="submit" value="✉ Registrarme" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"><i class="fa fa-envelope-o"></i> Registrarme</button>
                                     </div>
-                              </div>
+                                </div>
                               </form>
                         </div>
                     </div>
@@ -310,7 +352,14 @@
             <div id="footer"></div>
             <div class="footer__contact">
                 <h3>Contáctame</h3>
+                <address>
+                  <a href="mailto:alexballera@gmail.com">Alex Ballera</a><br> 
+                </address>
                 <p>Entrepreneur, Marketer & Front End Developer en tecnologías HTML5, CSS3, JavaScript & Ruby on Rails</p>
+                <a href="#openModal">
+                  <button class="informacion__boton" type="button"> <i class="fa fa-envelope-o"></i> Contáctame
+                  </button>
+                </a>
             </div>
             <div class="footer__content">
                 <h3>Contenido</h3>
@@ -318,7 +367,7 @@
                   <li><a href="#responsive">Responsive</a></li>
                   <li><a href="#projects">Proyectos</a></li>
                   <li><a href="#articles">Artículos</a></li>
-                  <li><a href="#footer">Contacto</a></li>
+                  <li><a href="#openModal">Contáctame</a></li>
                 </ul>
             </div>
             <div id="paddingFooter" class="footer__social">

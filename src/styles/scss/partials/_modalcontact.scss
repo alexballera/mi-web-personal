@@ -1,0 +1,101 @@
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    &:target {
+        opacity:1;
+        pointer-events: auto;
+    }
+    & > div {
+        width: 60%;
+        position: relative;
+        top: 75px;
+        margin: 10% auto;
+        padding: 1.25rem;
+        border-radius: 10px;
+        background: #fff;
+        background: linear-gradient(#fff, #999);
+    }
+    & picture{
+        & figcaption{
+            display: none;
+            color: grey;
+            margin-top: 1rem;
+            @include respond-to(xs) {
+                display: block;
+            }
+            &:hover{
+                color: grey;
+            }
+        }
+    }
+    & p{
+        color: grey;
+        margin: 1rem 0;
+    }
+    & ul {
+        text-align: center;
+        margin-bottom: 1rem;
+        & li{
+          display: inline-block;
+          margin-right: 0.5rem;
+          & i{
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            color: $white;
+            @include respond-to(md) {
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                font-size: 1.2rem;
+                }
+            &.fa-facebook{
+              background-color: $facebook;
+            }
+            &.fa-twitter{
+              background-color: $twitter;
+            }
+            &.fa-linkedin{
+              background-color: $linkedin;
+            }
+            &.fa-google-plus{
+              background-color: $google;
+            }
+            &.fa-github-alt{
+              background-color: $github;
+            }
+            &:hover{
+              background-color: $orange;
+            }
+          }
+        }
+    }
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px #000;
+    &__boton{
+        color: $orange;
+    }
+    &:hover { background: $orange; }
+}

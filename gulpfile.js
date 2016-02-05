@@ -76,7 +76,7 @@ gulp.task('serve', () => {
     notify: false,
     logPrefix: 'BS',
     server: {
-      baseDir: [globs.build]
+      baseDir: [globs.dist]
     },
     host: '0.0.0.0',
     port: 8000,

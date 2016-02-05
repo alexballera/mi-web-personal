@@ -34,7 +34,18 @@ $item: 3;
         width: 40%;
     }
     & p{
-      width: 95%;
+      width: 80%;
+    }
+    & a button{
+      margin-top: 0.5rem;
+      padding: 0.25rem 1rem;
+      color: $white;
+      background-color: $orange;
+      border-radius: 5px;
+      &:hover{
+        background-color: $purple;
+        // color: $orange;
+      }
     }
   }
   &__content{
@@ -48,12 +59,10 @@ $item: 3;
   }
   &__social{
     width: 100%;
-    // padding-bottom: 47px;
     @include respond-to(xs) {
         width: 50%;
     }
     @include respond-to(mm) {
-      // padding-bottom: 0;
       width: 40%;
     }
     & ul li{

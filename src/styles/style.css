@@ -1,4 +1,3 @@
-@import url(./fonts/css/font-awesome.min.css);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -731,16 +730,16 @@ h3 {
         .header__picture img {
           width: 10rem;
           height: 10rem; } }
-    .header__picture img:hover {
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg);
-      transition: all 1.2s ease;
-      border: 0.2rem solid #FFB040; }
-    .header__picture figcaption {
+      .header__picture img:hover {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        transition: all 1.2s ease;
+        border: 0.2rem solid #FFB040; }
+    .header__picture--figcaption {
       font-size: 1.2em;
       color: #F1FFF9;
       margin-top: 1em; }
-      .header__picture figcaption a {
+      .header__picture--figcaption a {
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
@@ -748,28 +747,28 @@ h3 {
             -ms-flex-direction: column;
                 flex-direction: column;
         line-height: 2.5rem; }
-        .header__picture figcaption a span:nth-child(1) span::before {
+        .header__picture--figcaption a span:nth-child(1) span::before {
           content: "() => { ";
           color: #55ACEE; }
-        .header__picture figcaption a span:nth-child(1) span::after {
+        .header__picture--figcaption a span:nth-child(1) span::after {
           content: " }";
           color: #55ACEE; }
-        .header__picture figcaption a span:nth-child(2) {
+        .header__picture--figcaption a span:nth-child(2) {
           font-size: 80%; }
-          .header__picture figcaption a span:nth-child(2)::before {
+          .header__picture--figcaption a span:nth-child(2)::before {
             content: "< ";
             color: #55ACEE; }
-          .header__picture figcaption a span:nth-child(2)::after {
+          .header__picture--figcaption a span:nth-child(2)::after {
             content: " />";
             color: #55ACEE; }
-        .header__picture figcaption a span:hover {
+        .header__picture--figcaption a span:hover {
           color: #FFB040; }
       @media screen and (min-width: 30em) {
-        .header__picture figcaption {
+        .header__picture--figcaption {
           font-size: 1.5em;
           font-weight: 400; } }
       @media screen and (min-width: 48em) {
-        .header__picture figcaption {
+        .header__picture--figcaption {
           font-size: 2em; } }
   .header__languages {
     padding-top: 2em; }
@@ -1118,16 +1117,20 @@ h3 {
     .form__email input[type="email"] {
       border-radius: 6px;
       padding: 0 .5rem;
-      width: 350px;
-      font-size: 22px;
+      width: 75%;
       line-height: 40px;
       height: 100%;
       margin: .25rem; }
-    .form__email input[type="submit"] {
+      @media screen and (min-width: 42.5em) {
+        .form__email input[type="email"] {
+          font-size: 22px; } }
+      @media screen and (min-width: 48em) {
+        .form__email input[type="email"] {
+          width: 50%; } }
+    .form__email button[type="submit"] {
       height: 100%;
       line-height: 40px;
       width: 200px;
-      font-size: 22px;
       border-radius: 5px;
       margin: .25rem .25rem .5rem .25rem;
       color: #F1FFF9;
@@ -1135,11 +1138,13 @@ h3 {
       outline: none;
       border: none; }
       @media screen and (min-width: 37.5em) {
-        .form__email input[type="submit"] {
+        .form__email button[type="submit"] {
           margin-bottom: 0; } }
-      .form__email input[type="submit"]:hover {
-        background-color: #1E1E1E;
-        color: #FFB040; }
+      @media screen and (min-width: 42.5em) {
+        .form__email button[type="submit"] {
+          font-size: 22px; } }
+      .form__email button[type="submit"]:hover {
+        background-color: #8344CC; }
 
 /** Footer */
 .footer {
@@ -1179,7 +1184,15 @@ h3 {
       .footer__contact {
         width: 40%; } }
     .footer__contact p {
-      width: 95%; }
+      width: 80%; }
+    .footer__contact a button {
+      margin-top: 0.5rem;
+      padding: 0.25rem 1rem;
+      color: #F1FFF9;
+      background-color: #FFB040;
+      border-radius: 5px; }
+      .footer__contact a button:hover {
+        background-color: #8344CC; }
   .footer__content {
     width: 100%; }
     @media screen and (min-width: 30em) {
@@ -1219,3 +1232,88 @@ h3 {
           background-color: #010101; }
         .footer__social ul li i:hover {
           background-color: #FFB040; }
+
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none; }
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto; }
+  .modalDialog > div {
+    width: 60%;
+    position: relative;
+    top: 75px;
+    margin: 10% auto;
+    padding: 1.25rem;
+    border-radius: 10px;
+    background: #fff;
+    background: linear-gradient(#fff, #999); }
+  .modalDialog picture figcaption {
+    display: none;
+    color: grey;
+    margin-top: 1rem; }
+    @media screen and (min-width: 30em) {
+      .modalDialog picture figcaption {
+        display: block; } }
+    .modalDialog picture figcaption:hover {
+      color: grey; }
+  .modalDialog p {
+    color: grey;
+    margin: 1rem 0; }
+  .modalDialog ul {
+    text-align: center;
+    margin-bottom: 1rem; }
+    .modalDialog ul li {
+      display: inline-block;
+      margin-right: 0.5rem; }
+      .modalDialog ul li i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        color: #F1FFF9; }
+        @media screen and (min-width: 48em) {
+          .modalDialog ul li i {
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            font-size: 1.2rem; } }
+        .modalDialog ul li i.fa-facebook {
+          background-color: #3B5998; }
+        .modalDialog ul li i.fa-twitter {
+          background-color: #55ACEE; }
+        .modalDialog ul li i.fa-linkedin {
+          background-color: #0177B5; }
+        .modalDialog ul li i.fa-google-plus {
+          background-color: #DC4E41; }
+        .modalDialog ul li i.fa-github-alt {
+          background-color: #010101; }
+        .modalDialog ul li i:hover {
+          background-color: #FFB040; }
+
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 1px 1px 3px #000; }
+  .close__boton {
+    color: #FFB040; }
+  .close:hover {
+    background: #FFB040; }
