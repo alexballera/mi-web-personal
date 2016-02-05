@@ -86,11 +86,9 @@
                   </a>
                   <button id="btnMenu" class="nav__mobile--btn inactive active"><i id="btnButton" class="fa fa-bars"></i></button>
             </div>
-            <nav id="navBar" class="nav__menu--navbar">
+            <nav class="nav__menu--navbar">
                   <ul id="navbarMenu" class="nav__menu--list">
-                      <li class="nav__menu--list--item"><a href="#">Inicio</a></li>
                       <li class="nav__menu--list--item"><a href="#responsive">Responsive</a></li>
-                      <li class="nav__menu--list--item"><a href="#mobile">Mobile</a></li>
                       <li class="nav__menu--list--item"><a href="#projects">Proyectos</a></li>
                       <li class="nav__menu--list--item"><a href="#articles">Artículos</a></li>
                       <li class="nav__menu--list--item"><a href="#footer">Contacto</a></li>
@@ -111,14 +109,13 @@
                   alt="Alex Ballera | Web Developer">
                   <figcaption>
                     <a href="https://es.gravatar.com/alexballera" target="_blank" class="header__link">
-                      Alex Ballera | Front End Developer
-                      <br>
-                      <span>Mobile Friendly & Responsive Web Design</span>
+                      <span>Alex Ballera
+                      <span>Front End Developer</span></span>
+                      <span>Mobile Optimization & Responsive Web Design</span>
                     </a>
                   </figcaption>
               </picture>
               <section class="header__languages">
-                  <!-- <div class=""> -->
                     <div class="header__languages--container">
                       <div class="header__languages--item html">
                         <picture class="header__languages--picture">
@@ -173,7 +170,6 @@
                         </picture>
                       </div>
                     </div>
-                  <!-- </div> -->
               </section>
         </header>
     <!-- Fin de Header -->
@@ -181,12 +177,14 @@
         <section class="content">
               <!-- Servicios, Proyectos & Artículos -->
                     <!-- Servicios: Responsive Web Design & Mobile Friendly -->
-                          <main>
+                          <main class="main">
+                                <div id="responsive"></div>
+                                <h1 class="content__title">¿Tu sitio web responde a diferentes tamaños de navegador?
+                                <br><span>¿Está optimizado para dispositivos móviles?</span></h1>
+                                <div class="content__container">
                                 <!-- Responsive Web Design -->
                                       <section class="content__responsive">
-                                          <div class="container">
-                                            <div id="responsive"></div>
-                                            <h2 class="content__responsive--title">Responsive Web Design</h2>
+                                            <!-- <h2 class="content__responsive--title">Responsive Web Design</h2> -->
                                             <article class="content__responsive--responsive responsive">
                                               <picture class="content__responsive--responsive--picture">
                                                 <source
@@ -200,17 +198,15 @@
                                                 <figcaption>Responsive Web Design</figcaption>
                                               </picture>
                                               <div class="content__responsive--responsive--text">
-                                                    <p>Descripción de Responsive Web Design. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet explicabo possimus, ad odio aut id! Eum architecto fugit aliquam eos rem alias vel sequi, similique, unde sint possimus porro nesciunt!</p>
+                                                    <p><span><em>Responsive Web Design</em></span>, responde a las necesidades de los usuarios y de sus dispositivos. El diseño cambia en función del tamaño y de la capacidad del dispositivo.</p>
                                               </div>
                                             </article>
-                                          </div>
                                       </section>
                                 <!-- Fin RWD -->
                                 <!-- Mobile Friendly -->
                                       <section class="content__responsive">
-                                          <div class="container">
-                                            <div id="mobile"></div>
-                                            <h2 class="content__responsive--title">Mobile Friendly</h2>
+                                          <!-- <div class="container"> -->
+                                            <!-- <h2 class="content__responsive--title">Mobile Optimization</h2> -->
                                             <article class="content__responsive--responsive responsive">
                                               <picture class="content__responsive--responsive--picture">
                                                 <source
@@ -221,15 +217,15 @@
                                                       srcset="images/mobile-friendly.svg,
                                                       images/mobile-friendly@2x.svg 2x"
                                                       alt="Mobile Friendly">
-                                                      <figcaption>Mobile Friendly</figcaption>
+                                                      <figcaption>Mobile Optimization</figcaption>
                                               </picture>
                                               <div class="content__responsive--responsive--text">
-                                                <p>Descripción de Mobile Friendly. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet explicabo possimus, ad odio aut id! Eum architecto fugit aliquam eos rem alias vel sequi, similique, unde sint possimus porro nesciunt!</p>
+                                                <p><span><em>Mobile Optimization</em></span> es el proceso de garantizar que los visitantes que acceden a su sitio web desde dispositivos móviles tengan una experiencia optimizada para el dispositivo.</p>
                                               </div>
                                             </article>
-                                          </div>
                                       </section>
                                 <!-- Fin Mobile Friendly -->
+                                </div>
                           </main>
                     <!-- Fin de Servicios: Responsive Web Design & Mobile Friendly -->
                     <!-- Proyectos -->

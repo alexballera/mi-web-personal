@@ -40,3 +40,10 @@ h3{
 .linkedin{
   background-color: $linkedin;
 }
+.title{
+  color: grey;
+  padding: 1rem 0;
+  @include respond-to(sm) {
+      padding-top: 0;
+  }
+}

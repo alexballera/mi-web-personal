@@ -1,0 +1,45 @@
+.form{
+  width: 100%;
+  margin: 1rem auto;
+  &__content{
+    & p{
+      color: grey;
+      letter-spacing: 1.2px;
+      font-size: 1.1rem;
+      line-height: 1.2rem;
+      width: 80%;
+      margin: 0 auto 1rem auto;
+    }
+  }
+  &__email {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    & input[type="email"] {
+        border-radius: 6px;
+        padding: 0 .5rem;
+        width: 350px;
+        font-size: 22px;
+        line-height: 40px;
+        height: 100%;
+        margin: .25rem;
+    }
+    & input[type="submit"] {
+        height: 100%;
+        line-height: 40px;
+        width: 200px;
+        font-size: 22px;
+        border-radius: 5px;
+        margin: .25rem .25rem .5rem .25rem;
+        color: $white;
+        background-color: $orange;
+        outline: none;
+        border: none;
+        @include respond-to(sm) {
+          margin-bottom: 0;
+        }
+    }
+  }
+}

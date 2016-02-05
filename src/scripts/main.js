@@ -6,11 +6,11 @@ import hammer from './vendors/hammer.min.js'
 import onSwipe from './lib/onSwipe'
 import showMenu from './lib/showMenu'
 import changeButton from './lib/changeButton'
-import loadCSS from './lib/loadCSS'  // Descomentar si se está en línea
-import loadJS from './lib/loadJS'  // Descomentar si se está en línea
-import showProjects from './lib/showProjects'  // Descomentar si se está en línea
-import showArticles from './lib/showArticles'  // Descomentar si se está en línea
-import doTransparentBar from './lib/doTransparentBar'  // Descomentar si se está en línea
+import doTransparentBar from './lib/doTransparentBar'
+// import loadCSS from './lib/loadCSS'  // Descomentar si se está en línea
+// import loadJS from './lib/loadJS'  // Descomentar si se está en línea
+// import showProjects from './lib/showProjects'  // Descomentar si se está en línea
+// import showArticles from './lib/showArticles'  // Descomentar si se está en línea
 
 (() => {
   'use strict'

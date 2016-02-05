@@ -1,13 +1,6 @@
 /** Articles & Projects */
 .content{
     &__articles{
-        &--title{
-            color: grey;
-            padding: 1rem 0;
-            @include respond-to(sm) {
-                padding-top: 0;
-            }
-        }
         &--container{
             box-sizing: border-box;
             height: 100%;
