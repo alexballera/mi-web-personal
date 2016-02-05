@@ -40,6 +40,10 @@
         @include respond-to(sm) {
           margin-bottom: 0;
         }
+        &:hover{
+          background-color: $black;
+          color: $orange;
+        }
     }
   }
 }

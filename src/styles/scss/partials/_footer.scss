@@ -1,36 +1,81 @@
 /** Footer */
+$item: 3;
 .footer{
   background-color: $black;
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
+  padding: 1rem;
+  color: grey;
+  letter-spacing: 1.1px;
+  font-size: 0.85rem;
+  line-height: 1.2rem;
   @include respond-to(md) {
     display: flex;
+  }
+  & a{
+    color: grey;
+    &:hover{
+      color: $orange;
+    }
   }
   & h3{
     color: $white;
     font-weight: 400;
+    font-size: 1rem;
+    padding: 1rem 0;
   }
   &__contact{
-    height: 50px;
     @include respond-to(md) {
-        width: (100%/3);
+        width: 40%;
+    }
+    & p{
+      width: 95%;
     }
   }
   &__content{
-    height: 50px;
     @include respond-to(md) {
-        width: (100%/3);
+        width: 20%;
     }
   }
   &__social{
-    height: 50px;
-    padding-bottom: 63px;
+    padding-bottom: 47px;
     @include respond-to(mm) {
       padding-bottom: 0;
     }
     @include respond-to(md) {
-        width: (100%/3);
+        width: 40%;
+    }
+    & ul li{
+      display: inline-block;
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      & i{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 50%;
+        color: $white;
+        &.fa-facebook{
+          background-color: $facebook;
+        }
+        &.fa-twitter{
+          background-color: $twitter;
+        }
+        &.fa-linkedin{
+          background-color: $linkedin;
+        }
+        &.fa-google-plus{
+          background-color: $google;
+        }
+        &.fa-github-alt{
+          background-color: $github;
+        }
+        &:hover{
+          background-color: $orange;
+        }
+      }
     }
   }
 }

@@ -483,21 +483,6 @@ h3 {
     h3 {
       font-size: 1.3em; } }
 
-.facebook {
-  background-color: #3B5998; }
-
-.twitter {
-  background-color: #55ACEE; }
-
-.github {
-  background-color: #010101; }
-
-.google {
-  background-color: #DC4E41; }
-
-.linkedin {
-  background-color: #0177B5; }
-
 .title {
   color: grey;
   padding: 1rem 0; }
@@ -1152,37 +1137,71 @@ h3 {
       @media screen and (min-width: 37.5em) {
         .form__email input[type="submit"] {
           margin-bottom: 0; } }
+      .form__email input[type="submit"]:hover {
+        background-color: #1E1E1E;
+        color: #FFB040; }
 
 /** Footer */
 .footer {
   background-color: #1E1E1E;
   box-sizing: border-box;
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 1rem;
+  color: grey;
+  letter-spacing: 1.1px;
+  font-size: 0.85rem;
+  line-height: 1.2rem; }
   @media screen and (min-width: 48em) {
     .footer {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; } }
+  .footer a {
+    color: grey; }
+    .footer a:hover {
+      color: #FFB040; }
   .footer h3 {
     color: #F1FFF9;
-    font-weight: 400; }
-  .footer__contact {
-    height: 50px; }
-    @media screen and (min-width: 48em) {
-      .footer__contact {
-        width: 33.33333%; } }
-  .footer__content {
-    height: 50px; }
-    @media screen and (min-width: 48em) {
-      .footer__content {
-        width: 33.33333%; } }
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 1rem 0; }
+  @media screen and (min-width: 48em) {
+    .footer__contact {
+      width: 40%; } }
+  .footer__contact p {
+    width: 95%; }
+  @media screen and (min-width: 48em) {
+    .footer__content {
+      width: 20%; } }
   .footer__social {
-    height: 50px;
-    padding-bottom: 63px; }
+    padding-bottom: 47px; }
     @media screen and (min-width: 42.5em) {
       .footer__social {
         padding-bottom: 0; } }
     @media screen and (min-width: 48em) {
       .footer__social {
-        width: 33.33333%; } }
+        width: 40%; } }
+    .footer__social ul li {
+      display: inline-block;
+      font-size: 1.2rem;
+      margin-right: 0.5rem; }
+      .footer__social ul li i {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 50%;
+        color: #F1FFF9; }
+        .footer__social ul li i.fa-facebook {
+          background-color: #3B5998; }
+        .footer__social ul li i.fa-twitter {
+          background-color: #55ACEE; }
+        .footer__social ul li i.fa-linkedin {
+          background-color: #0177B5; }
+        .footer__social ul li i.fa-google-plus {
+          background-color: #DC4E41; }
+        .footer__social ul li i.fa-github-alt {
+          background-color: #010101; }
+        .footer__social ul li i:hover {
+          background-color: #FFB040; }
