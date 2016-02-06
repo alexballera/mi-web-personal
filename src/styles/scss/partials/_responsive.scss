@@ -42,6 +42,12 @@
     @include respond-to(lg) {
       width: 394px;
     }
+    &--form{
+      width: 70%;
+      & em{
+        font-weight: 700;
+      }
+    }
     &--title{
       padding: 1em 0;
       color: grey;
