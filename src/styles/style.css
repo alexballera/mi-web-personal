@@ -953,6 +953,7 @@ h3 {
     .content__responsive {
       width: 394px; } }
   .content__responsive--form {
+    padding-top: 1rem;
     width: 70%; }
     .content__responsive--form em {
       font-weight: 700; }
