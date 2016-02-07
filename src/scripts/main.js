@@ -11,6 +11,7 @@ import loadCSS from './lib/loadCSS'  // Descomentar si se está en línea
 import loadJS from './lib/loadJS'  // Descomentar si se está en línea
 import showProjects from './lib/showProjects'  // Descomentar si se está en línea
 import showArticles from './lib/showArticles'  // Descomentar si se está en línea
+// import mailChimp from './lib/mailChimp'  // Descomentar si se está en línea
 
 (() => {
   'use strict'
@@ -32,13 +33,14 @@ import showArticles from './lib/showArticles'  // Descomentar si se está en lí
 // Load CSS
     var urlCSS = [
       'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css',
-      // 'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css'
+      'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css'
     ]
     loadCSS(urlCSS)
 
   // Load JS
     var urlJs = [
-      '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5698df4c26bc43c8'
+      '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5698df4c26bc43c8',
+      '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'
     ]
     loadJS(urlJs)
   }

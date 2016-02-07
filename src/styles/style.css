@@ -451,64 +451,6 @@ h3 {
             width: 50px;
             height: 50px; } }
 
-.form {
-  width: 70%;
-  margin: 1rem auto; }
-  .form__content p {
-    color: grey;
-    letter-spacing: 1.2px;
-    font-size: 1.1rem;
-    line-height: 1.2rem;
-    width: 80%;
-    margin: 0 auto 1rem auto; }
-  .form__email {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex: 0 1 auto;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .form__email input[type="email"] {
-      border-radius: 6px;
-      padding: 0 .5rem;
-      width: 75%;
-      line-height: 40px;
-      height: 100%;
-      margin: .25rem; }
-      @media screen and (min-width: 42.5em) {
-        .form__email input[type="email"] {
-          font-size: 22px; } }
-      @media screen and (min-width: 48em) {
-        .form__email input[type="email"] {
-          width: 50%; } }
-    .form__email button[type="submit"] {
-      height: 100%;
-      line-height: 40px;
-      width: 200px;
-      border-radius: 5px;
-      margin: .25rem .25rem .5rem .25rem;
-      color: #F1FFF9;
-      background-color: #FFB040;
-      outline: none;
-      border: none; }
-      @media screen and (min-width: 37.5em) {
-        .form__email button[type="submit"] {
-          margin-bottom: 0; } }
-      @media screen and (min-width: 42.5em) {
-        .form__email button[type="submit"] {
-          font-size: 22px; } }
-      .form__email button[type="submit"]:hover {
-        background-color: #8344CC; }
-
 /** Content */
 .container {
   box-sizing: border-box;
@@ -796,6 +738,80 @@ h3 {
         .content__articles--post--text.show p span.screen-reader-text {
           color: #FFB040; }
 
+.form {
+  width: 70%;
+  margin: 1rem auto; }
+  .form__container--purple {
+    background-color: #9780B2; }
+  .form__content p {
+    color: grey;
+    letter-spacing: 1.2px;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    width: 85%;
+    margin: 0 auto 1rem auto; }
+  .form__content--purple h2 {
+    margin-bottom: 1rem; }
+  .form__content--purple h2,
+  .form__content--purple p {
+    color: #F1FFF9; }
+  .form__email {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .form__email input[type="email"],
+    .form__email input[type="text"] {
+      border-radius: 6px;
+      padding: 0 .5rem;
+      width: 100%;
+      line-height: 40px;
+      height: 100%;
+      margin: .25rem;
+      font-size: 1.1rem; }
+      @media screen and (min-width: 48em) {
+        .form__email input[type="email"],
+        .form__email input[type="text"] {
+          width: 80%; } }
+      @media screen and (min-width: 64em) {
+        .form__email input[type="email"],
+        .form__email input[type="text"] {
+          width: 75%; } }
+      @media screen and (min-width: 90em) {
+        .form__email input[type="email"],
+        .form__email input[type="text"] {
+          width: 85%; } }
+    .form__email button[type="submit"] {
+      height: 100%;
+      line-height: 40px;
+      width: 200px;
+      border-radius: 5px;
+      margin: .25rem .25rem .5rem .25rem;
+      color: #F1FFF9;
+      background-color: #FFB040;
+      outline: none;
+      border: none; }
+      @media screen and (min-width: 37.5em) {
+        .form__email button[type="submit"] {
+          margin-bottom: 0; } }
+      @media screen and (min-width: 42.5em) {
+        .form__email button[type="submit"] {
+          font-size: 22px; } }
+      .form__email button[type="submit"]:hover {
+        background-color: #8344CC;
+        cursor: pointer; }
+
 /** Footer */
 .footer {
   background-color: #1E1E1E;
@@ -880,6 +896,8 @@ h3 {
           background-color: #DC4E41; }
         .footer__social ul li i.fa-github-alt {
           background-color: #010101; }
+        .footer__social ul li i.fa-envelope-o {
+          background-color: #8344CC; }
         .footer__social ul li i:hover {
           background-color: #FFB040; }
 
@@ -900,12 +918,18 @@ h3 {
   .modalDialog > div {
     width: 60%;
     position: relative;
-    top: 75px;
+    top: -20px;
     margin: 10% auto;
     padding: 1.25rem;
     border-radius: 10px;
     background: #fff;
     background: linear-gradient(#fff, #999); }
+    @media screen and (max-width: 767px) and (orientation: landscape) {
+      .modalDialog > div {
+        width: 80%;
+        top: -15px;
+        margin: 5% auto;
+        padding: 0.75rem; } }
   .modalDialog picture figcaption {
     display: none;
     color: grey;
@@ -931,6 +955,10 @@ h3 {
         text-align: center;
         border-radius: 50%;
         color: #F1FFF9; }
+        @media screen and (max-width: 767px) and (orientation: landscape) {
+          .modalDialog ul li i {
+            width: 25px;
+            height: 25px; } }
         @media screen and (min-width: 48em) {
           .modalDialog ul li i {
             width: 35px;
@@ -967,3 +995,9 @@ h3 {
     color: #FFB040; }
   .close:hover {
     background: #FFB040; }
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .form__modal input[type="email"],
+  .form__modal input[type="text"] {
+    line-height: 1.5rem;
+    height: 100%; } }

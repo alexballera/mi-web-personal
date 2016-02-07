@@ -44,7 +44,6 @@ $item: 3;
       border-radius: 5px;
       &:hover{
         background-color: $purple;
-        // color: $orange;
       }
     }
   }
@@ -90,6 +89,9 @@ $item: 3;
         }
         &.fa-github-alt{
           background-color: $github;
+        }
+        &.fa-envelope-o{
+          background-color: $purpleLigth;
         }
         &:hover{
           background-color: $orange;

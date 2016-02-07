@@ -16,12 +16,18 @@
     & > div {
         width: 60%;
         position: relative;
-        top: 75px;
+        top: -20px;
         margin: 10% auto;
         padding: 1.25rem;
         border-radius: 10px;
         background: #fff;
         background: linear-gradient(#fff, #999);
+        @include respond-to(sm-landscape) {
+            width: 80%;
+            top: -15px;
+            margin: 5% auto;
+            padding: 0.75rem;
+        }
     }
     & picture{
         & figcaption{
@@ -53,6 +59,10 @@
             text-align: center;
             border-radius: 50%;
             color: $white;
+            @include respond-to(sm-landscape) {
+                width: 25px;
+                height: 25px;
+            }
             @include respond-to(md) {
                 width: 35px;
                 height: 35px;
@@ -98,4 +108,13 @@
         color: $orange;
     }
     &:hover { background: $orange; }
+}
+.form__modal{
+    @include respond-to(sm-landscape) {
+        & input[type="email"],
+        & input[type="text"] {
+            line-height: 1.5rem;
+            height: 100%;
+        }
+    }
 }

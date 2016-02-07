@@ -19,7 +19,6 @@ const cache = require('gulp-cache')
 const del = require('del')
 const inject = require('gulp-inject')
 const wiredep = require('wiredep').stream
-const install = require('gulp-install')
 const deploy = require('gulp-gh-pages')
 
 // Variables
@@ -177,11 +176,6 @@ gulp.task('clean', (cb) => {
   return del([globs.build, globs.dist], cb)
 })
 
-// Install
-gulp.task('install', () => {
-  gulp.src(['./bower.json', './package.json'])
-    .pipe(install())
-})
 // Deploy to gh-pages
 gulp.task('deploy', () => {
   return gulp.src('./dist/**/*')
@@ -217,11 +211,6 @@ gulp.task('watch', () => {
   gulp.watch(globs.scripts.watch, ['build:scripts'])
   gulp.watch(globs.images.watch, ['build:images'])
   gulp.watch(['./bower.json'], ['wiredep', 'copy'])
-})
-
-// Install
-gulp.task('server', ['install'], () => {
-  gulp.start('build')
 })
 
 // Build

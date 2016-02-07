@@ -1,14 +1,24 @@
 .form{
   width: 70%;
   margin: 1rem auto;
+  &__container--purple{
+    background-color: $purpleLight;
+  }
   &__content{
     & p{
       color: grey;
       letter-spacing: 1.2px;
       font-size: 1.1rem;
       line-height: 1.2rem;
-      width: 80%;
+      width: 85%;
       margin: 0 auto 1rem auto;
+    }
+    &--purple h2{
+      margin-bottom: 1rem;
+    }
+    &--purple h2,
+    &--purple p{
+      color: $white;
     }
   }
   &__email {
@@ -17,18 +27,23 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    & input[type="email"] {
+    & input[type="email"],
+    & input[type="text"] {
         border-radius: 6px;
         padding: 0 .5rem;
-        width: 75%;
+        width: 100%;
         line-height: 40px;
         height: 100%;
         margin: .25rem;
-        @include respond-to(mm) {
-          font-size: 22px;
-        }
+        font-size: 1.1rem;
         @include respond-to(md) {
-          width: 50%;
+          width: 80%;
+        }
+        @include respond-to(lg) {
+          width: 75%;
+        }
+        @include respond-to(xl) {
+          width: 85%;
         }
     }
     & button[type="submit"] {
@@ -49,6 +64,7 @@
         }
         &:hover{
           background-color: $purple;
+          cursor: pointer;
         }
     }
   }
