@@ -30,8 +30,8 @@ $item: 3;
   }
   &__contact{
     width: 100%;
-    @include respond-to(mm) {
-        width: 40%;
+    @include respond-to(lg) {
+        width: 25%;
     }
     & p{
       width: 80%;
@@ -49,20 +49,31 @@ $item: 3;
   }
   &__content{
     width: 100%;
-    @include respond-to(xs) {
-        width: 50%;
-    }
-    @include respond-to(mm) {
+    @include respond-to(sm) {
         width: 20%;
+    }
+    @include respond-to(lg) {
+        width: 10%;
+    }
+  }
+  &__articles{
+    & ul li{
+      width: 95%;
+    }
+    @include respond-to(sm) {
+        width: 80%;
+    }
+    @include respond-to(lg) {
+        width: 35%;
     }
   }
   &__social{
     width: 100%;
-    @include respond-to(xs) {
-        width: 50%;
-    }
-    @include respond-to(mm) {
-      width: 40%;
+    box-sizing: border-box;
+    @include respond-to(lg) {
+        border-left: 2px solid $orange;
+        padding-left: 2rem;
+        width: 30%;
     }
     & ul li{
       display: inline-block;
@@ -91,7 +102,7 @@ $item: 3;
           background-color: $github;
         }
         &.fa-envelope-o{
-          background-color: $purpleLigth;
+          background-color: $purple;
         }
         &:hover{
           background-color: $orange;

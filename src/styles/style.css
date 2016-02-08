@@ -846,9 +846,9 @@ h3 {
     padding: 1rem 0; }
   .footer__contact {
     width: 100%; }
-    @media screen and (min-width: 42.5em) {
+    @media screen and (min-width: 64em) {
       .footer__contact {
-        width: 40%; } }
+        width: 25%; } }
     .footer__contact p {
       width: 80%; }
     .footer__contact a button {
@@ -861,20 +861,28 @@ h3 {
         background-color: #8344CC; }
   .footer__content {
     width: 100%; }
-    @media screen and (min-width: 30em) {
-      .footer__content {
-        width: 50%; } }
-    @media screen and (min-width: 42.5em) {
+    @media screen and (min-width: 37.5em) {
       .footer__content {
         width: 20%; } }
+    @media screen and (min-width: 64em) {
+      .footer__content {
+        width: 10%; } }
+  .footer__articles ul li {
+    width: 95%; }
+  @media screen and (min-width: 37.5em) {
+    .footer__articles {
+      width: 80%; } }
+  @media screen and (min-width: 64em) {
+    .footer__articles {
+      width: 35%; } }
   .footer__social {
-    width: 100%; }
-    @media screen and (min-width: 30em) {
+    width: 100%;
+    box-sizing: border-box; }
+    @media screen and (min-width: 64em) {
       .footer__social {
-        width: 50%; } }
-    @media screen and (min-width: 42.5em) {
-      .footer__social {
-        width: 40%; } }
+        border-left: 2px solid #FFB040;
+        padding-left: 2rem;
+        width: 30%; } }
     .footer__social ul li {
       display: inline-block;
       font-size: 1.2rem;
