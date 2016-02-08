@@ -655,7 +655,8 @@ h3 {
     .content__articles--post {
       width: 385px; } }
   .content__articles--post--title {
-    width: 60%; }
+    width: 60%;
+    text-align: left; }
     @media screen and (min-width: 42.5em) {
       .content__articles--post--title {
         width: 100%;
@@ -850,7 +851,8 @@ h3 {
       .footer__contact {
         width: 25%; } }
     .footer__contact p {
-      width: 80%; }
+      width: 80%;
+      margin-bottom: 1rem; }
     .footer__contact a button {
       margin-top: 0.5rem;
       padding: 0.25rem 1rem;
@@ -883,6 +885,8 @@ h3 {
         border-left: 2px solid #FFB040;
         padding-left: 2rem;
         width: 30%; } }
+    .footer__social ul {
+      margin-top: 1rem; }
     .footer__social ul li {
       display: inline-block;
       font-size: 1.2rem;

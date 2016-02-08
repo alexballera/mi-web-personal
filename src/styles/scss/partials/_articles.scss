@@ -57,6 +57,7 @@
             }
             &--title{
                 width: 60%;
+                text-align: left;
                 @include respond-to(mm) {
                     width: 100%;
                     min-height: 5rem;
