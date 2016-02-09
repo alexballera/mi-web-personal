@@ -1176,7 +1176,7 @@ h3 {
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 2rem;
   color: grey;
   letter-spacing: 1.1px;
   font-size: 0.85rem;
@@ -1198,91 +1198,87 @@ h3 {
     .footer a:hover {
       color: #FFB040; }
   .footer h3 {
-    color: #F1FFF9;
     font-weight: 400;
     font-size: 1rem;
     padding: 1rem 0; }
   .footer__contact {
-    width: 100%; }
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 1rem; }
     @media screen and (min-width: 64em) {
       .footer__contact {
-        width: 25%; } }
-    .footer__contact p {
-      width: 80%; }
+        border-left: 2px solid #FFB040;
+        padding-left: 2rem;
+        width: 40%; } }
     .footer__contact a button {
-      margin-top: 0.5rem;
-      padding: 0.25rem 1rem;
+      margin-top: 1.5rem;
+      padding: 0.35rem 1rem;
       color: #F1FFF9;
       background-color: #FFB040;
       border-radius: 5px; }
       .footer__contact a button:hover {
         background-color: #8344CC; }
-    .footer__contact ul li {
+    .footer__contact--tech li {
       display: inline-block;
-      margin: 0.5rem;
+      margin: 0.4rem;
       margin-left: 0;
-      font-size: 1.4rem; }
-      .footer__contact ul li i.fa-html5 {
+      font-size: 1.2rem; }
+      .footer__contact--tech li i.fa-html5 {
         color: #E34C25; }
-      .footer__contact ul li i.fa-css3 {
+      .footer__contact--tech li i.fa-css3 {
         color: #0B72B7; }
-      .footer__contact ul li i.icon-javascript {
+      .footer__contact--tech li i.icon-javascript {
         color: #EFDA4E; }
-      .footer__contact ul li i.icon-ruby-on-rails {
+      .footer__contact--tech li i.icon-ruby-on-rails {
         color: #91242E; }
-      .footer__contact ul li i.icon-wordpress {
+      .footer__contact--tech li i.icon-wordpress {
         color: #0087BE; }
+  .footer__social--redes li {
+    display: inline-block;
+    font-size: 1rem;
+    margin-right: 0.75rem; }
+    .footer__social--redes li i {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 50%;
+      color: #F1FFF9; }
+      .footer__social--redes li i.fa-facebook {
+        background-color: #3B5998; }
+      .footer__social--redes li i.fa-twitter {
+        background-color: #55ACEE; }
+      .footer__social--redes li i.fa-linkedin {
+        background-color: #0177B5; }
+      .footer__social--redes li i.fa-google-plus {
+        background-color: #DC4E41; }
+      .footer__social--redes li i.fa-github-alt {
+        background-color: #010101; }
+      .footer__social--redes li i.fa-envelope-o {
+        background-color: #8344CC; }
+      .footer__social--redes li i.fa-facebook:hover, .footer__social--redes li i.fa-twitter:hover, .footer__social--redes li i.fa-linkedin:hover, .footer__social--redes li i.fa-google-plus:hover, .footer__social--redes li i.fa-github-alt:hover, .footer__social--redes li i.fa-envelope-o:hover {
+        background-color: #FFB040; }
   .footer__content {
-    width: 100%; }
-    @media screen and (min-width: 37.5em) {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 1rem; }
+    @media screen and (min-width: 48em) {
+      .footer__content {
+        width: 40%; } }
+    @media screen and (min-width: 64em) {
       .footer__content {
         width: 20%; } }
+  .footer__articles {
+    box-sizing: border-box;
+    padding-right: 1rem; }
+    .footer__articles ul li {
+      width: 95%; }
+    @media screen and (min-width: 48em) {
+      .footer__articles {
+        width: 60%; } }
     @media screen and (min-width: 64em) {
-      .footer__content {
-        width: 10%; } }
-  .footer__articles ul li {
-    width: 95%; }
-  @media screen and (min-width: 37.5em) {
-    .footer__articles {
-      width: 80%; } }
-  @media screen and (min-width: 64em) {
-    .footer__articles {
-      width: 35%; } }
-  .footer__social {
-    width: 100%;
-    box-sizing: border-box; }
-    @media screen and (min-width: 64em) {
-      .footer__social {
-        border-left: 2px solid #FFB040;
-        padding-left: 2rem;
-        width: 30%; } }
-    .footer__social ul {
-      margin-top: 1rem; }
-    .footer__social ul li {
-      display: inline-block;
-      font-size: 1.2rem;
-      margin-right: 0.5rem; }
-      .footer__social ul li i {
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-        text-align: center;
-        border-radius: 50%;
-        color: #F1FFF9; }
-        .footer__social ul li i.fa-facebook {
-          background-color: #3B5998; }
-        .footer__social ul li i.fa-twitter {
-          background-color: #55ACEE; }
-        .footer__social ul li i.fa-linkedin {
-          background-color: #0177B5; }
-        .footer__social ul li i.fa-google-plus {
-          background-color: #DC4E41; }
-        .footer__social ul li i.fa-github-alt {
-          background-color: #010101; }
-        .footer__social ul li i.fa-envelope-o {
-          background-color: #8344CC; }
-        .footer__social ul li i:hover {
-          background-color: #FFB040; }
+      .footer__articles {
+        width: 40%; } }
 
 .modalDialog {
   position: fixed;

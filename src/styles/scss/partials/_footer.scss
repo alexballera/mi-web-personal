@@ -5,7 +5,7 @@ $item: 3;
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 2rem;
   color: grey;
   letter-spacing: 1.1px;
   font-size: 0.85rem;
@@ -14,6 +14,7 @@ $item: 3;
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
+  // justify-content: space-between;
   @include respond-to(mm) {
   }
   & a{
@@ -23,22 +24,22 @@ $item: 3;
     }
   }
   & h3{
-    color: $white;
     font-weight: 400;
     font-size: 1rem;
     padding: 1rem 0;
   }
   &__contact{
     width: 100%;
+    box-sizing: border-box;
+    padding-right: 1rem;
     @include respond-to(lg) {
-        width: 25%;
-    }
-    & p{
-      width: 80%;
+        border-left: 2px solid $orange;
+        padding-left: 2rem;
+        width: 40%;
     }
     & a button{
-      margin-top: 0.5rem;
-      padding: 0.25rem 1rem;
+      margin-top: 1.5rem;
+      padding: 0.35rem 1rem;
       color: $white;
       background-color: $orange;
       border-radius: 5px;
@@ -46,11 +47,11 @@ $item: 3;
         background-color: $purple;
       }
     }
-    & ul li{
+    &--tech li{
       display: inline-block;
-      margin: 0.5rem;
+      margin: 0.4rem;
       margin-left: 0;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       & i.fa-html5{
         color: $html;
       }
@@ -68,70 +69,73 @@ $item: 3;
       }
     }
   }
+  &__social{
+    &--redes {
+      & li{
+        display: inline-block;
+        font-size: 1rem;
+        margin-right: 0.75rem;
+        & i{
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          border-radius: 50%;
+          color: $white;
+          &.fa-facebook{
+            background-color: $facebook;
+          }
+          &.fa-twitter{
+            background-color: $twitter;
+          }
+          &.fa-linkedin{
+            background-color: $linkedin;
+          }
+          &.fa-google-plus{
+            background-color: $google;
+          }
+          &.fa-github-alt{
+            background-color: $github;
+          }
+          &.fa-envelope-o{
+            background-color: $purple;
+          }
+          &.fa-facebook,
+          &.fa-twitter,
+          &.fa-linkedin,
+          &.fa-google-plus,
+          &.fa-github-alt,
+          &.fa-envelope-o{
+            &:hover{
+              background-color: $orange;
+            }
+          }
+        }
+      }
+    }
+  }
   &__content{
     width: 100%;
-    @include respond-to(sm) {
-        width: 20%;
+    box-sizing: border-box;
+    padding-right: 1rem;
+    @include respond-to(md) {
+        width: 40%;
     }
     @include respond-to(lg) {
-        width: 10%;
+        width: 20%;
     }
   }
   &__articles{
+    box-sizing: border-box;
+    padding-right: 1rem;
     & ul li{
       width: 95%;
     }
-    @include respond-to(sm) {
-        width: 80%;
+    @include respond-to(md) {
+        width: 60%;
     }
     @include respond-to(lg) {
-        width: 35%;
-    }
-  }
-  &__social{
-    width: 100%;
-    box-sizing: border-box;
-    @include respond-to(lg) {
-        border-left: 2px solid $orange;
-        padding-left: 2rem;
-        width: 30%;
-    }
-    & ul{
-      margin-top: 1rem;
-    }
-    & ul li{
-      display: inline-block;
-      font-size: 1.2rem;
-      margin-right: 0.5rem;
-      & i{
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-        text-align: center;
-        border-radius: 50%;
-        color: $white;
-        &.fa-facebook{
-          background-color: $facebook;
-        }
-        &.fa-twitter{
-          background-color: $twitter;
-        }
-        &.fa-linkedin{
-          background-color: $linkedin;
-        }
-        &.fa-google-plus{
-          background-color: $google;
-        }
-        &.fa-github-alt{
-          background-color: $github;
-        }
-        &.fa-envelope-o{
-          background-color: $purple;
-        }
-        &:hover{
-          background-color: $orange;
-        }
-      }
+        width: 40%;
     }
   }
 }
