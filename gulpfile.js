@@ -195,6 +195,9 @@ gulp.task('copy', () => {
   gulp.src(globs.videos.watch)
     .pipe(gulp.dest(globs.videos.build))
     .pipe(gulp.dest(globs.videos.dist))
+  gulp.src('./analyticstracking.php')
+    .pipe(gulp.dest(globs.build))
+    .pipe(gulp.dest(globs.dist))
 })
 
 // Reload

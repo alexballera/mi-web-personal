@@ -36,10 +36,10 @@
         font-size: 1.2em;
         color: $white;
         margin-top: 1em;
-        & a{
           display: flex;
           flex-direction: column;
           line-height: 2.5rem;
+          transition: all 1.2s ease;
           & span{
             &:nth-child(1){
               & span{
@@ -64,11 +64,7 @@
                 color: $twitter;
               }
             }
-            &:hover{
-              color:  $orange;
-            }
           }
-        }
         @include respond-to(xs) {
             font-size: 1.5em;
             font-weight: 400;
@@ -79,32 +75,36 @@
     }
 }
 &__languages{
-    padding-top: 2em;
-    &--container{
-      margin: 0 auto;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: stretch;
-      width: 200px;
-      @include respond-to(xs) {
-        width: 250px;
-      }
-    }
-    &--picture{
-      height: 0;
-      margin: 0;
-      padding: 0;
-      & figcaption{
-        display: none;
-      }
-      & img{
-        width: 40px;
-        height: 40px;
-        @include respond-to(xs) {
-          width: 50px;
-          height: 50px;
+    &--tech {
+      margin: 0.75rem 0;
+      & li{
+        box-sizing: border-box;
+        display: inline-block;
+        margin-right: 0.5rem;
+        font-size: 1.5rem;
+        transition: all 1.2s ease;
+        @include respond-to(md) {
+            font-size: 2.5em;
+        }
+        & i{
+          &.fa-html5{
+            color: $html;
+          }
+          &.fa-css3{
+            color: $css;
+          }
+          &.icon-javascript-alt{
+            color: $javascript;
+          }
+          &.icon-ruby-on-rails{
+            color: $rails;
+          }
+          &.fa-wordpress{
+            color: $wordpress;
+          }
+          &.fa-git{
+            color: $git;
+          }
         }
       }
     }

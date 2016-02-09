@@ -61,6 +61,7 @@
     <![endif]-->
   </head>
   <body>
+  <?php include_once("analyticstracking.php") ?>
     <!--[if lt  IE  8]>
     <p  class="browsehappy">
       Estás usando  un  navegador <strong>desactualizado</strong>.
@@ -137,7 +138,6 @@
                   </div>
             </form>
         </div>
-      <!-- </div> -->
     </div>
     <!-- Fin Modal Contact -->
     <!-- Header -->
@@ -152,68 +152,20 @@
                   images/alex-ballera@2x.svg 2x"
                   alt="Alex Ballera | Web Developer">
                   <figcaption class="header__picture--figcaption">
-                    <a href="https://es.gravatar.com/alexballera" target="_blank" class="header__link">
                       <span>Alex Ballera
                       <span>Front End Developer</span></span>
                       <span>Mobile Optimization & Responsive Web Design</span>
-                    </a>
                   </figcaption>
               </picture>
               <section class="header__languages">
-                    <div class="header__languages--container">
-                      <div class="header__languages--item html">
-                        <picture class="header__languages--picture">
-                          <source
-                          srcset="images/html5.svg,
-                          images/html5@2x.svg 2x">
-                          <img
-                          src="images/html5.svg"
-                          srcset="images/html5.svg,
-                          images/html5@2x.svg 2x"
-                          alt="HTML5">
-                          <figcaption>HTML5</figcaption>
-                        </picture>
-                      </div>
-                      <div class="header__languages--item css">
-                        <picture class="header__languages--picture">
-                          <source
-                          srcset="images/css3.svg,
-                          images/css3@2x.svg 2x">
-                          <img
-                          src="images/css3.svg"
-                          srcset="images/css3.svg,
-                          images/css3@2x.svg 2x"
-                          alt="CSS3">
-                          <figcaption>CSS3</figcaption>
-                        </picture>
-                      </div>
-                      <div class="header__languages--item javascript">
-                        <picture class="header__languages--picture">
-                          <source
-                          srcset="images/javascripts.svg,
-                          images/javascripts@2x.svg 2x">
-                          <img
-                          src="images/javascripts.svg"
-                          srcset="images/javascripts.svg,
-                          images/javascripts@2x.svg 2x"
-                          alt="Javascripts">
-                          <figcaption>Javascripts</figcaption>
-                        </picture>
-                      </div>
-                      <div class="header__languages--item rails">
-                        <picture class="header__languages--picture">
-                          <source
-                          srcset="images/rails.svg,
-                          images/rails@2x.svg 2x">
-                          <img
-                          src="images/rails.svg"
-                          srcset="images/rails.svg,
-                          images/rails@2x.svg 2x"
-                          alt="Ruby on Rails">
-                          <figcaption>Ruby on Rails</figcaption>
-                        </picture>
-                      </div>
-                    </div>
+                    <ul class="header__languages--tech">
+                          <li><i class="fa fa-html5"></i></li>
+                          <li><i class="fa fa-css3"></i></li>
+                          <li><i class="icon-javascript-alt"></i></li>
+                          <li><i class="icon-ruby-on-rails"></i></li>
+                          <li><i class="fa fa-wordpress"></i></li>
+                          <li><i class="fa fa-git"></i></li>
+                    </ul>
               </section>
         </header>
     <!-- Fin de Header -->
@@ -249,8 +201,6 @@
                                 <!-- Fin RWD -->
                                 <!-- Mobile Friendly -->
                                       <section class="content__responsive">
-                                          <!-- <div class="container"> -->
-                                            <!-- <h2 class="content__responsive--title">Mobile Optimization</h2> -->
                                             <article class="content__responsive--responsive responsive">
                                               <picture class="content__responsive--responsive--picture">
                                                 <source
@@ -299,7 +249,7 @@
                           <article id="content_projects" class="content__articles content__projects--background">
                                 <div class="container">
                                       <div id="projects"></div>
-                                      <h2 class="content__articles--title title">Proyectos</h2>
+                                      <h2 class="content__articles--title title">Conoce un poco de los proyectos que he realizado y en los que he participado</h2>
                                       <!-- Inicio de los Proyectos -->
                                       <div class="content__articles--container">
                                             <div class="loader">Loading...</div>
@@ -337,7 +287,7 @@
                           <article id="content_articles" class="content__articles content__articles--background">
                                 <div class="container">
                                       <div id="articles"></div>
-                                      <h2 class="content__articles--title title">Artículos</h2>
+                                      <h2 class="content__articles--title title">¿Qué quieres aprender hoy?</h2>
                                       <!-- Inicio de los Artículos -->
                                       <div class="content__articles--container">
                                             <div class="loader">Loading...</div>
@@ -428,7 +378,7 @@
     e=o.createElement(i);r=o.getElementsByTagName(i)[0];
     e.src='https://www.google-analytics.com/analytics.js';
     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-XXXXX-X');ga('send','pageview');
+    ga('create','UA-64526674-2');ga('send','pageview');
     </script>
     <!-- bower:js -->
     <!-- endbower -->

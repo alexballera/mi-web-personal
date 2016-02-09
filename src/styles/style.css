@@ -741,31 +741,29 @@ h3 {
     .header__picture--figcaption {
       font-size: 1.2em;
       color: #F1FFF9;
-      margin-top: 1em; }
-      .header__picture--figcaption a {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        line-height: 2.5rem; }
-        .header__picture--figcaption a span:nth-child(1) span::before {
-          content: "() => { ";
+      margin-top: 1em;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      line-height: 2.5rem;
+      transition: all 1.2s ease; }
+      .header__picture--figcaption span:nth-child(1) span::before {
+        content: "() => { ";
+        color: #55ACEE; }
+      .header__picture--figcaption span:nth-child(1) span::after {
+        content: " }";
+        color: #55ACEE; }
+      .header__picture--figcaption span:nth-child(2) {
+        font-size: 80%; }
+        .header__picture--figcaption span:nth-child(2)::before {
+          content: "< ";
           color: #55ACEE; }
-        .header__picture--figcaption a span:nth-child(1) span::after {
-          content: " }";
+        .header__picture--figcaption span:nth-child(2)::after {
+          content: " />";
           color: #55ACEE; }
-        .header__picture--figcaption a span:nth-child(2) {
-          font-size: 80%; }
-          .header__picture--figcaption a span:nth-child(2)::before {
-            content: "< ";
-            color: #55ACEE; }
-          .header__picture--figcaption a span:nth-child(2)::after {
-            content: " />";
-            color: #55ACEE; }
-        .header__picture--figcaption a span:hover {
-          color: #FFB040; }
       @media screen and (min-width: 30em) {
         .header__picture--figcaption {
           font-size: 1.5em;
@@ -773,40 +771,29 @@ h3 {
       @media screen and (min-width: 48em) {
         .header__picture--figcaption {
           font-size: 2em; } }
-  .header__languages {
-    padding-top: 2em; }
-    .header__languages--container {
-      margin: 0 auto;
+  .header__languages--tech {
+    margin: 0.75rem 0; }
+    .header__languages--tech li {
       box-sizing: border-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-justify-content: space-around;
-          -ms-flex-pack: distribute;
-              justify-content: space-around;
-      -webkit-align-items: stretch;
-          -ms-flex-align: stretch;
-              align-items: stretch;
-      width: 200px; }
-      @media screen and (min-width: 30em) {
-        .header__languages--container {
-          width: 250px; } }
-    .header__languages--picture {
-      height: 0;
-      margin: 0;
-      padding: 0; }
-      .header__languages--picture figcaption {
-        display: none; }
-      .header__languages--picture img {
-        width: 40px;
-        height: 40px; }
-        @media screen and (min-width: 30em) {
-          .header__languages--picture img {
-            width: 50px;
-            height: 50px; } }
+      display: inline-block;
+      margin-right: 0.5rem;
+      font-size: 1.5rem;
+      transition: all 1.2s ease; }
+      @media screen and (min-width: 48em) {
+        .header__languages--tech li {
+          font-size: 2.5em; } }
+      .header__languages--tech li i.fa-html5 {
+        color: #E34C25; }
+      .header__languages--tech li i.fa-css3 {
+        color: #0B72B7; }
+      .header__languages--tech li i.icon-javascript-alt {
+        color: #EFDA4E; }
+      .header__languages--tech li i.icon-ruby-on-rails {
+        color: #91242E; }
+      .header__languages--tech li i.fa-wordpress {
+        color: #0087BE; }
+      .header__languages--tech li i.fa-git {
+        color: #F34D27; }
 
 /** Content */
 .container {
@@ -1212,7 +1199,8 @@ h3 {
         width: 45%; } }
     .footer__contact a button {
       margin-top: 1.5rem;
-      padding: 0.35rem 1rem;
+      padding: 0.4rem 1rem;
+      font-size: 1rem;
       color: #F1FFF9;
       background-color: #FFB040;
       border-radius: 5px; }
