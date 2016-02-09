@@ -33,8 +33,7 @@ var showProjects = $(() => {
       .replace(':avatar alt:', project.author.name + ' Logo')
       .replace(':profile:', project.author.profile_URL)
       .replace(':profile img:', project.author.profile_URL)
-      .replace(':category:', project.categories.Proyecto.name)
-      // .replace(':category:', Object.keys(project.categories)[0])
+      // .replace(':category:', project.categories.Proyecto.name)
       .replace(':category2:', Object.keys(project.categories)[1])
 
       var $projectTemplate = $(projectTemplate)
@@ -52,7 +51,7 @@ var showProjects = $(() => {
               style="width:17.5px;height:17.5px;margin:8px;">
             </a>
             <a href=":profile:" target="_blank" class="content__articles--post--link">
-              <figcaption style="display:block;outline:none;font-size:70%;color:grey;"><span style="font-weight:700;">:author:</span> | <i class="fa fa-tags"></i> :category:, :category2:</figcaption>
+              <figcaption style="display:block;outline:none;font-size:70%;color:grey;"><span style="font-weight:700;">:author:</span> | <i class="fa fa-tag"></i> :category2:</figcaption>
             </a>
           </picture>
         </div>

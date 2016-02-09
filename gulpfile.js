@@ -191,6 +191,7 @@ gulp.task('copy', () => {
     .pipe(gulp.dest('./dist/bower_components'))
   gulp.src(globs.fonts.src + '/**/*.*')
     .pipe(gulp.dest(globs.fonts.build))
+    .pipe(gulp.dest(globs.fonts.dist))
   gulp.src(globs.videos.watch)
     .pipe(gulp.dest(globs.videos.build))
     .pipe(gulp.dest(globs.videos.dist))

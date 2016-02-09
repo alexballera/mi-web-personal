@@ -35,7 +35,6 @@ $item: 3;
     }
     & p{
       width: 80%;
-      margin-bottom: 1rem;
     }
     & a button{
       margin-top: 0.5rem;
@@ -45,6 +44,27 @@ $item: 3;
       border-radius: 5px;
       &:hover{
         background-color: $purple;
+      }
+    }
+    & ul li{
+      display: inline-block;
+      margin: 0.5rem;
+      margin-left: 0;
+      font-size: 1.4rem;
+      & i.fa-html5{
+        color: $html;
+      }
+      & i.fa-css3{
+        color: $css;
+      }
+      & i.icon-javascript{
+        color: $javascript;
+      }
+      & i.icon-ruby-on-rails{
+        color: $rails;
+      }
+      & i.icon-wordpress{
+        color: $twitter;
       }
     }
   }
