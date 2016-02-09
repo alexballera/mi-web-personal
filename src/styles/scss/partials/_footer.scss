@@ -14,7 +14,6 @@ $item: 3;
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  // justify-content: space-between;
   @include respond-to(mm) {
   }
   & a{
@@ -35,7 +34,7 @@ $item: 3;
     @include respond-to(lg) {
         border-left: 2px solid $orange;
         padding-left: 2rem;
-        width: 40%;
+        width: 45%;
     }
     & a button{
       margin-top: 1.5rem;
@@ -47,25 +46,12 @@ $item: 3;
         background-color: $purple;
       }
     }
-    &--tech li{
-      display: inline-block;
-      margin: 0.4rem;
-      margin-left: 0;
-      font-size: 1.2rem;
-      & i.fa-html5{
-        color: $html;
-      }
-      & i.fa-css3{
-        color: $css;
-      }
-      & i.icon-javascript{
-        color: $javascript;
-      }
-      & i.icon-ruby-on-rails{
-        color: $rails;
-      }
-      & i.icon-wordpress{
-        color: $wordpress;
+    &--tech {
+      margin: 0.75rem 0;
+      & li{
+        display: inline-block;
+        margin-right: 0.4rem;
+        font-size: 1.25rem;
       }
     }
   }
@@ -73,42 +59,33 @@ $item: 3;
     &--redes {
       & li{
         display: inline-block;
-        font-size: 1rem;
+        font-size: 1.35rem;
         margin-right: 0.75rem;
         & i{
-          width: 30px;
-          height: 30px;
-          line-height: 30px;
+          width: 2.25rem;
+          height: 2.25rem;
+          line-height: 2.25rem;
           text-align: center;
           border-radius: 50%;
           color: $white;
-          &.fa-facebook{
+          background-color: grey;
+          &.fa-facebook:hover{
             background-color: $facebook;
           }
-          &.fa-twitter{
+          &.fa-twitter:hover{
             background-color: $twitter;
           }
-          &.fa-linkedin{
+          &.fa-linkedin:hover{
             background-color: $linkedin;
           }
-          &.fa-google-plus{
+          &.fa-google-plus:hover{
             background-color: $google;
           }
-          &.fa-github-alt{
+          &.fa-github-alt:hover{
             background-color: $github;
           }
-          &.fa-envelope-o{
+          &.fa-envelope-o:hover{
             background-color: $purple;
-          }
-          &.fa-facebook,
-          &.fa-twitter,
-          &.fa-linkedin,
-          &.fa-google-plus,
-          &.fa-github-alt,
-          &.fa-envelope-o{
-            &:hover{
-              background-color: $orange;
-            }
           }
         }
       }
@@ -135,7 +112,7 @@ $item: 3;
         width: 60%;
     }
     @include respond-to(lg) {
-        width: 40%;
+        width: 35%;
     }
   }
 }

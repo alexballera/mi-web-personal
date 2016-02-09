@@ -1209,7 +1209,7 @@ h3 {
       .footer__contact {
         border-left: 2px solid #FFB040;
         padding-left: 2rem;
-        width: 40%; } }
+        width: 45%; } }
     .footer__contact a button {
       margin-top: 1.5rem;
       padding: 0.35rem 1rem;
@@ -1218,46 +1218,36 @@ h3 {
       border-radius: 5px; }
       .footer__contact a button:hover {
         background-color: #8344CC; }
-    .footer__contact--tech li {
-      display: inline-block;
-      margin: 0.4rem;
-      margin-left: 0;
-      font-size: 1.2rem; }
-      .footer__contact--tech li i.fa-html5 {
-        color: #E34C25; }
-      .footer__contact--tech li i.fa-css3 {
-        color: #0B72B7; }
-      .footer__contact--tech li i.icon-javascript {
-        color: #EFDA4E; }
-      .footer__contact--tech li i.icon-ruby-on-rails {
-        color: #91242E; }
-      .footer__contact--tech li i.icon-wordpress {
-        color: #0087BE; }
+    .footer__contact--tech {
+      margin: 0.75rem 0; }
+      .footer__contact--tech li {
+        display: inline-block;
+        margin-right: 0.4rem;
+        font-size: 1.25rem; }
   .footer__social--redes li {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.35rem;
     margin-right: 0.75rem; }
     .footer__social--redes li i {
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
+      width: 2.25rem;
+      height: 2.25rem;
+      line-height: 2.25rem;
       text-align: center;
       border-radius: 50%;
-      color: #F1FFF9; }
-      .footer__social--redes li i.fa-facebook {
+      color: #F1FFF9;
+      background-color: grey; }
+      .footer__social--redes li i.fa-facebook:hover {
         background-color: #3B5998; }
-      .footer__social--redes li i.fa-twitter {
+      .footer__social--redes li i.fa-twitter:hover {
         background-color: #55ACEE; }
-      .footer__social--redes li i.fa-linkedin {
+      .footer__social--redes li i.fa-linkedin:hover {
         background-color: #0177B5; }
-      .footer__social--redes li i.fa-google-plus {
+      .footer__social--redes li i.fa-google-plus:hover {
         background-color: #DC4E41; }
-      .footer__social--redes li i.fa-github-alt {
+      .footer__social--redes li i.fa-github-alt:hover {
         background-color: #010101; }
-      .footer__social--redes li i.fa-envelope-o {
+      .footer__social--redes li i.fa-envelope-o:hover {
         background-color: #8344CC; }
-      .footer__social--redes li i.fa-facebook:hover, .footer__social--redes li i.fa-twitter:hover, .footer__social--redes li i.fa-linkedin:hover, .footer__social--redes li i.fa-google-plus:hover, .footer__social--redes li i.fa-github-alt:hover, .footer__social--redes li i.fa-envelope-o:hover {
-        background-color: #FFB040; }
   .footer__content {
     width: 100%;
     box-sizing: border-box;
@@ -1278,7 +1268,7 @@ h3 {
         width: 60%; } }
     @media screen and (min-width: 64em) {
       .footer__articles {
-        width: 40%; } }
+        width: 35%; } }
 
 .modalDialog {
   position: fixed;
