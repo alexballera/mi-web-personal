@@ -63,7 +63,7 @@ var showArticles = $(() => {
         </section>
   </section>`
 
-  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/posts/')
+  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/posts/?number=6')
       .then((articles) => {
         $projectContainer.find('.loader').remove()
         localStorage.articles = JSON.stringify(articles)
