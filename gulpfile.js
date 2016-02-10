@@ -184,7 +184,7 @@ gulp.task('deploy', () => {
 
 // Copy
 gulp.task('copy', () => {
-  gulp.src(globs.html.watch)
+  gulp.src(globs.html.main)
     .pipe(gulp.dest('./'))
   gulp.src(['./src/bower_components/**'])
     .pipe(gulp.dest('./build/bower_components'))
@@ -195,7 +195,7 @@ gulp.task('copy', () => {
   gulp.src(globs.videos.watch)
     .pipe(gulp.dest(globs.videos.build))
     .pipe(gulp.dest(globs.videos.dist))
-  gulp.src('./analyticstracking.php')
+  gulp.src(globs.src + '/analyticstracking.php')
     .pipe(gulp.dest(globs.build))
     .pipe(gulp.dest(globs.dist))
 })
