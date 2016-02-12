@@ -20,6 +20,9 @@ const del = require('del')
 const inject = require('gulp-inject')
 const wiredep = require('wiredep').stream
 const deploy = require('gulp-gh-pages')
+// Para que babelify y jquery trabajen se deben instalar jquery, babel-preset-es2015 babel-preset-react
+// sudo npm install --save jquery
+// sudo npm install --save-dev babel-preset-es2015 babel-preset-react
 
 // Variables
 const globs = {
@@ -77,7 +80,6 @@ gulp.task('serve', () => {
     server: {
       baseDir: [globs.dist]
     },
-    host: '0.0.0.0',
     port: 8000,
     ui: {
       port: 8001

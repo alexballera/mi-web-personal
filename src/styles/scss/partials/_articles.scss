@@ -22,17 +22,17 @@
             justify-content: space-between;
             flex-wrap: wrap;
             transition: all 0.3s ease;
-            &:nth-child(1){
-                font-size: 3rem;
-                @include respond-to(mm) {
-                    width: 90%;
-                    & picture{
-                        @include respond-to(mm) {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
+            // &:nth-child(1){
+            //     font-size: 3rem;
+            //     @include respond-to(mm) {
+            //         width: 90%;
+            //         & picture{
+            //             @include respond-to(mm) {
+            //                 width: 100%;
+            //             }
+            //         }
+            //     }
+            // }
             &:hover{
                 background-color: $orange;
                 a h3{

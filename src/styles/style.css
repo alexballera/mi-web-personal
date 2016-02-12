@@ -637,7 +637,7 @@ h3 {
         width: 45%; } }
     @media screen and (max-width: 767px) and (orientation: landscape) {
       .nav__menu--navbar {
-        width: 100%; } }
+        width: 100vw; } }
   .nav__menu--list {
     height: 0;
     overflow: hidden;
@@ -655,7 +655,7 @@ h3 {
         display: inline-block;
         margin: 0;
         text-align: center;
-        width: 25%; }
+        width: 24%; }
         .nav__menu--list--item:nth-child(4) {
           background-color: rgba(15, 15, 15, 0.75); } }
     @media screen and (max-width: 767px) and (orientation: landscape) {
@@ -971,14 +971,6 @@ h3 {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   transition: all 0.3s ease; }
-  .content__articles--post:nth-child(1) {
-    font-size: 3rem; }
-    @media screen and (min-width: 42.5em) {
-      .content__articles--post:nth-child(1) {
-        width: 90%; } }
-  @media screen and (min-width: 42.5em) and (min-width: 42.5em) {
-    .content__articles--post:nth-child(1) picture {
-      width: 100%; } }
   .content__articles--post:hover {
     background-color: #FFB040; }
     .content__articles--post:hover a h3 {
@@ -1217,13 +1209,23 @@ h3 {
     font-size: 1.35rem;
     margin-right: 0.75rem; }
     .footer__social--redes li i {
-      width: 2.25rem;
-      height: 2.25rem;
-      line-height: 2.25rem;
+      width: 1.75rem;
+      height: 1.75rem;
+      line-height: 1.75rem;
       text-align: center;
       border-radius: 50%;
       color: #F1FFF9;
       background-color: grey; }
+      @media screen and (min-width: 42.5em) {
+        .footer__social--redes li i {
+          width: 2.25rem;
+          height: 2.25rem;
+          line-height: 2.25rem; } }
+      @media screen and (orientation: landscape) {
+        .footer__social--redes li i {
+          width: 2.25rem;
+          height: 2.25rem;
+          line-height: 2.25rem; } }
       .footer__social--redes li i.fa-facebook:hover {
         background-color: #3B5998; }
       .footer__social--redes li i.fa-twitter:hover {
@@ -1306,16 +1308,17 @@ h3 {
       display: inline-block;
       margin-right: 0.5rem; }
       .modalDialog ul li i {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
         text-align: center;
         border-radius: 50%;
         color: #F1FFF9; }
         @media screen and (max-width: 767px) and (orientation: landscape) {
           .modalDialog ul li i {
-            width: 25px;
-            height: 25px; } }
+            width: 30px;
+            height: 30px;
+            line-height: 30px; } }
         @media screen and (min-width: 48em) {
           .modalDialog ul li i {
             width: 35px;

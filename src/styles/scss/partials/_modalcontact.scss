@@ -53,15 +53,16 @@
           display: inline-block;
           margin-right: 0.5rem;
           & i{
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
             text-align: center;
             border-radius: 50%;
             color: $white;
             @include respond-to(sm-landscape) {
-                width: 25px;
-                height: 25px;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
             }
             @include respond-to(md) {
                 width: 35px;

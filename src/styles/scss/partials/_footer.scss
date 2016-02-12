@@ -14,8 +14,6 @@ $item: 3;
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  @include respond-to(mm) {
-  }
   & a{
     color: grey;
     &:hover{
@@ -63,13 +61,23 @@ $item: 3;
         font-size: 1.35rem;
         margin-right: 0.75rem;
         & i{
-          width: 2.25rem;
-          height: 2.25rem;
-          line-height: 2.25rem;
+          width: 1.75rem;
+          height: 1.75rem;
+          line-height: 1.75rem;
           text-align: center;
           border-radius: 50%;
           color: $white;
           background-color: grey;
+          @include respond-to(mm) {
+            width: 2.25rem;
+            height: 2.25rem;
+            line-height: 2.25rem;
+          }
+          @include respond-to(landscape) {
+            width: 2.25rem;
+            height: 2.25rem;
+            line-height: 2.25rem;
+          }
           &.fa-facebook:hover{
             background-color: $facebook;
           }
