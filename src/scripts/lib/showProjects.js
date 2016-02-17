@@ -3,18 +3,6 @@ import $ from 'jquery'
 var showProjects = $(() => {
   // Variables Globales
   var $projectContainer = $('#content_projects').find('.content__articles--container')
-  // const mql = window.matchMedia('screen and (min-width: 680px')
-  // if (mql.matches) {
-  //     // Show Excerpt
-  //   $projectContainer.on('mouseenter', 'section.content__articles--post', (ev) => {
-  //     $('.content__articles--post--text').addClass('show').fadeIn('slow') // .css('display', 'table')
-  //   })
-
-  //     // Hide Excerpt
-  //   $projectContainer.on('mouseleave', 'section.content__articles--post', (ev) => {
-  //     $('.content__articles--post--text').removeClass('show') // .css('display', 'none')
-  //   })
-  // }
 
   // Optimizamos con renderShows
   function renderShows (projects) {
@@ -43,6 +31,11 @@ var showProjects = $(() => {
   }
   // Request
   var template = `<section class="content__articles--post" style="display: flex; align-items: center;">
+        <picture class="content__articles--post--picture">
+          <a href=":url:" target="_blank" class="content__articles--post--link">
+            <img src=":image:" alt=":image alt:">
+          </a>
+        </picture>
         <div class="content__articles--post--title">
           <a href=":link:" target="_blank"><h3>:title:</h3></a>
           <picture class="content__articles--post--avatar" style="display:flex;align-items:center;">
@@ -55,12 +48,6 @@ var showProjects = $(() => {
             </a>
           </picture>
         </div>
-        <picture class="content__articles--post--picture"><a href=":url:" target="_blank" class="content__articles--post--link"><img src=":image:" alt=":image alt:"></a></picture>
-        <article class="content__articles--post--text">
-          <a href=":link content:" target="_blank">:summary:</a>
-        </article>
-        <section class="content__articles--post--author" style="display: flex;position:relative;">
-        </section>
   </section>`
 
   $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/posts/?category=proyectos&number=6')

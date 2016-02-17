@@ -613,7 +613,6 @@ h3 {
   width: 100%;
   box-sizing: border-box;
   background-color: white;
-  border-bottom: 1px solid #EEEEEE;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -627,7 +626,7 @@ h3 {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   transition: all 0.3s ease;
-  padding-right: 0.3rem; }
+  margin-bottom: 0.5rem; }
   .content__articles--post:hover {
     background-color: #FFB040; }
     .content__articles--post:hover a h3 {
@@ -649,15 +648,11 @@ h3 {
     .content__articles--post {
       width: 385px; } }
   .content__articles--post--title {
-    width: 60%;
+    width: 100%;
     text-align: left; }
     @media screen and (min-width: 42.5em) {
       .content__articles--post--title {
-        width: 100%;
-        min-height: 5rem;
-        -webkit-order: 1;
-            -ms-flex-order: 1;
-                order: 1; } }
+        min-height: 5rem; } }
     .content__articles--post--title h3 {
       vertical-align: middle;
       padding: 0.5rem;
@@ -681,57 +676,11 @@ h3 {
       .content__articles--post--title h3 a {
         color: #1E1E1E; }
   .content__articles--post--picture {
-    width: 40%; }
-    @media screen and (min-width: 42.5em) {
-      .content__articles--post--picture {
-        width: 100%; } }
+    width: 100%; }
     .content__articles--post--picture img {
       width: 100%;
       vertical-align: middle;
       color: #FFB040; }
-  .content__articles--post--text {
-    display: none;
-    transition: all 3s ease; }
-    .content__articles--post--text.show {
-      display: table;
-      transition: all 3s ease;
-      position: absolute;
-      left: 0;
-      top: 5rem;
-      padding: 0.5rem;
-      background-color: rgba(30, 30, 30, 0.75);
-      color: #F1FFF9;
-      box-sizing: border-box;
-      height: 100%; }
-      .content__articles--post--text.show a {
-        width: 100%; }
-      .content__articles--post--text.show p {
-        letter-spacing: 1.2px;
-        line-height: 1.2rem;
-        z-index: 1000;
-        box-sizing: border-box;
-        width: 100%;
-        height: 100%;
-        height: 134px;
-        border: 2px solid #F1FFF9;
-        padding: 0.5rem;
-        display: table-cell;
-        vertical-align: middle;
-        font-size: 75%; }
-        @media screen and (min-width: 48em) {
-          .content__articles--post--text.show p {
-            font-size: 1rem; } }
-        .content__articles--post--text.show p::after {
-          content: " Leer mas...";
-          color: #FFB040; }
-        .content__articles--post--text.show p::first-letter {
-          color: red;
-          font-size: 120%;
-          font-weight: 700; }
-        .content__articles--post--text.show p a.more-link {
-          color: red; }
-        .content__articles--post--text.show p span.screen-reader-text {
-          color: #FFB040; }
 
 .form {
   width: 70%;
