@@ -44,7 +44,6 @@
     }
     &--form{
       padding-top: 1rem;
-      // width: 70%;
       & em{
         font-weight: 700;
       }
@@ -81,13 +80,13 @@
           width: 70%;
           padding: 1rem;
           @include respond-to(md) {
-            width: 250px;
+            width: 270px;
             height: 160px;
             vertical-align: middle;
           }
-          @include respond-to(xl) {
-            width: 632px;
-          }
+          // @include respond-to(xl) {
+          //   width: 632px;
+          // }
         }
       }
       &--text{

@@ -5,7 +5,7 @@
     text-align: center;
     padding: 3em 0;
     margin-top: $header-height;
-    @include background('../images/background-header.jpg', $background);
+    @include background('http://i1.wp.com/alexballera.com/wp-content/uploads/2016/02/background-header.jpg?resize=1024%2C350', $background);
     background-attachment: fixed;
     @include respond-to(md) {
       margin-top: $header-height*$header-mult;

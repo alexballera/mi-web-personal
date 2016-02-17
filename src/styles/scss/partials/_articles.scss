@@ -22,17 +22,7 @@
             justify-content: space-between;
             flex-wrap: wrap;
             transition: all 0.3s ease;
-            // &:nth-child(1){
-            //     font-size: 3rem;
-            //     @include respond-to(mm) {
-            //         width: 90%;
-            //         & picture{
-            //             @include respond-to(mm) {
-            //                 width: 100%;
-            //             }
-            //         }
-            //     }
-            // }
+            padding-right: 0.3rem;
             &:hover{
                 background-color: $orange;
                 a h3{
@@ -48,6 +38,7 @@
                 position: relative;
                 border: none;
                 width: 48%;
+                padding-right: 0;
             }
             @include respond-to(lg) {
                 width: 30%;

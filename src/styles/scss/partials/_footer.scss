@@ -55,11 +55,18 @@ $item: 3;
     }
   }
   &__social{
+    & p:nth-child(2){
+      margin-bottom: 0.5rem;
+    }
     &--redes {
       & li{
         display: inline-block;
-        font-size: 1.35rem;
-        margin-right: 0.75rem;
+        font-size: 1rem;
+        margin-right: 0.5rem;
+        @include respond-to(mm) {
+          font-size: 1.35rem;
+          margin-right: 0.75rem;
+        }
         & i{
           width: 1.75rem;
           height: 1.75rem;
@@ -92,6 +99,9 @@ $item: 3;
           }
           &.fa-github-alt:hover{
             background-color: $github;
+          }
+          &.fa-rss:hover{
+            background-color: $rss;
           }
           &.fa-envelope-o:hover{
             background-color: $purple;

@@ -1,11 +1,21 @@
-@charset "UTF-8"; 
-// Este es el archivo principal de Estilos,'preferiblemente
-// con archivos para cada bloque o archivo html e importarlo
-// con @import
-
-@import './vendors/normalize'; //Comentar si se está online
-@import './customs/reset';
-@import './fonts/css/font-awesome.css'; //Comentar si se está online
+@charset "UTF-8";
+/*
+ Theme Name:   Twenty Fifteen Child
+ Theme URI: http://alexballera.com/themes/twentyfifteen-child/
+ Author: Alex Ballera
+ Author URI: http://alexballera.com
+ Author URI:   http://alexballera.com
+ Template:     twentyfifteen
+ Version:      1.0.0
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+ Text Domain: twentyfifteen-child
+*/
+// @import './vendors/normalize'; //Comentar si se está online
+@import './vendors/reset';
+@import '../twentyfifteen/style.css';
+// @import './fonts/css/font-awesome.css'; //Comentar si se está online
 @import './fonts/fonts-mfizz/font-mfizz.css';
 @import './vendors/spinners';
 @import './customs/var';
@@ -17,3 +27,6 @@
 @import './partials/form';
 @import './partials/footer';
 @import './partials/modalcontact';
+@import './parent/customs';
+@import './parent/single';
+@import './parent/relatedposts';
