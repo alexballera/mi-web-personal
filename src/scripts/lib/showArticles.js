@@ -15,7 +15,6 @@ var showArticles = $(() => {
       .replace(':link content:', project.short_URL)
       .replace(':image:', project.featured_image)
       .replace(':image alt:', project.title + ' Image')
-      .replace(':summary:', project.excerpt)
       .replace(':author:', project.author.name)
       .replace(':avatar:', project.author.avatar_URL)
       .replace(':avatar alt:', project.author.name + ' Logo')
@@ -50,7 +49,7 @@ var showArticles = $(() => {
         </div>
   </section>`
 
-  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/posts/?number=6')
+  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/posts/?number=6&category=sin-categoria,responsive,html,css,wordpress,rails,servidor,git,javascript')
       .then((articles) => {
         $projectContainer.find('.loader').remove()
         localStorage.articles = JSON.stringify(articles)

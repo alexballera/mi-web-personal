@@ -2,7 +2,6 @@ import $ from 'jquery'
 import modernizr from './vendors/modernizr.js'
 import selectivizr from './vendors/selectivizr.js'
 import retinajs from './vendors/retina.js'
-import onSwipe from './lib/onSwipe'
 import showMenu from './lib/showMenu'
 import changeButton from './lib/changeButton'
 import doTransparentBar from './lib/doTransparentBar'
@@ -12,6 +11,7 @@ import showProjects from './lib/showProjects'  // Descomentar si se está en lí
 import showArticles from './lib/showArticles'  // Descomentar si se está en línea
 import lastsArticles from './lib/lastsArticles'  // Descomentar si se está en línea
 import showCategories from './lib/showCategories'  // Descomentar si se está en línea
+import mailChimp from './lib/mailChimp.js'  // Descomentar si se está en línea
 
 (() => {
   'use strict'

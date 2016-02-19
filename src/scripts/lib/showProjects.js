@@ -15,7 +15,6 @@ var showProjects = $(() => {
       .replace(':link content:', project.short_URL)
       .replace(':image:', project.featured_image)
       .replace(':image alt:', project.title + ' Image')
-      .replace(':summary:', project.excerpt)
       .replace(':author:', project.author.name)
       .replace(':avatar:', project.author.avatar_URL)
       .replace(':avatar alt:', project.author.name + ' Logo')
