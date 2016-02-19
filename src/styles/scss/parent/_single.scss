@@ -41,7 +41,7 @@ header.entry-header{
     text-align: justify;
     margin-top: 1rem;
     & a{
-      color: grey;
+      color: $black;
       font-weight: bolder;
       text-decoration: none;
     }
@@ -51,7 +51,7 @@ header.entry-header{
     &-info{
     font-family: $font-awesome;
     & h2{
-      font-size: 1.2em;
+      font-size: 1.1rem;
       font-family: $font-awesome;
     }
   }
@@ -61,8 +61,17 @@ header.entry-header{
       font-weight: bold;
       font-family: $font-awesome;
     }
-    & p{
+    & a.author-link{
+      color: $black;
+    }
+    & a{
+      color: $black;
+    }
+    & p.author-bio{
       font-size: 1rem;
+      & a.author-link{
+        color: $black;
+      }
     }
   }
 }

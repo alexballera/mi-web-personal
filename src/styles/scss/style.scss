@@ -15,7 +15,7 @@
 // @import './vendors/normalize'; //Comentar si se está online
 @import './vendors/reset';
 @import '../twentyfifteen/style.css';
-// @import './fonts/css/font-awesome.css'; //Comentar si se está online
+// @import './fonts/fonts/css/font-awesome.css'; //Comentar si se está online
 @import './fonts/fonts-mfizz/font-mfizz.css';
 @import './vendors/spinners';
 @import './customs/var';
@@ -27,6 +27,4 @@
 @import './partials/form';
 @import './partials/footer';
 @import './partials/modalcontact';
-@import './parent/customs';
-@import './parent/single';
-@import './parent/relatedposts';
+@import './parent/parent';
