@@ -1,21 +1,7 @@
-/*
- Theme Name:   Twenty Fifteen Child
- Theme URI: http://alexballera.com/themes/twentyfifteen-child/
- Author: Alex Ballera
- Author URI: http://alexballera.com
- Author URI:   http://alexballera.com
- Template:     twentyfifteen
- Version:      1.0.0
- License: GNU General Public License v2 or later
- License URI: http://www.gnu.org/licenses/gpl-2.0.html
- Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
- Text Domain: twentyfifteen-child
-*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(../twentyfifteen/style.css);
 @import url(./fonts/fonts-mfizz/font-mfizz.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
