@@ -7,11 +7,11 @@ import changeButton from './lib/changeButton'
 import doTransparentBar from './lib/doTransparentBar'
 import loadCSS from './lib/loadCSS'  // Descomentar si se está en línea
 import loadJS from './lib/loadJS'  // Descomentar si se está en línea
+import loadLeadin from './lib/loadLeadin'  // Descomentar si se está en línea
 import showProjects from './lib/showProjects'  // Descomentar si se está en línea
 import showArticles from './lib/showArticles'  // Descomentar si se está en línea
 import lastsArticles from './lib/lastsArticles'  // Descomentar si se está en línea
 import showCategories from './lib/showCategories'  // Descomentar si se está en línea
-import mailChimp from './lib/mailChimp.js'  // Descomentar si se está en línea
 
 (() => {
   'use strict'
@@ -43,6 +43,10 @@ import mailChimp from './lib/mailChimp.js'  // Descomentar si se está en línea
       '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'
     ]
     loadJS(urlJs)
+
+  // Load LeadIn
+    var leadIn = '//js.leadin.com/js/v1/2056572.js'
+    loadLeadin(leadIn)
   }
 })()
 
