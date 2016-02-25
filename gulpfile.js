@@ -32,6 +32,7 @@ const globs = {
   html: {
     main: './src/index.html',
     watch: './src/**/*.html',
+    error: './src/404.html',
     build: './build',
     dist: './dist'
   },
@@ -91,9 +92,14 @@ gulp.task('serve', () => {
 })
 
 // HTML minificado
-gulp.task('build:html', () => {
+gulp.task('build:html', ['html:404'], () => {
   return gulp.src(globs.html.main)
-    // .pipe(gulp.dest(globs.build))
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest(globs.build))
+    .pipe(gulp.dest(globs.dist))
+})
+gulp.task('html:404', () => {
+  return gulp.src(globs.html.error)
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(globs.build))
     .pipe(gulp.dest(globs.dist))
