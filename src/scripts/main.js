@@ -5,7 +5,7 @@ import retinajs from './vendors/retina.js'
 import showMenu from './lib/showMenu'
 import changeButton from './lib/changeButton'
 import doTransparentBar from './lib/doTransparentBar'
-import loadCSS from './lib/loadCSS'  // Descomentar si se está en línea
+// import loadCSS from './lib/loadCSS'  // Descomentar si se está en línea
 import loadJS from './lib/loadJS'  // Descomentar si se está en línea
 import loadLeadin from './lib/loadLeadin'  // Descomentar si se está en línea
 import showProjects from './lib/showProjects'  // Descomentar si se está en línea
@@ -31,11 +31,11 @@ import showCategories from './lib/showCategories'  // Descomentar si se está en
     btnButton.addEventListener('click', changeButton)
 
 // Load CSS
-    var urlCSS = [
-      'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css',
-      'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css'
-    ]
-    loadCSS(urlCSS)
+    // var urlCSS = [
+    //   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css',
+    //   'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css'
+    // ]
+    // loadCSS(urlCSS)
 
   // Load JS
     var urlJs = [
@@ -45,7 +45,7 @@ import showCategories from './lib/showCategories'  // Descomentar si se está en
     loadJS(urlJs)
 
   // Load LeadIn
-    var leadIn = '//js.leadin.com/js/v1/2056572.js'
+    var leadIn = ['//js.leadin.com/js/v1/2056572.js']
     loadLeadin(leadIn)
   }
 })()
