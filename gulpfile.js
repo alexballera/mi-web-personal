@@ -200,8 +200,9 @@ gulp.task('copy', () => {
   gulp.src(globs.videos.watch)
     .pipe(gulp.dest(globs.videos.build))
     .pipe(gulp.dest(globs.videos.dist))
-  gulp.src(globs.src + '/analyticstracking.php')
-    .pipe(gulp.dest(globs.build))
+  gulp.src(globs.src + '/robots.txt')
+    .pipe(gulp.dest(globs.dist))
+  gulp.src(globs.src + '/sitemap.xml')
     .pipe(gulp.dest(globs.dist))
 })
 
