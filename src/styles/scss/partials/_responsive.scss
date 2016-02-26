@@ -54,6 +54,7 @@
     }
     &--responsive{
       padding: 1em;
+      padding-top: 2rem;
       transition: all 1.2s ease;
       @include respond-to(md) {
         transition: all 1.2s ease;
@@ -74,21 +75,18 @@
           font-size: 150%;
         }
       }
-      &--picture{
-        width: 100%;
-        & img{
-          width: 70%;
-          padding: 1rem;
-          @include respond-to(md) {
-            width: 270px;
-            height: 160px;
-            vertical-align: middle;
-          }
-          // @include respond-to(xl) {
-          //   width: 632px;
-          // }
-        }
-      }
+      // &--picture{
+      //   width: 100%;
+      //   & img{
+      //     width: 70%;
+      //     padding: 1rem;
+      //     @include respond-to(md) {
+      //       width: 270px;
+      //       height: 160px;
+      //       vertical-align: middle;
+      //     }
+      //   }
+      // }
       &--text{
         padding-top: 1em;
         @include respond-to(md) {
@@ -98,4 +96,8 @@
       }
     }
   }
+}
+.fa.fa-desktop,
+.icon-mobile-device {
+  font-size: 10rem;
 }

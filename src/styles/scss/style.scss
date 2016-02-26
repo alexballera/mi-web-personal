@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-// @import './vendors/normalize'; //Comentar si se está online
+// @import './vendors/normalize'; // Comentar si se va a usar el cdnjs
 @import './vendors/reset';
-// @import './fonts/css/font-awesome.css'; //Comentar si se está online
-@import '../fonts/fonts-mfizz/font-mfizz';
+@import '../fonts/src/font-awesome'; // Comentar si se va a usar el cdnjs
+@import '../fonts/src/font-mfizz';
 @import './vendors/spinners';
 @import './customs/var';
 @import './customs/breakpoints';

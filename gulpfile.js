@@ -197,10 +197,10 @@ gulp.task('copy', () => {
   gulp.src(['./src/bower_components/**'])
     .pipe(gulp.dest('./build/bower_components'))
     .pipe(gulp.dest('./dist/bower_components'))
-  gulp.src(globs.fonts.src + '/**/*.*')
-    .pipe(gulp.dest(globs.fonts.build))
   gulp.src(globs.fonts.src + '/fonts-mfizz/**/*.*')
     .pipe(gulp.dest(globs.fonts.dist + '/fonts-mfizz'))
+  gulp.src(globs.fonts.src + '/fontawesome/**/*.*') // Comentar si se va a usar el cdnjs
+    .pipe(gulp.dest(globs.fonts.dist + '/fontawesome')) // Comentar si se va a usar el cdnjs
   gulp.src(globs.videos.watch)
     .pipe(gulp.dest(globs.videos.build))
     .pipe(gulp.dest(globs.videos.dist))
