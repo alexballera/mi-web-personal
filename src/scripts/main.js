@@ -34,7 +34,7 @@ import showCategories from './lib/showCategories'  // Descomentar si se está en
 // Load CSS
     var urlCSS = [
       'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css',
-      'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css'
+      'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css'
     ]
     loadCSS(urlCSS)
 
