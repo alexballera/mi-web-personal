@@ -1,6 +1,7 @@
 import $ from 'jquery'
 import modernizr from './vendors/modernizr.js'
 import selectivizr from './vendors/selectivizr.js'
+import validate from './vendors/mc-validate.js'
 import retinajs from './vendors/retina.js'
 import showMenu from './lib/showMenu'
 import changeButton from './lib/changeButton'
@@ -39,9 +40,8 @@ import showCategories from './lib/showCategories'  // Descomentar si se está en
 
   // Load JS
     var urlJs = [
-      '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5698df4c26bc43c8',
-      '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js',
-      '//www.google-analytics.com/analytics.js'
+      '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5698df4c26bc43c8'
+      // '//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'
     ]
     loadJS(urlJs)
 
