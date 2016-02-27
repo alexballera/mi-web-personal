@@ -75,18 +75,6 @@
           font-size: 150%;
         }
       }
-      // &--picture{
-      //   width: 100%;
-      //   & img{
-      //     width: 70%;
-      //     padding: 1rem;
-      //     @include respond-to(md) {
-      //       width: 270px;
-      //       height: 160px;
-      //       vertical-align: middle;
-      //     }
-      //   }
-      // }
       &--text{
         padding-top: 1em;
         @include respond-to(md) {

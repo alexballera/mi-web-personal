@@ -11,15 +11,9 @@ var showProjects = $(() => {
       var projectTemplate = template
       .replace(':title:', project.title)
       .replace(':url:', project.short_URL)
-      .replace(':link:', project.short_URL)
-      .replace(':link content:', project.short_URL)
       .replace(':image:', project.featured_image)
       .replace(':image alt:', project.title + ' Image')
-      .replace(':author:', project.author.name)
-      .replace(':avatar:', project.author.avatar_URL)
-      .replace(':avatar alt:', project.author.name + ' Logo')
-      .replace(':profile:', project.author.profile_URL)
-      .replace(':profile img:', project.author.profile_URL)
+      .replace(':category:', project.categories.Proyectos.name)
 
       var $projectTemplate = $(projectTemplate)
       $projectTemplate.hide()
@@ -27,28 +21,15 @@ var showProjects = $(() => {
     })
   }
   // Request
-  var template = `<section class="content__articles--post" style="display: flex; align-items: center;">
+  var template = `<section class="content__articles--post">
+      <a class="content__articles--post--link" href=":url:" target="_blank">
         <picture class="content__articles--post--picture">
-          <a href=":url:" target="_blank" class="content__articles--post--link">
             <img src=":image:" alt=":image alt:">
-          </a>
+            <figcaption><h3>:title:</h3></figcaption>
         </picture>
-        <div class="content__articles--post--title">
-          <a href=":link:" target="_blank"><h3>:title:</h3></a>
-          <picture class="content__articles--post--avatar" style="display:flex;align-items:center;">
-            <a href=":profile img:" target="_blank">
-            <img src=":avatar:" alt=":avatar alt:"
-              style="width:17.5px;height:17.5px;margin:8px;">
-            </a>
-            <a href=":profile:" target="_blank" class="content__articles--post--link">
-              <figcaption style="display:block;outline:none;font-size:70%;color:grey;">
-                <span style="font-weight:700;">:author:</span>
-              </figcaption>
-            </a>
-          </picture>
-        </div>
+        <i class="fa fa-folder-open" style="font-size:90%;color:grey;margin:0.5rem"> :category:</i>
+      </a>
   </section>`
-
   $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/posts/?category=proyectos&number=6')
       .then((projects) => {
         $projectContainer.find('.loader').remove()
