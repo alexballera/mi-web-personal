@@ -1087,8 +1087,6 @@ h3 {
     .content__articles--post--picture img {
       width: 100%;
       vertical-align: middle; }
-  .content__articles--post i.fa-folder-open {
-    color: red; }
 
 .hide {
   display: none; }

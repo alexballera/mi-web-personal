@@ -18,6 +18,11 @@ var showProjects = $(() => {
       var $projectTemplate = $(projectTemplate)
       $projectTemplate.hide()
       $projectContainer.append($projectTemplate.fadeIn(3500))
+      $projectContainer.find('.fa-folder-open').css({
+        fontSize: '90%',
+        color: 'grey',
+        margin: '0.5rem'
+      })
     })
   }
   // Request
@@ -27,7 +32,7 @@ var showProjects = $(() => {
             <img src=":image:" alt=":image alt:">
             <figcaption><h3>:title:</h3></figcaption>
         </picture>
-        <i class="fa fa-folder-open" style="font-size:90%;color:grey;margin:0.5rem"> :category:</i>
+        <i class="fa fa-folder-open"> :category:</i>
       </a>
   </section>`
   $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/posts/?category=proyectos&number=6')

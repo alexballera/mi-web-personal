@@ -19,6 +19,11 @@ var showArticles = $(() => {
       var $projectTemplate = $(projectTemplate)
       $projectTemplate.hide()
       $projectContainer.append($projectTemplate.fadeIn(3500))
+      $projectContainer.find('.fa-folder-open').css({
+        fontSize: '90%',
+        color: 'grey',
+        margin: '0.5rem'
+      })
     })
   }
   // Request
@@ -28,7 +33,7 @@ var showArticles = $(() => {
             <img src=":image:" alt=":image alt:">
             <figcaption><h3>:title:</h3></figcaption>
         </picture>
-        <i class="fa fa-folder-open" style="font-size:90%;color:grey;margin:0.5rem"> :category1:, :category2:</i>
+        <i class="fa fa-folder-open"> :category1:, :category2:</i>
       </a>
   </section>`
 
