@@ -111,6 +111,9 @@
     &:hover { background: $orange; }
 }
 .form__modal{
+    & button a{
+        color: white;
+    }
     @include respond-to(sm-landscape) {
         & input[type="email"],
         & input[type="text"] {

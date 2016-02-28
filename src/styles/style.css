@@ -1380,6 +1380,9 @@ h3 {
   .close:hover {
     background: #FFB040; }
 
+.form__modal button a {
+  color: white; }
+
 @media screen and (max-width: 767px) and (orientation: landscape) {
   .form__modal input[type="email"],
   .form__modal input[type="text"] {
