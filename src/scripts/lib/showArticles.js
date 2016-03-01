@@ -15,15 +15,13 @@ var showArticles = $(() => {
       .replace(':image alt:', project.title + ' Image')
       .replace(':category1:', Object.keys(project.categories)[0])
       .replace(':category2:', Object.keys(project.categories)[1])
+      .replace(':tag1:', Object.keys(project.tags)[0])
+      .replace(':tag2:', Object.keys(project.tags)[1])
+      .replace(':tag3:', Object.keys(project.tags)[2])
 
       var $projectTemplate = $(projectTemplate)
       $projectTemplate.hide()
       $projectContainer.append($projectTemplate.fadeIn(3500))
-      $projectContainer.find('.fa-folder-open').css({
-        fontSize: '90%',
-        color: 'grey',
-        margin: '0.5rem'
-      })
     })
   }
   // Request
@@ -33,7 +31,7 @@ var showArticles = $(() => {
             <img src=":image:" alt=":image alt:">
             <figcaption><h3>:title:</h3></figcaption>
         </picture>
-        <i class="fa fa-folder-open"> :category1:, :category2:</i>
+        <i class="fa fa-folder-open"> :category1:, :category2:</i> <i class="fa fa-tags"> :tag1:, :tag2:, :tag3:</i>
       </a>
   </section>`
 

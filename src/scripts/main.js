@@ -6,7 +6,7 @@ import retinajs from './vendors/retina.js'
 import showMenu from './lib/showMenu'
 import changeButton from './lib/changeButton'
 import doTransparentBar from './lib/doTransparentBar'
-import loadCSS from './lib/loadCSS'  // Descomentar si se está en línea
+// import loadCSS from './lib/loadCSS'  // Descomentar si se va a usar el cdnjs
 import loadJS from './lib/loadJS'  // Descomentar si se está en línea
 import loadLeadin from './lib/loadLeadin'  // Descomentar si se está en línea
 import showProjects from './lib/showProjects'  // Descomentar si se está en línea
@@ -31,13 +31,12 @@ import showCategories from './lib/showCategories'  // Descomentar si se está en
     btnButton.addEventListener('click', showMenu)
     btnButton.addEventListener('click', changeButton)
 
-// Load CSS
-    var urlCSS = [
-      'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css',
-      'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css',
-      'styles/style.min.css'
-    ]
-    loadCSS(urlCSS)
+// Load CSS Descomentar si se va a usar el cdnjs
+    // var urlCSS = [
+    //   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css',
+    //   'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css'
+    // ]
+    // loadCSS(urlCSS)
 
   // Load JS
     var urlJs = [

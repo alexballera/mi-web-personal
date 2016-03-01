@@ -10,31 +10,32 @@ var showProjects = $(() => {
     projects.posts.forEach(function (project) {
       var projectTemplate = template
       .replace(':title:', project.title)
+      .replace(':figcaption:', project.title)
       .replace(':url:', project.short_URL)
       .replace(':image:', project.featured_image)
       .replace(':image alt:', project.title + ' Image')
+      .replace(':author:', project.author.name)
       .replace(':category:', project.categories.Proyectos.name)
+      .replace(':tag1:', Object.keys(project.tags)[0])
+      .replace(':tag2:', Object.keys(project.tags)[1])
+      .replace(':tag3:', Object.keys(project.tags)[2])
 
       var $projectTemplate = $(projectTemplate)
       $projectTemplate.hide()
       $projectContainer.append($projectTemplate.fadeIn(3500))
-      $projectContainer.find('.fa-folder-open').css({
-        fontSize: '90%',
-        color: 'grey',
-        margin: '0.5rem'
-      })
     })
   }
   // Request
-  var template = `<section class="content__articles--post">
-      <a class="content__articles--post--link" href=":url:" target="_blank">
+  var template = `<a class="content__articles--post" href=":url:" target="_blank">
+    <section>
         <picture class="content__articles--post--picture">
             <img src=":image:" alt=":image alt:">
-            <figcaption><h3>:title:</h3></figcaption>
+            <figcaption>:figcaption:</figcaption>
         </picture>
-        <i class="fa fa-folder-open"> :category:</i>
-      </a>
-  </section>`
+        <h3>:title:</h3>
+        <i class="fa fa-user"> :author:</i> <i class="fa fa-folder-open"> :category:</i> <i class="fa fa-tags"> :tag1:, :tag2:, :tag3:</i>
+    </section>
+  </a>`
   $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/blog.alexballera.com/posts/?category=proyectos&number=6')
       .then((projects) => {
         $projectContainer.find('.loader').remove()
