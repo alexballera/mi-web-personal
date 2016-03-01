@@ -20,7 +20,7 @@ var lastsArticles = $(() => {
   // Request
   var template = `<li><a href=":url:" target="_blank">✔ :title:</a></li>`
 
-  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/alexballera.com/posts/?number=8')
+  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/blog.alexballera.com/posts/?number=8')
       .then((lastArticles) => {
         $projectContainer.find('.loader').remove()
         localStorage.lastArticles = JSON.stringify(lastArticles)

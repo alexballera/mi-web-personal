@@ -995,6 +995,28 @@ h3 {
     padding-top: 1rem; }
     .content__responsive--form em {
       font-weight: 700; }
+    .content__responsive--form p {
+      color: grey;
+      width: 75%;
+      margin: 0 auto; }
+    .content__responsive--form a button[type="button"] {
+      height: 100%;
+      line-height: 40px;
+      width: 300px;
+      border-radius: 5px;
+      margin: 1.5rem .25rem 0.5rem .25rem;
+      padding: 1rem;
+      color: #F1FFF9;
+      background-color: #FFB040;
+      outline: none;
+      border: none;
+      font-size: 22px; }
+      @media screen and (min-width: 42.5em) {
+        .content__responsive--form a button[type="button"] {
+          font-size: 2rem; } }
+      .content__responsive--form a button[type="button"]:hover {
+        background-color: #8344CC;
+        cursor: pointer; }
   .content__responsive--title {
     padding: 1em 0;
     color: grey; }

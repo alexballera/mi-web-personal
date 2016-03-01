@@ -47,6 +47,31 @@
       & em{
         font-weight: 700;
       }
+      & p{
+        color: grey;
+        width: 75%;
+        margin: 0 auto;
+      }
+      & a button[type="button"] {
+        height: 100%;
+        line-height: 40px;
+        width: 300px;
+        border-radius: 5px;
+        margin: 1.5rem .25rem 0.5rem .25rem;
+        padding: 1rem;
+        color: $white;
+        background-color: $orange;
+        outline: none;
+        border: none;
+        font-size: 22px;
+        @include respond-to(mm) {
+          font-size: 2rem;
+        }
+        &:hover{
+          background-color: $purple;
+          cursor: pointer;
+        }
+    }
     }
     &--title{
       padding: 1em 0;
