@@ -24,7 +24,8 @@
                 color: white;
                 & i.fa.fa-folder-open, 
                 & i.fa.fa-tags,
-                & i.fa.fa-user,{
+                & i.fa.fa-user,
+                & i.fa.fa-calendar{
                     color: $purpleLight;
                 }
                 & h3{
@@ -59,15 +60,11 @@
             }
             & i.fa.fa-folder-open, 
             & i.fa.fa-tags,
-            & i.fa.fa-user{
+            & i.fa.fa-user,
+            & i.fa.fa-calendar{
                 font-size: 75%;
                 color: grey;
                 margin: 0.5rem;
-            }
-            & i.fa.fa-folder-open:hover, 
-            & i.fa.fa-tags:hover,
-            & i.fa.fa-user:hover{
-                color: $purpleLight;
             }
         }
     }

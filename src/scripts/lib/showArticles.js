@@ -13,6 +13,11 @@ var showArticles = $(() => {
       .replace(':url:', project.short_URL)
       .replace(':image:', project.featured_image)
       .replace(':image alt:', project.title + ' Image')
+      .replace(':author:', project.author.name)
+      .replace(':year:', project.date.split('-')[0])
+      .replace(':month:', project.date.split('-')[1])
+      .replace(':day1:', project.date.split('-')[2].split('')[0])
+      .replace(':day2:', project.date.split('-')[2].split('')[1])
       .replace(':category1:', Object.keys(project.categories)[0])
       .replace(':category2:', Object.keys(project.categories)[1])
       .replace(':tag1:', Object.keys(project.tags)[0])
@@ -25,15 +30,16 @@ var showArticles = $(() => {
     })
   }
   // Request
-  var template = `<section class="content__articles--post">
-      <a class="content__articles--post--link" href=":url:" target="_blank">
+  var template = `<a class="content__articles--post" href=":url:" target="_blank">
+    <section>
         <picture class="content__articles--post--picture">
             <img src=":image:" alt=":image alt:">
-            <figcaption><h3>:title:</h3></figcaption>
+            <figcaption>:figcaption:</figcaption>
         </picture>
-        <i class="fa fa-folder-open"> :category1:, :category2:</i> <i class="fa fa-tags"> :tag1:, :tag2:, :tag3:</i>
-      </a>
-  </section>`
+        <h3>:title:</h3>
+        <i class="fa fa-user"> :author:</i> <i class="fa fa-calendar"> :day1::day2:-:month:-:year:</i> <i class="fa fa-folder-open"> :category1:, :category2:</i> <i class="fa fa-tags"> :tag1:, :tag2:, :tag3:</i>
+    </section>
+  </a>`
 
   $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/blog.alexballera.com/posts/?number=6&category=sin-categoria,responsive,html,css,wordpress,rails,servidor,git,javascript')
       .then((articles) => {

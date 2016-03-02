@@ -3431,7 +3431,10 @@ h3 {
     .content__responsive--form p {
       color: grey;
       width: 75%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      letter-spacing: 1.2px;
+      font-size: 1.2rem;
+      line-height: 1.2rem; }
     .content__responsive--form a button[type="button"] {
       height: 100%;
       line-height: 40px;
@@ -3468,7 +3471,7 @@ h3 {
     .content__responsive--responsive--text {
       color: grey;
       letter-spacing: 1.2px;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       line-height: 1.2rem;
       width: 80%;
       margin: 0 auto; }
@@ -3521,7 +3524,8 @@ h3 {
     color: white; }
     .content__articles--post:hover i.fa.fa-folder-open,
     .content__articles--post:hover i.fa.fa-tags,
-    .content__articles--post:hover i.fa.fa-user {
+    .content__articles--post:hover i.fa.fa-user,
+    .content__articles--post:hover i.fa.fa-calendar {
       color: #9780B2; }
     .content__articles--post:hover h3 {
       color: white; }
@@ -3550,14 +3554,11 @@ h3 {
     margin: 0.5rem; }
   .content__articles--post i.fa.fa-folder-open,
   .content__articles--post i.fa.fa-tags,
-  .content__articles--post i.fa.fa-user {
+  .content__articles--post i.fa.fa-user,
+  .content__articles--post i.fa.fa-calendar {
     font-size: 75%;
     color: grey;
     margin: 0.5rem; }
-  .content__articles--post i.fa.fa-folder-open:hover,
-  .content__articles--post i.fa.fa-tags:hover,
-  .content__articles--post i.fa.fa-user:hover {
-    color: #9780B2; }
 
 .hide {
   display: none; }

@@ -18,7 +18,7 @@ var showCategories = $(() => {
     })
   }
   // Request
-  var template = `<li><a href="/category/:url:" target="_blank"><i class="fa fa-folder-open"></i> :title:</a></li>`
+  var template = `<li><a href="http://blog.alexballera.com/:url:" target="_blank"><i class="fa fa-folder-open"></i> :title:</a></li>`
 
   $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/blog.alexballera.com/categories/?number=6&order_by=count&order=DESC')
       .then((categories) => {
