@@ -55,20 +55,17 @@
         font-size: 1.2rem;
         line-height: 1.2rem;
       }
-      & a button[type="button"] {
-        height: 100%;
-        line-height: 40px;
-        width: 300px;
+      & a {
+        display: block;
+        margin: 1rem auto 0.5rem auto;
+        width: 225px;
         border-radius: 5px;
-        margin: 1.5rem .25rem 0.5rem .25rem;
         padding: 1rem;
         color: $white;
         background-color: $orange;
-        outline: none;
-        border: none;
-        font-size: 22px;
+        font-size: 1.40px;
         @include respond-to(mm) {
-          font-size: 2rem;
+          font-size: 1.75rem;
         }
         &:hover{
           background-color: $purple;

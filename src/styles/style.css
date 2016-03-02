@@ -3435,22 +3435,19 @@ h3 {
       letter-spacing: 1.2px;
       font-size: 1.2rem;
       line-height: 1.2rem; }
-    .content__responsive--form a button[type="button"] {
-      height: 100%;
-      line-height: 40px;
-      width: 300px;
+    .content__responsive--form a {
+      display: block;
+      margin: 1rem auto 0.5rem auto;
+      width: 225px;
       border-radius: 5px;
-      margin: 1.5rem .25rem 0.5rem .25rem;
       padding: 1rem;
       color: #F1FFF9;
       background-color: #FFB040;
-      outline: none;
-      border: none;
-      font-size: 22px; }
+      font-size: 1.40px; }
       @media screen and (min-width: 42.5em) {
-        .content__responsive--form a button[type="button"] {
-          font-size: 2rem; } }
-      .content__responsive--form a button[type="button"]:hover {
+        .content__responsive--form a {
+          font-size: 1.75rem; } }
+      .content__responsive--form a:hover {
         background-color: #8344CC;
         cursor: pointer; }
   .content__responsive--title {
