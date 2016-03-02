@@ -1,4 +1,4 @@
 # robots.txt generated at http://www.mcanerin.com
 User-agent: *
 Disallow:
-Sitemap: http://portafolio.alexballera.com/sitemap.xml
+Sitemap: http://alexballera.com/sitemap.xml
