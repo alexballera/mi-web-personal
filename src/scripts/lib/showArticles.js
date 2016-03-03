@@ -37,7 +37,7 @@ var showArticles = $(() => {
             <figcaption>:figcaption:</figcaption>
         </picture>
         <h3>:title:</h3>
-        <i class="fa fa-user"> :author:</i> <i class="fa fa-calendar"> :day1::day2:-:month:-:year:</i> <i class="fa fa-folder-open"> :category1:, :category2:</i> <i class="fa fa-tags"> :tag1:, :tag2:, :tag3:</i>
+        <i class="fa fa-user"> :author:</i> <i class="fa fa-calendar"> :day1::day2:/:month:/:year:</i> <i class="fa fa-folder-open"> :category1:, :category2:</i> <i class="fa fa-tags"> :tag1:, :tag2:, :tag3:</i>
     </section>
   </a>`
 

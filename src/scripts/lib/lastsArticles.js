@@ -11,6 +11,10 @@ var lastsArticles = $(() => {
       var projectTemplate = template
       .replace(':title:', project.title)
       .replace(':url:', project.short_URL)
+      .replace(':year:', project.date.split('-')[0])
+      .replace(':month:', project.date.split('-')[1])
+      .replace(':day1:', project.date.split('-')[2].split('')[0])
+      .replace(':day2:', project.date.split('-')[2].split('')[1])
 
       var $projectTemplate = $(projectTemplate)
       $projectTemplate.hide()
@@ -18,7 +22,7 @@ var lastsArticles = $(() => {
     })
   }
   // Request
-  var template = `<li><a href=":url:" target="_blank"><i class="fa fa-file-text"></i> :title:</a></li>`
+  var template = `<li><a href=":url:" target="_blank"><i class="fa fa-file-text"></i> :title: - :day1::day2:/:month:/:year:</a></li>`
 
   $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/posts/?number=8')
       .then((lastArticles) => {

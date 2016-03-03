@@ -3226,7 +3226,9 @@ h3 {
           box-sizing: border-box;
           padding: 0 .5em;
           text-align: center;
-          height: 3rem; } }
+          font-size: 1.1rem;
+          height: 3rem;
+          line-height: 3rem; } }
       @media screen and (max-width: 767px) and (orientation: landscape) {
         .nav__menu--list--item a {
           padding: 0;
@@ -3568,7 +3570,7 @@ h3 {
   .form__content p {
     color: grey;
     letter-spacing: 1.2px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.2rem;
     width: 85%;
     margin: 0 auto 1rem auto; }

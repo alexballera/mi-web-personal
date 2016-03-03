@@ -195,7 +195,9 @@ $items: 4;
           box-sizing: border-box;
           padding: 0 .5em;
           text-align: center;
+          font-size: 1.1rem;
           height: ($header-height*$header-mult);
+          line-height: ($header-height*$header-mult);
         }
         @include respond-to(sm-landscape) {
           padding: 0;
