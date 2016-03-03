@@ -40,7 +40,7 @@ var showProjects = $(() => {
         <i class="fa fa-user"> :author:</i> <i class="fa fa-calendar"> :day1::day2:-:month:-:year:</i> <i class="fa fa-folder-open"> :category:</i> <i class="fa fa-tags"> :tag1:, :tag2:, :tag3:</i>
     </section>
   </a>`
-  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/blog.alexballera.com/posts/?category=proyectos&number=6')
+  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/posts/?category=proyectos&number=6')
       .then((projects) => {
         $projectContainer.find('.loader').remove()
         localStorage.projects = JSON.stringify(projects)
