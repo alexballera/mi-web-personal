@@ -63,7 +63,7 @@
         padding: 1rem;
         color: $white;
         background-color: $orange;
-        font-size: 1.40px;
+        font-size: 1.40rem;
         @include respond-to(mm) {
           font-size: 1.75rem;
         }
@@ -113,4 +113,5 @@
 .fa.fa-desktop,
 .icon-mobile-device {
   font-size: 10rem;
+  color: grey;
 }

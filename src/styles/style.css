@@ -3445,7 +3445,7 @@ h3 {
       padding: 1rem;
       color: #F1FFF9;
       background-color: #FFB040;
-      font-size: 1.40px; }
+      font-size: 1.40rem; }
       @media screen and (min-width: 42.5em) {
         .content__responsive--form a {
           font-size: 1.75rem; } }
@@ -3487,7 +3487,8 @@ h3 {
 
 .fa.fa-desktop,
 .icon-mobile-device {
-  font-size: 10rem; }
+  font-size: 10rem;
+  color: grey; }
 
 /** Articles & Projects */
 .content__articles--container {
@@ -3557,7 +3558,8 @@ h3 {
   .content__articles--post i.fa.fa-calendar {
     font-size: 75%;
     color: grey;
-    margin: 0.5rem; }
+    margin: 0.5rem;
+    font-family: "FontAwesome", Arial, sans-serif; }
 
 .hide {
   display: none; }
