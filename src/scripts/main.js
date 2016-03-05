@@ -32,7 +32,7 @@ import showCategories from './lib/showCategories'  // Descomentar si se está en
 
   // Load JS
     var urlJs = [
-      '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5698df4c26bc43c8'
+      '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56d613c8f5bb6dba'
     ]
     loadJS(urlJs)
 
