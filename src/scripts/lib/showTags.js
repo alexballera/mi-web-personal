@@ -20,7 +20,7 @@ var showTags = $(() => {
     })
   }
   // Request
-  var template = `<a href="http://web.alexballera.com/tag/:url:" target="_blank"> :title: (:count:),</a>`
+  var template = `<a href="http://web.alexballera.com/tag/:url:" target="_blank"><i class="fa fa-tag"></i> :title: (:count:),</a>`
 
   $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/tags/?order_by=count&order=DESC')
       .then((tags) => {
