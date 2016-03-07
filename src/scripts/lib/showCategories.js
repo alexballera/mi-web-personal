@@ -8,11 +8,12 @@ var showCategories = $(() => {
   function renderShows (categories) {
     $projectContainer.find('.loader').remove()
     categories.categories.forEach(function (project) {
-      var projectTemplate = template
-      .replace(':title:', project.name)
-      .replace(':url:', project.slug)
-      .replace(':count:', project.post_count)
-
+      if (project.post_count) {
+        var projectTemplate = template
+        .replace(':title:', project.name)
+        .replace(':url:', project.slug)
+        .replace(':count:', project.post_count)
+      }
       var $projectTemplate = $(projectTemplate)
       $projectTemplate.hide()
       $projectContainer.append($projectTemplate.fadeIn(3500))
@@ -21,7 +22,7 @@ var showCategories = $(() => {
   // Request
   var template = `<li><a href="http://web.alexballera.com/:url:" target="_blank"><i class="fa fa-folder-open"></i> :title: (:count:)</a></li>`
 
-  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/categories/?number=6&order_by=count&order=DESC')
+  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/categories/?order_by=count&order=DESC')
       .then((categories) => {
         $projectContainer.find('.loader').remove()
         localStorage.categories = JSON.stringify(categories)
