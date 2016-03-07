@@ -20,9 +20,7 @@ var showProjects = $(() => {
       .replace(':day1:', project.date.split('-')[2].split('')[0])
       .replace(':day2:', project.date.split('-')[2].split('')[1])
       .replace(':category:', project.categories.Proyectos.name)
-      .replace(':tag1:', Object.keys(project.tags)[0])
-      .replace(':tag2:', Object.keys(project.tags)[1])
-      .replace(':tag3:', Object.keys(project.tags)[2])
+      .replace(':tags:', Object.keys(project.tags))
 
       var $projectTemplate = $(projectTemplate)
       $projectTemplate.hide()
@@ -37,7 +35,7 @@ var showProjects = $(() => {
             <figcaption>:figcaption:</figcaption>
         </picture>
         <h3>:title:</h3>
-        <i class="fa fa-user"> :author:</i> <i class="fa fa-calendar"> :day1::day2:/:month:/:year:</i> <i class="fa fa-folder-open"> :category:</i> <i class="fa fa-tags"> :tag1:, :tag2:, :tag3:</i>
+        <i class="fa fa-user"> :author:</i> <i class="fa fa-calendar"> :day1::day2:/:month:/:year:</i> <i class="fa fa-folder-open"> :category:</i> <i class="fa fa-tags"> :tags: </i>
     </section>
   </a>`
   $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/posts/?category=proyectos&number=6')

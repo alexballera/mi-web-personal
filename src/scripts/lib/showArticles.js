@@ -18,11 +18,8 @@ var showArticles = $(() => {
       .replace(':month:', project.date.split('-')[1])
       .replace(':day1:', project.date.split('-')[2].split('')[0])
       .replace(':day2:', project.date.split('-')[2].split('')[1])
-      .replace(':category1:', Object.keys(project.categories)[0])
-      .replace(':category2:', Object.keys(project.categories)[1])
-      .replace(':tag1:', Object.keys(project.tags)[0])
-      .replace(':tag2:', Object.keys(project.tags)[1])
-      .replace(':tag3:', Object.keys(project.tags)[2])
+      .replace(':categories:', Object.keys(project.categories))
+      .replace(':tags:', Object.keys(project.tags))
 
       var $projectTemplate = $(projectTemplate)
       $projectTemplate.hide()
@@ -37,7 +34,7 @@ var showArticles = $(() => {
             <figcaption>:figcaption:</figcaption>
         </picture>
         <h3>:title:</h3>
-        <i class="fa fa-user"> :author:</i> <i class="fa fa-calendar"> :day1::day2:/:month:/:year:</i> <i class="fa fa-folder-open"> :category1:, :category2:</i> <i class="fa fa-tags"> :tag1:, :tag2:, :tag3:</i>
+        <i class="fa fa-user"> :author:</i> <i class="fa fa-calendar"> :day1::day2:/:month:/:year:</i> <i class="fa fa-folder-open"> :categories:</i> <i class="fa fa-tags"> :tags:</i>
     </section>
   </a>`
 
