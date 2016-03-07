@@ -12,6 +12,7 @@ import showProjects from './lib/showProjects'  // Descomentar si se está en lí
 import showArticles from './lib/showArticles'  // Descomentar si se está en línea
 import lastsArticles from './lib/lastsArticles'  // Descomentar si se está en línea
 import showCategories from './lib/showCategories'  // Descomentar si se está en línea
+import showTags from './lib/showTags'  // Descomentar si se está en línea
 
 (() => {
   'use strict'
