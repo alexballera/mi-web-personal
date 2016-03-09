@@ -3861,3 +3861,38 @@ h3 {
   .form__modal input[type="text"] {
     line-height: 1.5rem;
     height: 100%; } }
+
+.content__legal {
+  width: 60%;
+  text-align: justify;
+  padding: 3rem;
+  padding-bottom: 2rem;
+  letter-spacing: 1.1px;
+  line-height: 1.2rem; }
+  .content__legal h1,
+  .content__legal h2,
+  .content__legal span {
+    color: #1E1E1E;
+    font-weight: 700; }
+  .content__legal h1,
+  .content__legal h2 {
+    line-height: 2.5rem; }
+  .content__legal a {
+    color: #FFB040;
+    font-weight: bold; }
+  .content__legal p {
+    margin: 1rem 0; }
+
+section.legal {
+  text-align: center;
+  height: 1rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  background-color: black; }
+  section.legal ul li {
+    margin: 0 0.5rem;
+    display: inline-block; }
+    section.legal ul li a {
+      color: grey; }
+      section.legal ul li a:hover {
+        color: #FFB040; }

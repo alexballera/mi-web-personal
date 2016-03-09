@@ -6,6 +6,7 @@ import retinajs from './vendors/retina.js'
 import showMenu from './lib/showMenu'
 import changeButton from './lib/changeButton'
 import doTransparentBar from './lib/doTransparentBar'
+import cookieConsent from './lib/cookieConsent'  // Descomentar si se está en línea
 import loadJS from './lib/loadJS'  // Descomentar si se está en línea
 import loadLeadin from './lib/loadLeadin'  // Descomentar si se está en línea
 import showProjects from './lib/showProjects'  // Descomentar si se está en línea
@@ -31,8 +32,13 @@ import showTags from './lib/showTags'  // Descomentar si se está en línea
     btnButton.addEventListener('click', showMenu)
     btnButton.addEventListener('click', changeButton)
 
+    cookieConsent()
   // Load JS
-    var urlJs = ['//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56db8556594705cc']
+    var urlJs = [
+      '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56db8556594705cc',
+      '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js',
+      '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js'
+    ]
     loadJS(urlJs)
 
   // Load LeadIn
