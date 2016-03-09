@@ -32,11 +32,12 @@ import showTags from './lib/showTags'  // Descomentar si se está en línea
     btnButton.addEventListener('click', showMenu)
     btnButton.addEventListener('click', changeButton)
 
+// Cookies
     cookieConsent()
+
   // Load JS
     var urlJs = [
       '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56db8556594705cc',
-      '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js',
       '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js'
     ]
     loadJS(urlJs)

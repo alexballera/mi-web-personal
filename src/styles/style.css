@@ -3896,3 +3896,34 @@ section.legal {
       color: grey; }
       section.legal ul li a:hover {
         color: #FFB040; }
+
+.header__404 {
+  margin: 0;
+  height: 100vh; }
+
+.header__message {
+  color: #F1FFF9; }
+  .header__message span {
+    transition: all 1.2s ease;
+    font-size: 3rem;
+    font-weight: 700; }
+    @media screen and (min-width: 37.5em) {
+      .header__message span {
+        font-size: 4rem; } }
+    @media screen and (min-width: 42.5em) {
+      .header__message span {
+        font-size: 5rem; } }
+    @media screen and (min-width: 48em) {
+      .header__message span {
+        font-size: 6rem; } }
+    @media screen and (min-width: 64em) {
+      .header__message span {
+        font-size: 10rem; } }
+  .header__message p {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: 1.25px; }
+    .header__message p a {
+      color: #55ACEE; }
+      .header__message p a:hover {
+        color: #FFB040; }
