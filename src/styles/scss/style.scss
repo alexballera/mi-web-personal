@@ -1,18 +1,18 @@
 @charset "UTF-8";
 
-@import './vendors/normalize'; // Comentar si se va a usar el cdnjs
-@import './vendors/reset';
-@import '../fonts/src/font-awesome'; // Comentar si se va a usar el cdnjs
-@import '../fonts/src/font-mfizz';
-@import './vendors/spinners';
-@import './customs/var';
-@import './customs/breakpoints';
-@import './customs/customs';
-@import './partials/navbar';
-@import './partials/header';
-@import './partials/content';
-@import './partials/form';
-@import './partials/footer';
-@import './partials/modalcontact';
-@import './partials/legal';
-@import './partials/404';
+@import './vendors/normalize',
+'./vendors/reset',
+'../fonts/src/font-awesome',
+'../fonts/src/font-mfizz',
+'./vendors/spinners',
+'./customs/var',
+'./customs/breakpoints',
+'./customs/customs',
+'./partials/navbar',
+'./partials/header',
+'./partials/content',
+'./partials/form',
+'./partials/footer',
+'./partials/modalcontact',
+'./partials/legal',
+'./partials/404';

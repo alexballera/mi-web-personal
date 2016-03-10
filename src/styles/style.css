@@ -3024,10 +3024,10 @@ h3 {
 
 .title {
   color: grey;
-  padding: 1rem 0; }
+  padding: 2rem 0; }
   @media screen and (min-width: 37.5em) {
     .title {
-      padding-top: 0; } }
+      padding-top: 1rem; } }
 
 .hide {
   display: none; }
@@ -3362,8 +3362,8 @@ h3 {
   margin-right: auto; }
   .content__title {
     width: 90%;
-    margin: 0 auto;
-    padding: 1rem 1rem 2rem 1rem;
+    margin: 1rem auto;
+    padding: 2rem 1rem;
     letter-spacing: 1.2px;
     color: grey;
     font-size: 1.4rem;
@@ -3371,6 +3371,9 @@ h3 {
     @media screen and (min-width: 30em) {
       .content__title {
         font-size: 1.5rem; } }
+    @media screen and (min-width: 37.5em) {
+      .content__title {
+        padding-top: 1rem; } }
     @media screen and (min-width: 48em) {
       .content__title {
         font-size: 1.75rem;
