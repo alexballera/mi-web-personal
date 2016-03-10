@@ -15,6 +15,8 @@ const babelify = require('babelify')
 const imagemin = require('gulp-imagemin')
 const pngquant = require('imagemin-pngquant')
 const imageminSvgo = require('imagemin-svgo')
+const imageminOptipng = require('imagemin-optipng')
+const imageminJpegtran = require('imagemin-jpegtran')
 const cache = require('gulp-cache')
 const del = require('del')
 const inject = require('gulp-inject')
@@ -166,7 +168,12 @@ gulp.task('build:images', () => {
       progressive: true,
       interlaced: true,
       multipass: true,
-      use: [pngquant(), imageminSvgo()],
+      use: [
+        pngquant(),
+        imageminSvgo(),
+        imageminOptipng({optimizationLevel: 7}),
+        imageminJpegtran({progressive: true})
+      ],
       svgoPlugins: [
         { removeViewBox: false }, // don't remove the viewbox atribute from the SVG
         { removeUselessStrokeAndFill: false }, // don't remove Useless Strokes and Fills

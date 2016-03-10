@@ -30,7 +30,7 @@ var showArticles = $(() => {
   var template = `<a class="content__articles--post" href=":url:" target="_blank">
     <section>
         <picture class="content__articles--post--picture">
-            <img src=":image:" alt=":image alt:">
+            <img src=":image:" alt=":image alt:" width="300">
             <figcaption>:figcaption:</figcaption>
         </picture>
         <h3>:title:</h3>
