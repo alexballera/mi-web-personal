@@ -28,19 +28,17 @@
       margin-bottom: 1rem;
       @include respond-to(md) {
         margin-bottom: 0;
-        margin-right: 2%;
+        // margin-right: 2%;
       }
     }
-    &:nth-child(2){
+    &:nth-child(2),
+    &:nth-child(3){
       @include respond-to(md) {
-        margin-left: 2%;
+        margin-left: 1rem;
       }
     }
     @include respond-to(md) {
-      width: 45%;
-    }
-    @include respond-to(lg) {
-      width: 394px;
+      width: 30%;
     }
     &--form{
       padding-top: 1rem;
@@ -111,6 +109,7 @@
   }
 }
 .fa.fa-desktop,
+.fa.fa-tachometer,
 .icon-mobile-device {
   font-size: 10rem;
   color: grey;

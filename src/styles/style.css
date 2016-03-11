@@ -3418,17 +3418,13 @@ h3 {
     margin-bottom: 1rem; }
     @media screen and (min-width: 48em) {
       .content__responsive:nth-child(1) {
-        margin-bottom: 0;
-        margin-right: 2%; } }
+        margin-bottom: 0; } }
   @media screen and (min-width: 48em) {
-    .content__responsive:nth-child(2) {
-      margin-left: 2%; } }
+    .content__responsive:nth-child(2), .content__responsive:nth-child(3) {
+      margin-left: 1rem; } }
   @media screen and (min-width: 48em) {
     .content__responsive {
-      width: 45%; } }
-  @media screen and (min-width: 64em) {
-    .content__responsive {
-      width: 394px; } }
+      width: 30%; } }
   .content__responsive--form {
     padding-top: 1rem; }
     .content__responsive--form em {
@@ -3489,6 +3485,7 @@ h3 {
           padding: 1em; } }
 
 .fa.fa-desktop,
+.fa.fa-tachometer,
 .icon-mobile-device {
   font-size: 10rem;
   color: grey; }
