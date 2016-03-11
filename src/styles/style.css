@@ -3414,10 +3414,10 @@ h3 {
 
 .content__responsive {
   background-color: white; }
-  .content__responsive:nth-child(1) {
+  .content__responsive:nth-child(1), .content__responsive:nth-child(2) {
     margin-bottom: 1rem; }
     @media screen and (min-width: 48em) {
-      .content__responsive:nth-child(1) {
+      .content__responsive:nth-child(1), .content__responsive:nth-child(2) {
         margin-bottom: 0; } }
   @media screen and (min-width: 48em) {
     .content__responsive:nth-child(2), .content__responsive:nth-child(3) {
