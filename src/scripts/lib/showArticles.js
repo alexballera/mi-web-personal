@@ -10,6 +10,7 @@ var showArticles = $(() => {
     articles.posts.forEach(function (project) {
       var projectTemplate = template
       .replace(':title:', project.title)
+      .replace(':url title:', project.title)
       .replace(':url:', project.short_URL)
       .replace(':image:', project.featured_image)
       .replace(':image alt:', project.title + ' Image')
@@ -27,7 +28,7 @@ var showArticles = $(() => {
     })
   }
   // Request
-  var template = `<a class="content__articles--post" href=":url:" target="_blank">
+  var template = `<a class="content__articles--post" href=":url:" target="_blank" title=":url title:">
     <section>
         <picture class="content__articles--post--picture">
             <img src=":image:" alt=":image alt:" width="300">
