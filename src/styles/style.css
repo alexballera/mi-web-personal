@@ -3838,15 +3838,16 @@ h3 {
 .close {
   background: #606061;
   color: #FFFFFF;
-  line-height: 25px;
+  line-height: 3rem;
   position: absolute;
   right: -12px;
   text-align: center;
   top: -10px;
-  width: 24px;
+  width: 3rem;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 12px;
+  font-size: 1.75rem;
+  border-radius: 50%;
   box-shadow: 1px 1px 3px #000; }
   .close__boton {
     color: #FFB040; }
@@ -3861,6 +3862,14 @@ h3 {
   .form__modal input[type="text"] {
     line-height: 1.5rem;
     height: 100%; } }
+
+.indicates-required,
+.clear.response {
+  display: none; }
+
+.mc__input {
+  position: absolute;
+  left: -5000px; }
 
 .content__legal {
   width: 60%;
