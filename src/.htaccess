@@ -26,6 +26,24 @@ ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 1 month"
 </IfModule>
 
+#Headers Cache-Control
+<IfModule mod_headers.c>
+  Header unset ETag
+  FileETag None
+  <FilesMatch "\.(ico|jpe?g|png|gif|swf)$">
+      Header set Cache-Control "max-age=2592000, public"
+  </FilesMatch>
+  <FilesMatch "\.(css)$">
+      Header set Cache-Control "max-age=604800, public"
+  </FilesMatch>
+  <FilesMatch "\.(js)$">
+      Header set Cache-Control "max-age=216000, public"
+  </FilesMatch>
+  <FilesMatch "\.(x?html?|php)$">
+      Header set Cache-Control "max-age=216000, public"
+  </FilesMatch>
+</IfModule>
+
 ## Error 404 ##
 ErrorDocument 404 http://alexballera.com/404.html
 
