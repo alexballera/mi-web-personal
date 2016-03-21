@@ -24,6 +24,10 @@ h3{
     font-size: 1.3em;
   }
 }
+pre{
+    border-left: 15px solid $orange;
+    border-right: 2px solid $orange;
+  }
 .title{
   color: grey;
   padding: 2rem 0;
