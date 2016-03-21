@@ -22,9 +22,11 @@ var lastsArticles = $(() => {
     })
   }
   // Request
-  var template = `<li><a href=":url:" target="_blank"><i class="fa fa-file-text-o"></i> :title: - :day1::day2:/:month:/:year:</a></li>`
+  var template = `<li><a href=":url:" target="_blank"><i class="fa fa-file-text-o">
+    </i> :title: - :day1::day2:/:month:/:year:</a>
+  </li>`
 
-  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/posts/?number=8')
+  $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/posts/?number=6')
       .then((lastArticles) => {
         $projectContainer.find('.loader').remove()
         localStorage.lastArticles = JSON.stringify(lastArticles)

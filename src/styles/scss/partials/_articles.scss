@@ -22,7 +22,7 @@
             &:hover{
                 background-color: $orange;
                 color: white;
-                & i.fa.fa-folder-open, 
+                & i.fa.fa-folder-open-o, 
                 & i.fa.fa-tags,
                 & i.fa.fa-user,
                 & i.fa.fa-calendar{
@@ -58,7 +58,7 @@
                 color: $orange;
                 margin: 0.5rem;
             }
-            & i.fa.fa-folder-open, 
+            & i.fa.fa-folder-open-o, 
             & i.fa.fa-tags,
             & i.fa.fa-user,
             & i.fa.fa-calendar{

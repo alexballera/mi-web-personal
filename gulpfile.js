@@ -22,9 +22,9 @@ const del = require('del')
 const inject = require('gulp-inject')
 const wiredep = require('wiredep').stream
 const deploy = require('gulp-gh-pages')
-// Para que babelify y jquery trabajen se deben instalar jquery, babel-preset-es2015 babel-preset-react
+// Para que babelify y jquery trabajen se deben instalar jquery, babel-preset-es2015
 // sudo npm install --save jquery
-// sudo npm install --save-dev babel-preset-es2015 babel-preset-react
+// sudo npm install --save-dev babel-preset-es2015
 
 // Variables
 const globs = {

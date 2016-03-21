@@ -20,7 +20,8 @@ var showCategories = $(() => {
     })
   }
   // Request
-  var template = `<li><a href="http://web.alexballera.com/:url:" target="_blank"><i class="fa fa-folder-o"></i> :title: (:count:)</a></li>`
+  var template = `<a href="http://web.alexballera.com/:url:" target="_blank"><i class="fa fa-folder-open-o"></i> :title: (:count:),
+  </a>`
 
   $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/categories/?order_by=count&order=DESC')
       .then((categories) => {

@@ -24,6 +24,13 @@ $item: 3;
     font-weight: 400;
     font-size: 1rem;
     padding: 1rem 0;
+    & i {
+      &.fa.fa-folder-open,
+      &.fa.fa-tags,
+      &.fa.fa-file{
+        margin-right: 0.5rem;
+      }
+    }
   }
   &__contact{
     width: 100%;
@@ -44,6 +51,11 @@ $item: 3;
       &:hover{
         background-color: $purple;
       }
+      & i {
+          &.fa.fa-envelope-o{
+            margin-right: 0.5rem
+          }
+        }
     }
     &--tech {
       margin: 0.75rem 0;

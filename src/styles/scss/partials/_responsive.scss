@@ -69,7 +69,12 @@
           background-color: $purple;
           cursor: pointer;
         }
-    }
+        & i {
+          &.fa.fa-envelope-o{
+            margin-right: 0.5rem
+          }
+        }
+      }
     }
     &--title{
       padding: 1em 0;

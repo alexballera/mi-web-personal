@@ -3557,6 +3557,8 @@ pre {
       .content__responsive--form a:hover {
         background-color: #8344CC;
         cursor: pointer; }
+      .content__responsive--form a i.fa.fa-envelope-o {
+        margin-right: 0.5rem; }
   .content__responsive--title {
     padding: 1em 0;
     color: grey; }
@@ -3628,7 +3630,7 @@ pre {
   .content__articles--post:hover {
     background-color: #FFB040;
     color: white; }
-    .content__articles--post:hover i.fa.fa-folder-open,
+    .content__articles--post:hover i.fa.fa-folder-open-o,
     .content__articles--post:hover i.fa.fa-tags,
     .content__articles--post:hover i.fa.fa-user,
     .content__articles--post:hover i.fa.fa-calendar {
@@ -3658,7 +3660,7 @@ pre {
   .content__articles--post h3 {
     color: #FFB040;
     margin: 0.5rem; }
-  .content__articles--post i.fa.fa-folder-open,
+  .content__articles--post i.fa.fa-folder-open-o,
   .content__articles--post i.fa.fa-tags,
   .content__articles--post i.fa.fa-user,
   .content__articles--post i.fa.fa-calendar {
@@ -3743,6 +3745,8 @@ pre {
       .form__email button[type="submit"]:hover {
         background-color: #8344CC;
         cursor: pointer; }
+      .form__email button[type="submit"] i.fa.fa-envelope-o {
+        margin-right: 0.5rem; }
 
 /** Footer */
 .footer {
@@ -3775,6 +3779,8 @@ pre {
     font-weight: 400;
     font-size: 1rem;
     padding: 1rem 0; }
+    .footer h3 i.fa.fa-folder-open, .footer h3 i.fa.fa-tags, .footer h3 i.fa.fa-file {
+      margin-right: 0.5rem; }
   .footer__contact {
     width: 100%;
     box-sizing: border-box;
@@ -3793,6 +3799,8 @@ pre {
       border-radius: 5px; }
       .footer__contact a button:hover {
         background-color: #8344CC; }
+      .footer__contact a button i.fa.fa-envelope-o {
+        margin-right: 0.5rem; }
     .footer__contact--tech {
       margin: 0.75rem 0; }
       .footer__contact--tech li {

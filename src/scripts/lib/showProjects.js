@@ -10,8 +10,6 @@ var showProjects = $(() => {
   function renderProjects (projects) {
     $projectContainer.find('.loader').remove()
     projects.posts.forEach(function (project) {
-      // Object.getOwnPropertyNames(project.tags).forEach(function (tag) {
-      //   var tag = project.tags[tag].slug
       if (project.categories.Proyectos) {
       var projectTemplate = templateArticles
         .replace(':title:', project.title)
@@ -28,7 +26,6 @@ var showProjects = $(() => {
         .replace(':category:', Object.keys(project.categories))
         .replace(':tags:', Object.keys(project.tags))
       }
-      // var $tag = $(tag)
       var $projectTemplate = $(projectTemplate)
       $projectTemplate.hide()
       $projectContainer.append($projectTemplate.fadeIn(3500))
@@ -85,10 +82,17 @@ var showProjects = $(() => {
             <figcaption>:figcaption:</figcaption>
         </picture>
         <h3>:title:</h3>
-        <i class="fa fa-user"> :author:</i> <i class="fa fa-calendar"> :day1::day2:/:month:/:year:</i> <i class="fa fa-folder-open"> :category:</i> <i class="fa fa-tags"> :tags: </i>
+        <i class="fa fa-user"> :author:</i>
+        <i class="fa fa-calendar"> :day1::day2:/:month:/:year:</i>
+        <i class="fa fa-folder-open-o"> :category:</i>
+        <i class="fa fa-tags"> :tags: </i>
     </section>
   </a>`
-  var templateLastsArticles = `<li><a href=":url:" target="_blank"><i class="fa fa-file-text-o"></i> :title: - :day1::day2:/:month:/:year:</a></li>`
+  var templateLastsArticles = `<li>
+    <a href=":url:" target="_blank">
+      <i class="fa fa-file-text-o"></i> :title: - :day1::day2:/:month:/:year:
+    </a>
+  </li>`
 
   $.ajax('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/posts')
       .then((projects) => {
