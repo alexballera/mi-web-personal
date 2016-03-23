@@ -1,7 +1,7 @@
 import $ from 'jquery'
 import modernizr from './vendors/modernizr.js'
 import selectivizr from './vendors/selectivizr.js'
-// import validate from './vendors/mc-validate.js'
+import validate from './vendors/mc-validate.js'
 import retinajs from './vendors/retina.js'
 // import prism from './vendors/prism.js'
 import showMenu from './lib/showMenu'
@@ -37,8 +37,8 @@ import showTags from './lib/showTags'
   // Load JS
     var urlJs = [
       '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56db8556594705cc',
-      '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js',
-      'http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'
+      '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js'
+      // 'http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'
     ]
     loadJS(urlJs)
 
