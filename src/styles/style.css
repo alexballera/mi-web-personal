@@ -3142,6 +3142,7 @@ pre {
 #responsive,
 #projects,
 #articles,
+#contactame,
 #footer {
   box-sizing: border-box;
   position: relative;
@@ -3790,16 +3791,15 @@ pre {
         border-left: 2px solid #FFB040;
         padding-left: 2rem;
         width: 45%; } }
-    .footer__contact a button {
-      margin-top: 1.5rem;
-      padding: 0.4rem 1rem;
+    .footer__contact a.informacion__boton {
+      padding: 0.4rem;
       font-size: 1rem;
       color: #F1FFF9;
       background-color: #FFB040;
       border-radius: 5px; }
-      .footer__contact a button:hover {
+      .footer__contact a.informacion__boton:hover {
         background-color: #8344CC; }
-      .footer__contact a button i.fa.fa-envelope-o {
+      .footer__contact a.informacion__boton i.fa.fa-envelope-o {
         margin-right: 0.5rem; }
     .footer__contact--tech {
       margin: 0.75rem 0; }
@@ -3809,46 +3809,48 @@ pre {
         font-size: 1.25rem; }
   .footer__social p:nth-child(2) {
     margin-bottom: 0.5rem; }
-  .footer__social--redes li {
-    display: inline-block;
-    font-size: 1rem;
-    margin-right: 0.5rem; }
-    @media screen and (min-width: 42.5em) {
-      .footer__social--redes li {
-        font-size: 1.35rem;
-        margin-right: 0.75rem; } }
-    .footer__social--redes li i {
-      width: 1.75rem;
-      height: 1.75rem;
-      line-height: 1.75rem;
-      text-align: center;
-      border-radius: 50%;
-      color: #F1FFF9;
-      background-color: grey; }
+  .footer__social--redes {
+    margin-bottom: 2rem; }
+    .footer__social--redes li {
+      display: inline-block;
+      font-size: 1rem;
+      margin-right: 0.5rem; }
       @media screen and (min-width: 42.5em) {
-        .footer__social--redes li i {
-          width: 2.25rem;
-          height: 2.25rem;
-          line-height: 2.25rem; } }
-      @media screen and (orientation: landscape) {
-        .footer__social--redes li i {
-          width: 2.25rem;
-          height: 2.25rem;
-          line-height: 2.25rem; } }
-      .footer__social--redes li i.fa-facebook:hover {
-        background-color: #3B5998; }
-      .footer__social--redes li i.fa-twitter:hover {
-        background-color: #55ACEE; }
-      .footer__social--redes li i.fa-linkedin:hover {
-        background-color: #0177B5; }
-      .footer__social--redes li i.fa-google-plus:hover {
-        background-color: #DC4E41; }
-      .footer__social--redes li i.fa-github-alt:hover {
-        background-color: #010101; }
-      .footer__social--redes li i.fa-rss:hover {
-        background-color: #FF9900; }
-      .footer__social--redes li i.fa-envelope-o:hover {
-        background-color: #8344CC; }
+        .footer__social--redes li {
+          font-size: 1.35rem;
+          margin-right: 0.75rem; } }
+      .footer__social--redes li i {
+        width: 1.75rem;
+        height: 1.75rem;
+        line-height: 1.75rem;
+        text-align: center;
+        border-radius: 50%;
+        color: #F1FFF9;
+        background-color: grey; }
+        @media screen and (min-width: 42.5em) {
+          .footer__social--redes li i {
+            width: 2.25rem;
+            height: 2.25rem;
+            line-height: 2.25rem; } }
+        @media screen and (orientation: landscape) {
+          .footer__social--redes li i {
+            width: 2.25rem;
+            height: 2.25rem;
+            line-height: 2.25rem; } }
+        .footer__social--redes li i.fa-facebook:hover {
+          background-color: #3B5998; }
+        .footer__social--redes li i.fa-twitter:hover {
+          background-color: #55ACEE; }
+        .footer__social--redes li i.fa-linkedin:hover {
+          background-color: #0177B5; }
+        .footer__social--redes li i.fa-google-plus:hover {
+          background-color: #DC4E41; }
+        .footer__social--redes li i.fa-github-alt:hover {
+          background-color: #010101; }
+        .footer__social--redes li i.fa-rss:hover {
+          background-color: #FF9900; }
+        .footer__social--redes li i.fa-envelope-o:hover {
+          background-color: #8344CC; }
   .footer__content {
     width: 100%;
     box-sizing: border-box;
@@ -3870,112 +3872,6 @@ pre {
     @media screen and (min-width: 64em) {
       .footer__articles {
         width: 35%; } }
-
-.modalDialog {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 99999;
-  opacity: 0;
-  transition: opacity 400ms ease-in;
-  pointer-events: none; }
-  .modalDialog:target {
-    opacity: 1;
-    pointer-events: auto; }
-  .modalDialog > div {
-    width: 60%;
-    position: relative;
-    top: -20px;
-    margin: 10% auto;
-    padding: 1.25rem;
-    border-radius: 10px;
-    background: #fff;
-    background: linear-gradient(#fff, #999); }
-    @media screen and (max-width: 767px) and (orientation: landscape) {
-      .modalDialog > div {
-        width: 80%;
-        top: -15px;
-        margin: 5% auto;
-        padding: 0.75rem; } }
-  .modalDialog picture figcaption {
-    display: none;
-    color: grey;
-    margin-top: 1rem; }
-    @media screen and (min-width: 30em) {
-      .modalDialog picture figcaption {
-        display: block; } }
-    .modalDialog picture figcaption:hover {
-      color: grey; }
-  .modalDialog p {
-    color: grey;
-    margin: 1rem 0; }
-  .modalDialog ul {
-    text-align: center;
-    margin-bottom: 1rem; }
-    .modalDialog ul li {
-      display: inline-block;
-      margin-right: 0.5rem; }
-      .modalDialog ul li i {
-        width: 25px;
-        height: 25px;
-        line-height: 25px;
-        text-align: center;
-        border-radius: 50%;
-        color: #F1FFF9; }
-        @media screen and (max-width: 767px) and (orientation: landscape) {
-          .modalDialog ul li i {
-            width: 30px;
-            height: 30px;
-            line-height: 30px; } }
-        @media screen and (min-width: 48em) {
-          .modalDialog ul li i {
-            width: 35px;
-            height: 35px;
-            line-height: 35px;
-            font-size: 1.2rem; } }
-        .modalDialog ul li i.fa-facebook {
-          background-color: #3B5998; }
-        .modalDialog ul li i.fa-twitter {
-          background-color: #55ACEE; }
-        .modalDialog ul li i.fa-linkedin {
-          background-color: #0177B5; }
-        .modalDialog ul li i.fa-google-plus {
-          background-color: #DC4E41; }
-        .modalDialog ul li i.fa-github-alt {
-          background-color: #010101; }
-        .modalDialog ul li i:hover {
-          background-color: #FFB040; }
-
-.close {
-  background: #606061;
-  color: #FFFFFF;
-  line-height: 3rem;
-  position: absolute;
-  right: -12px;
-  text-align: center;
-  top: -10px;
-  width: 3rem;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.75rem;
-  border-radius: 50%;
-  box-shadow: 1px 1px 3px #000; }
-  .close__boton {
-    color: #FFB040; }
-  .close:hover {
-    background: #FFB040; }
-
-.form__modal button a {
-  color: white; }
-
-@media screen and (max-width: 767px) and (orientation: landscape) {
-  .form__modal input[type="email"],
-  .form__modal input[type="text"] {
-    line-height: 1.5rem;
-    height: 100%; } }
 
 .indicates-required,
 .clear.response {
