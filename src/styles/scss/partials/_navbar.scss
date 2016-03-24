@@ -48,6 +48,7 @@ $items: 4;
       height: 0;
       height: auto;
       vertical-align: middle;
+      display: flex;
       order: 1;
       &--picture{
          transition: all 1.2s ease;
@@ -76,26 +77,26 @@ $items: 4;
             border: 3px solid $orange;
           }
         }
-        & figcaption{
-          color: $white;
-          margin-left: .5em;
-          font-size: 1.2em;
-          display: none;
+      }
+      & h2.title__nav{
+        color: $white;
+        margin-left: .5em;
+        font-size: 1.2em;
+        display: none;
+        transition: all 1.2s ease;
+        @include respond-to(xs) {
           transition: all 1.2s ease;
-          @include respond-to(xs) {
-            transition: all 1.2s ease;
-            display: block;
-          }
-          @include respond-to(md) {
-            transition: all 1.2s ease;
-            display: none;
-          }
-          @include respond-to(lg) {
-            transition: all 1.2s ease;
-            display: block;
-          }
+          display: block;
         }
-        & figcaption:hover{
+        @include respond-to(md) {
+          transition: all 1.2s ease;
+          display: none;
+        }
+        @include respond-to(lg) {
+          transition: all 1.2s ease;
+          display: block;
+        }
+        &:hover{
           color: $orange;
         }
       }

@@ -3193,6 +3193,9 @@ pre {
       height: 0;
       height: auto;
       vertical-align: middle;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
       -webkit-order: 1;
           -ms-flex-order: 1;
               order: 1; }
@@ -3224,25 +3227,25 @@ pre {
           @media screen and (min-width: 48em) {
             .nav__mobile--logo--picture img:hover {
               border: 3px solid #FFB040; } }
-        .nav__mobile--logo--picture figcaption {
-          color: #F1FFF9;
-          margin-left: .5em;
-          font-size: 1.2em;
-          display: none;
-          transition: all 1.2s ease; }
-          @media screen and (min-width: 30em) {
-            .nav__mobile--logo--picture figcaption {
-              transition: all 1.2s ease;
-              display: block; } }
-          @media screen and (min-width: 48em) {
-            .nav__mobile--logo--picture figcaption {
-              transition: all 1.2s ease;
-              display: none; } }
-          @media screen and (min-width: 64em) {
-            .nav__mobile--logo--picture figcaption {
-              transition: all 1.2s ease;
-              display: block; } }
-        .nav__mobile--logo--picture figcaption:hover {
+      .nav__mobile--logo h2.title__nav {
+        color: #F1FFF9;
+        margin-left: .5em;
+        font-size: 1.2em;
+        display: none;
+        transition: all 1.2s ease; }
+        @media screen and (min-width: 30em) {
+          .nav__mobile--logo h2.title__nav {
+            transition: all 1.2s ease;
+            display: block; } }
+        @media screen and (min-width: 48em) {
+          .nav__mobile--logo h2.title__nav {
+            transition: all 1.2s ease;
+            display: none; } }
+        @media screen and (min-width: 64em) {
+          .nav__mobile--logo h2.title__nav {
+            transition: all 1.2s ease;
+            display: block; } }
+        .nav__mobile--logo h2.title__nav:hover {
           color: #FFB040; }
     .nav__mobile--btn {
       border: 0;
