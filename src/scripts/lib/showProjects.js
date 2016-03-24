@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-var showProjects = $(() => {
+var showArticles = $(() => {
   // Variables Globales
   var $projectContainer = $('#content_projects').find('.content__articles--container')
   var $articleContainer = $('#content_articles').find('.content__articles--container')
@@ -11,7 +11,7 @@ var showProjects = $(() => {
     $projectContainer.find('.loader').remove()
     projects.posts.forEach(function (project) {
       if (project.categories.Proyectos) {
-      var projectTemplate = templateArticles
+        var projectTemplate = templateArticles
         .replace(':title:', project.title)
         .replace(':url title:', project.title)
         .replace(':url:', project.short_URL)
@@ -36,7 +36,7 @@ var showProjects = $(() => {
     $articleContainer.find('.loader').remove()
     projects.posts.forEach(function (project) {
       if (!project.categories.Proyectos) {
-      var projectTemplate = templateArticles
+        var projectTemplate = templateArticles
         .replace(':title:', project.title)
         .replace(':url title:', project.title)
         .replace(':url:', project.short_URL)
@@ -58,19 +58,19 @@ var showProjects = $(() => {
   /** Show Lasts Articles **/
   function renderLastsArticles (projects) {
     $lastsArticlesContainer.find('.loader').remove()
-    projects.posts.forEach(function (project) {
+    for (var i = 0; i < 6; i++) {
       var projectTemplate = templateLastsArticles
-      .replace(':title:', project.title)
-      .replace(':url:', project.short_URL)
-      .replace(':year:', project.date.split('-')[0])
-      .replace(':month:', project.date.split('-')[1])
-      .replace(':day1:', project.date.split('-')[2].split('')[0])
-      .replace(':day2:', project.date.split('-')[2].split('')[1])
+      .replace(':title:', projects.posts[i].title)
+      .replace(':url:', projects.posts[i].short_URL)
+      .replace(':year:', projects.posts[i].date.split('-')[0])
+      .replace(':month:', projects.posts[i].date.split('-')[1])
+      .replace(':day1:', projects.posts[i].date.split('-')[2].split('')[0])
+      .replace(':day2:', projects.posts[i].date.split('-')[2].split('')[1])
 
       var $projectTemplate = $(projectTemplate)
       $projectTemplate.hide()
       $lastsArticlesContainer.append($projectTemplate.fadeIn(3500))
-    })
+    }
   }
   /** Templates **/
   var templateArticles = `<a class="content__articles--post" href=":url:" target="_blank" title=":url title:">
@@ -100,4 +100,4 @@ var showProjects = $(() => {
         renderLastsArticles(JSON.parse(localStorage.projects))
       })
 })
-module.exports = showProjects
+module.exports = showArticles

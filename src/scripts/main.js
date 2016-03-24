@@ -10,7 +10,7 @@ import doTransparentBar from './lib/doTransparentBar'
 import cookieConsent from './lib/cookieConsent'
 import loadJS from './lib/loadJS'
 import loadLeadin from './lib/loadLeadin'
-import showProjects from './lib/showProjects'
+import showArticles from './lib/showProjects'
 import showCategories from './lib/showCategories'
 import showTags from './lib/showTags'
 
