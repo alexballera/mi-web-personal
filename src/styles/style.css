@@ -3580,17 +3580,17 @@ pre {
                 align-items: center; } }
     .content__responsive--responsive--text {
       color: grey;
-      letter-spacing: 1.2px;
-      font-size: 1.2rem;
-      line-height: 1.2rem;
       width: 80%;
-      margin: 0 auto; }
-      .content__responsive--responsive--text p span {
-        font-weight: 700; }
+      margin: 0 auto;
+      padding-top: 1em; }
+      .content__responsive--responsive--text h2 {
+        letter-spacing: 1.2px;
+        font-size: 1.2rem;
+        line-height: 1.2rem; }
+        .content__responsive--responsive--text h2 span {
+          font-weight: 700; }
       .content__responsive--responsive--text::first-letter {
         font-size: 150%; }
-    .content__responsive--responsive--text {
-      padding-top: 1em; }
       @media screen and (min-width: 48em) {
         .content__responsive--responsive--text {
           transition: all 1.2s ease;
@@ -3908,7 +3908,6 @@ pre {
 section.legal {
   text-align: center;
   height: 1rem;
-  font-size: 0.8rem;
   line-height: 1rem;
   background-color: black; }
   section.legal ul li {
@@ -3918,6 +3917,8 @@ section.legal {
       color: grey; }
       section.legal ul li a:hover {
         color: #FFB040; }
+      section.legal ul li a h2 {
+        font-size: 0.8rem; }
 
 .header__404 {
   margin: 0;

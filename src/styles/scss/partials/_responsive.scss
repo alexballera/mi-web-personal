@@ -91,20 +91,20 @@
       }
       &--text{
         color: grey;
-        letter-spacing: 1.2px;
-        font-size: 1.2rem;
-        line-height: 1.2rem;
         width: 80%;
         margin: 0 auto;
-        & p span{
-          font-weight: 700;
+        padding-top: 1em;
+        & h2 {
+          letter-spacing: 1.2px;
+          font-size: 1.2rem;
+          line-height: 1.2rem;
+            & span{
+            font-weight: 700;
+          }
         }
         &::first-letter {
           font-size: 150%;
         }
-      }
-      &--text{
-        padding-top: 1em;
         @include respond-to(md) {
           transition: all 1.2s ease;
           padding: 1em;

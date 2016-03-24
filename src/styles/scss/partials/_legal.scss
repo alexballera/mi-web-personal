@@ -26,7 +26,6 @@
 section.legal{
   text-align: center;
   height: 1rem;
-  font-size: 0.8rem;
   line-height: 1rem;
   background-color: black;
   & ul{
@@ -37,6 +36,9 @@ section.legal{
         color: grey;
         &:hover{
           color: $orange;
+        }
+        & h2{
+          font-size: 0.8rem;
         }
       }
     }
