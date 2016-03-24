@@ -24,6 +24,10 @@
   }
   &__responsive{
     background-color: white;
+    & h2{
+      color: grey;
+      margin-top: 2rem;
+    }
     &:nth-child(1),
     &:nth-child(2){
       margin-bottom: 1rem;

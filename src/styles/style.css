@@ -3524,6 +3524,9 @@ pre {
 
 .content__responsive {
   background-color: white; }
+  .content__responsive h2 {
+    color: grey;
+    margin-top: 2rem; }
   .content__responsive:nth-child(1), .content__responsive:nth-child(2) {
     margin-bottom: 1rem; }
     @media screen and (min-width: 48em) {
