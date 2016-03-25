@@ -1,5 +1,5 @@
 var loadLeadin = (url) => {
-  for (var i = 0; i < url.length; i++) {
+  for (var i in url) {
     var elem = document.createElement('script')
     elem.src = url[i]
     elem.async = 'async'

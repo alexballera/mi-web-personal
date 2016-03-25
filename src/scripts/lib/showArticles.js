@@ -29,7 +29,6 @@ var showArticles = $(() => {
       $projectTemplate.hide()
       $projectContainer.append($projectTemplate.fadeIn(3500))
     })
-  // })
   }
   /** Show Articles **/
   function renderArticles (projects) {

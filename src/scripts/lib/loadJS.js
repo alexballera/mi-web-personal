@@ -1,5 +1,5 @@
 var loadJS = (url) => {
-  for (var i = 0; i < url.length; i++) {
+  for (var i in url) {
     var elem = document.createElement('script')
     elem.async = 'async'
     elem.src = url[i]
