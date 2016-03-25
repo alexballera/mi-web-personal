@@ -417,7 +417,7 @@ table {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
-  text-rendering: auto;
+  text-rendering: auto !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -3608,15 +3608,18 @@ pre {
           transition: all 1.2s ease;
           padding: 1em; } }
 
-.fa.fa-desktop,
-.fa.fa-tachometer,
+.fa {
+  text-rendering: auto !important; }
+  .fa.fa-desktop, .fa.fa-tachometer {
+    font-size: 10rem;
+    color: grey; }
+
 .icon-mobile-device {
   font-size: 10rem;
   color: grey; }
-
-.icon-mobile-device:before {
-  text-rendering: optimizeLegibility;
-  font-smoothing: antialiased; }
+  .icon-mobile-device:before {
+    text-rendering: optimizeLegibility !important;
+    font-smoothing: antialiased !important; }
 
 /** Articles & Projects */
 .content__articles--container {

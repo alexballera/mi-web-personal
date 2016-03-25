@@ -74,8 +74,10 @@
           cursor: pointer;
         }
         & i {
-          &.fa.fa-envelope-o{
-            margin-right: 0.5rem
+          &.fa{
+            &.fa-envelope-o{
+              margin-right: 0.5rem
+            }
           }
         }
       }
@@ -117,13 +119,19 @@
     }
   }
 }
-.fa.fa-desktop,
-.fa.fa-tachometer,
+.fa{
+  text-rendering: auto !important;
+  &.fa-desktop,
+  &.fa-tachometer{
+    font-size: 10rem;
+    color: grey;
+  }
+}
 .icon-mobile-device {
   font-size: 10rem;
   color: grey;
-}
-.icon-mobile-device:before{
-  text-rendering: optimizeLegibility;
-  font-smoothing: antialiased;
+  &:before{
+    text-rendering: optimizeLegibility !important;
+    font-smoothing: antialiased !important;
+  }
 }
