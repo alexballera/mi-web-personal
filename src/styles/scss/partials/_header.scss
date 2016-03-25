@@ -87,6 +87,9 @@
             font-size: 2.5em;
         }
         & i{
+          &.fa{
+            text-rendering: auto;
+          }
           &.fa-html5{
             color: $html;
           }
@@ -97,14 +100,14 @@
             color: $javascript;
             &:before{
               text-rendering: optimizeLegibility;
-              font-smoothing: antialiased
+              font-smoothing: antialiased;
             }
           }
           &.icon-ruby-on-rails{
             color: $rails;
             &:before{
               text-rendering: optimizeLegibility;
-              font-smoothing: antialiased
+              font-smoothing: antialiased;
             }
           }
           &.fa-wordpress{

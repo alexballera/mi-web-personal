@@ -3437,6 +3437,8 @@ pre {
       @media screen and (min-width: 48em) {
         .header__languages--tech li {
           font-size: 2.5em; } }
+      .header__languages--tech li i.fa {
+        text-rendering: auto; }
       .header__languages--tech li i.fa-html5 {
         color: #E34C25; }
       .header__languages--tech li i.fa-css3 {
