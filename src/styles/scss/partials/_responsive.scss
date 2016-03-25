@@ -16,7 +16,7 @@
   &__container{
     @include respond-to(md) {
       display: flex;
-      flex: 0 1 auto;
+      flex: 0 1;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
@@ -122,4 +122,8 @@
 .icon-mobile-device {
   font-size: 10rem;
   color: grey;
+}
+.icon-mobile-device:before{
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased
 }

@@ -4,17 +4,13 @@
                   $color:auto,
                   $size:cover,
                   $position:center,
-                  $repeat:no-repeat,
-                  $width:auto,
-                  $height:auto) {
+                  $repeat:no-repeat) {
 background: {
         image: url($imgpath);
         color: $color;
         size: $size;
         position: $position;
         repeat: $repeat;
-        width: $width;
-        height: $height;
     }
 }
 

@@ -95,9 +95,17 @@
           }
           &.icon-javascript-alt{
             color: $javascript;
+            &:before{
+              text-rendering: optimizeLegibility;
+              font-smoothing: antialiased
+            }
           }
           &.icon-ruby-on-rails{
             color: $rails;
+            &:before{
+              text-rendering: optimizeLegibility;
+              font-smoothing: antialiased
+            }
           }
           &.fa-wordpress{
             color: $wordpress;

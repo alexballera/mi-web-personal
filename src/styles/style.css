@@ -3138,6 +3138,9 @@ pre {
 .hide {
   display: none; }
 
+.fa {
+  text-rendering: auto; }
+
 /** Navbar */
 #responsive,
 #projects,
@@ -3365,8 +3368,6 @@ pre {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-width: auto;
-  background-height: auto;
   background-attachment: fixed; }
   @media screen and (min-width: 48em) {
     .header {
@@ -3442,8 +3443,14 @@ pre {
         color: #0B72B7; }
       .header__languages--tech li i.icon-javascript-alt {
         color: #EFDA4E; }
+        .header__languages--tech li i.icon-javascript-alt:before {
+          text-rendering: optimizeLegibility;
+          font-smoothing: antialiased; }
       .header__languages--tech li i.icon-ruby-on-rails {
         color: #91242E; }
+        .header__languages--tech li i.icon-ruby-on-rails:before {
+          text-rendering: optimizeLegibility;
+          font-smoothing: antialiased; }
       .header__languages--tech li i.fa-wordpress {
         color: #0087BE; }
       .header__languages--tech li i.fa-git {
@@ -3509,9 +3516,9 @@ pre {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex: 0 1 auto;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
+    -webkit-flex: 0 1;
+        -ms-flex: 0 1;
+            flex: 0 1;
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
@@ -3605,6 +3612,10 @@ pre {
   font-size: 10rem;
   color: grey; }
 
+.icon-mobile-device:before {
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased; }
+
 /** Articles & Projects */
 .content__articles--container {
   box-sizing: border-box;
@@ -3614,9 +3625,9 @@ pre {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-flex: 0 1 auto;
-          -ms-flex: 0 1 auto;
-              flex: 0 1 auto;
+      -webkit-flex: 0 1;
+          -ms-flex: 0 1;
+              flex: 0 1;
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
               flex-direction: row;
@@ -3700,9 +3711,9 @@ pre {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex: 0 1 auto;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
+    -webkit-flex: 0 1;
+        -ms-flex: 0 1;
+            flex: 0 1;
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
@@ -3769,9 +3780,9 @@ pre {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex: 0 1 auto;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  -webkit-flex: 0 1;
+      -ms-flex: 0 1;
+          flex: 0 1;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
