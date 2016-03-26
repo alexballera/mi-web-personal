@@ -88,13 +88,20 @@
         }
         & i{
           &.fa{
-            text-rendering: auto;
-          }
-          &.fa-html5{
-            color: $html;
-          }
-          &.fa-css3{
-            color: $css;
+            text-rendering: auto !important;
+            font-smoothing: antialiased !important;
+            &.fa-wordpress{
+              color: $wordpress;
+            }
+            &.fa-git{
+              color: $git;
+            }
+            &.fa-html5{
+              color: $html;
+            }
+            &.fa-css3{
+              color: $css;
+            }
           }
           &.icon-javascript-alt{
             color: $javascript;
@@ -109,12 +116,6 @@
               text-rendering: optimizeLegibility;
               font-smoothing: antialiased;
             }
-          }
-          &.fa-wordpress{
-            color: $wordpress;
-          }
-          &.fa-git{
-            color: $git;
           }
         }
       }

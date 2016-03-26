@@ -58,14 +58,18 @@
                 color: $orange;
                 margin: 0.5rem;
             }
-            & i.fa.fa-folder-open-o, 
-            & i.fa.fa-tags,
-            & i.fa.fa-user,
-            & i.fa.fa-calendar{
-                font-size: 75%;
-                color: grey;
-                margin: 0.5rem;
-                font-family: $font-awesome;
+            & i.fa{
+                text-rendering: auto !important;
+                font-smoothing: antialiased !important;
+                &.fa-folder-open-o, 
+                &.fa-tags,
+                &.fa-user,
+                &.fa-calendar{
+                    font-size: 75%;
+                    color: grey;
+                    margin: 0.5rem;
+                    font-family: $font-awesome;
+                }
             }
         }
     }

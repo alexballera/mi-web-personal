@@ -121,6 +121,7 @@
 }
 .fa{
   text-rendering: auto !important;
+  font-smoothing: antialiased !important;
   &.fa-desktop,
   &.fa-tachometer{
     font-size: 10rem;

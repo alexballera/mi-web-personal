@@ -39,5 +39,6 @@ pre{
   display: none;
 }
 .fa{
-  text-rendering: auto;
+  text-rendering: auto !important;
+  font-smoothing: antialiased !important;
 }

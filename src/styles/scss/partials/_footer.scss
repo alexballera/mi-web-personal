@@ -24,10 +24,12 @@ $item: 3;
     font-weight: 400;
     font-size: 1rem;
     padding: 1rem 0;
-    & i {
-      &.fa.fa-folder-open,
-      &.fa.fa-tags,
-      &.fa.fa-file{
+    & i.fa{
+      text-rendering: auto !important;
+      font-smoothing: antialiased !important;
+      &.fa-folder-open,
+      &.fa-tags,
+      &.fa-file{
         margin-right: 0.5rem;
       }
     }
@@ -51,8 +53,12 @@ $item: 3;
         background-color: $purple;
       }
       & i {
-          &.fa.fa-envelope-o{
-            margin-right: 0.5rem
+          &.fa{
+            text-rendering: auto !important;
+            font-smoothing: antialiased !important;
+            &.fa-envelope-o{
+              margin-right: 0.5rem
+            }
           }
         }
     }
