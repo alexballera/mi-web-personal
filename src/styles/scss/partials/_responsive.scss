@@ -119,11 +119,9 @@
     }
   }
 }
-.fa{
-  &.fa-desktop,
-  &.fa-tachometer,
-  .icon-mobile-device{
-    font-size: 10rem;
-    color: grey;
-  }
+.fa.fa-desktop,
+.fa.fa-tachometer,
+.icon-mobile-device{
+  font-size: 10rem;
+  color: grey;
 }
