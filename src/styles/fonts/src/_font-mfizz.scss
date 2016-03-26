@@ -146,11 +146,11 @@
   font-variant: normal;
   line-height: 1;
   text-decoration: inherit;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility !important;
   text-transform: none;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+  font-smoothing: antialiased !important;
 }
 
 .icon-3dprint:before { content: "\f100"; }

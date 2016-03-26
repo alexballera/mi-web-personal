@@ -20,6 +20,7 @@
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto !important;
+  font-smoothing: antialiased !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -418,6 +418,7 @@ table {
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto !important;
+  font-smoothing: antialiased !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -2620,11 +2621,11 @@ table {
   font-variant: normal;
   line-height: 1;
   text-decoration: inherit;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility !important;
   text-transform: none;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased; }
+  font-smoothing: antialiased !important; }
 
 .icon-3dprint:before {
   content: "\f100"; }
