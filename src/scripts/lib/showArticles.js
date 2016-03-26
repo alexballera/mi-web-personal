@@ -35,7 +35,7 @@ var showArticles = $(() => {
     $articleContainer.find('.loader').remove()
     projects.posts.forEach(function (project) {
       if (!project.categories.Proyectos) {
-        var projectTemplate = templateArticles
+        var articleTemplate = templateArticles
         .replace(':title:', project.title)
         .replace(':url title:', project.title)
         .replace(':url:', project.short_URL)
@@ -49,16 +49,16 @@ var showArticles = $(() => {
         .replace(':category:', Object.keys(project.categories))
         .replace(':tags:', Object.keys(project.tags))
       }
-      var $projectTemplate = $(projectTemplate)
-      $projectTemplate.hide()
-      $articleContainer.append($projectTemplate.fadeIn(3500))
+      var $articleTemplate = $(articleTemplate)
+      $articleTemplate.hide()
+      $articleContainer.append($articleTemplate.fadeIn(3500))
     })
   }
   /** Show Lasts Articles **/
   function renderLastsArticles (projects) {
     $lastsArticlesContainer.find('.loader').remove()
     for (var i = 0; i < 6; i++) {
-      var projectTemplate = templateLastsArticles
+      var lastArticleTemplate = templateLastsArticles
       .replace(':title:', projects.posts[i].title)
       .replace(':url:', projects.posts[i].short_URL)
       .replace(':year:', projects.posts[i].date.split('-')[0])
@@ -66,9 +66,9 @@ var showArticles = $(() => {
       .replace(':day1:', projects.posts[i].date.split('-')[2].split('')[0])
       .replace(':day2:', projects.posts[i].date.split('-')[2].split('')[1])
 
-      var $projectTemplate = $(projectTemplate)
-      $projectTemplate.hide()
-      $lastsArticlesContainer.append($projectTemplate.fadeIn(3500))
+      var $lastArticleTemplate = $(lastArticleTemplate)
+      $lastArticleTemplate.hide()
+      $lastsArticlesContainer.append($lastArticleTemplate.fadeIn(3500))
     }
   }
   /** Templates **/
