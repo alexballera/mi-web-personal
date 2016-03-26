@@ -28,6 +28,10 @@ pre{
     border-left: 15px solid $orange;
     border-right: 2px solid $orange;
   }
+noscript iframe.google-tag{
+  display:none;
+  visibility:hidden;
+}
 .title{
   color: grey;
   padding: 2rem 0;

@@ -1,8 +1,9 @@
 var loadJS = (url) => {
   for (var i in url) {
     var elem = document.createElement('script')
-    elem.async = 'async'
     elem.src = url[i]
+    elem.async = 'async'
+    elem.type = 'text/javascript'
     document.body.appendChild(elem)
   }
 }

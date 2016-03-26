@@ -3064,6 +3064,10 @@ pre {
   border-left: 15px solid #FFB040;
   border-right: 2px solid #FFB040; }
 
+noscript iframe.google-tag {
+  display: none;
+  visibility: hidden; }
+
 .title {
   color: grey;
   padding: 2rem 0; }
@@ -3810,7 +3814,8 @@ pre {
       .footer__articles {
         width: 35%; } }
   .footer__validation {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    text-align: right; }
 
 .indicates-required,
 .clear.response {
