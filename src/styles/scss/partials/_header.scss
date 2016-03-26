@@ -88,8 +88,6 @@
         }
         & i{
           &.fa{
-            text-rendering: auto !important;
-            font-smoothing: antialiased !important;
             &.fa-wordpress{
               color: $wordpress;
             }
@@ -105,17 +103,9 @@
           }
           &.icon-javascript-alt{
             color: $javascript;
-            &:before{
-              text-rendering: optimizeLegibility;
-              font-smoothing: antialiased;
-            }
           }
           &.icon-ruby-on-rails{
             color: $rails;
-            &:before{
-              text-rendering: optimizeLegibility;
-              font-smoothing: antialiased;
-            }
           }
         }
       }

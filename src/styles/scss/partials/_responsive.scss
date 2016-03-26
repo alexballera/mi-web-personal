@@ -120,19 +120,10 @@
   }
 }
 .fa{
-  text-rendering: auto !important;
-  font-smoothing: antialiased !important;
   &.fa-desktop,
-  &.fa-tachometer{
+  &.fa-tachometer,
+  .icon-mobile-device{
     font-size: 10rem;
     color: grey;
-  }
-}
-.icon-mobile-device {
-  font-size: 10rem;
-  color: grey;
-  &:before{
-    text-rendering: optimizeLegibility !important;
-    font-smoothing: antialiased !important;
   }
 }

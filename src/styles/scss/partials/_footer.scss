@@ -25,8 +25,6 @@ $item: 3;
     font-size: 1rem;
     padding: 1rem 0;
     & i.fa{
-      text-rendering: auto !important;
-      font-smoothing: antialiased !important;
       &.fa-folder-open,
       &.fa-tags,
       &.fa-file{
@@ -54,8 +52,6 @@ $item: 3;
       }
       & i {
           &.fa{
-            text-rendering: auto !important;
-            font-smoothing: antialiased !important;
             &.fa-envelope-o{
               margin-right: 0.5rem
             }

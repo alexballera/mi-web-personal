@@ -2618,11 +2618,8 @@ table {
   font-variant: normal;
   line-height: 1;
   text-decoration: inherit;
-  text-rendering: optimizeLegibility !important;
   text-transform: none;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased !important; }
+  -moz-osx-font-smoothing: grayscale; }
 
 .icon-3dprint:before {
   content: "\f100"; }
@@ -3432,27 +3429,18 @@ pre {
       @media screen and (min-width: 48em) {
         .header__languages--tech li {
           font-size: 2.5em; } }
-      .header__languages--tech li i.fa {
-        text-rendering: auto !important;
-        font-smoothing: antialiased !important; }
-        .header__languages--tech li i.fa.fa-wordpress {
-          color: #0087BE; }
-        .header__languages--tech li i.fa.fa-git {
-          color: #F34D27; }
-        .header__languages--tech li i.fa.fa-html5 {
-          color: #E34C25; }
-        .header__languages--tech li i.fa.fa-css3 {
-          color: #0B72B7; }
+      .header__languages--tech li i.fa.fa-wordpress {
+        color: #0087BE; }
+      .header__languages--tech li i.fa.fa-git {
+        color: #F34D27; }
+      .header__languages--tech li i.fa.fa-html5 {
+        color: #E34C25; }
+      .header__languages--tech li i.fa.fa-css3 {
+        color: #0B72B7; }
       .header__languages--tech li i.icon-javascript-alt {
         color: #EFDA4E; }
-        .header__languages--tech li i.icon-javascript-alt:before {
-          text-rendering: optimizeLegibility;
-          font-smoothing: antialiased; }
       .header__languages--tech li i.icon-ruby-on-rails {
         color: #91242E; }
-        .header__languages--tech li i.icon-ruby-on-rails:before {
-          text-rendering: optimizeLegibility;
-          font-smoothing: antialiased; }
 
 /** Content */
 .container {
@@ -3604,19 +3592,10 @@ pre {
           transition: all 1.2s ease;
           padding: 1em; } }
 
-.fa {
-  text-rendering: auto !important;
-  font-smoothing: antialiased !important; }
-  .fa.fa-desktop, .fa.fa-tachometer {
-    font-size: 10rem;
-    color: grey; }
-
-.icon-mobile-device {
+.fa.fa-desktop, .fa.fa-tachometer,
+.fa .icon-mobile-device {
   font-size: 10rem;
   color: grey; }
-  .icon-mobile-device:before {
-    text-rendering: optimizeLegibility !important;
-    font-smoothing: antialiased !important; }
 
 /** Articles & Projects */
 .content__articles--container {
@@ -3680,14 +3659,11 @@ pre {
   .content__articles--post h3 {
     color: #FFB040;
     margin: 0.5rem; }
-  .content__articles--post i.fa {
-    text-rendering: auto !important;
-    font-smoothing: antialiased !important; }
-    .content__articles--post i.fa.fa-folder-open-o, .content__articles--post i.fa.fa-tags, .content__articles--post i.fa.fa-user, .content__articles--post i.fa.fa-calendar {
-      font-size: 75%;
-      color: grey;
-      margin: 0.5rem;
-      font-family: "FontAwesome", Arial, sans-serif; }
+  .content__articles--post i.fa.fa-folder-open-o, .content__articles--post i.fa.fa-tags, .content__articles--post i.fa.fa-user, .content__articles--post i.fa.fa-calendar {
+    font-size: 75%;
+    color: grey;
+    margin: 0.5rem;
+    font-family: "FontAwesome", Arial, sans-serif; }
 
 .hide {
   display: none; }
@@ -3765,11 +3741,8 @@ pre {
       .form__email button[type="submit"]:hover {
         background-color: #8344CC;
         cursor: pointer; }
-      .form__email button[type="submit"] i.fa {
-        text-rendering: auto !important;
-        font-smoothing: antialiased !important; }
-        .form__email button[type="submit"] i.fa.fa-envelope-o {
-          margin-right: 0.5rem; }
+      .form__email button[type="submit"] i.fa.fa-envelope-o {
+        margin-right: 0.5rem; }
 
 /** Footer */
 .footer {
@@ -3802,11 +3775,8 @@ pre {
     font-weight: 400;
     font-size: 1rem;
     padding: 1rem 0; }
-    .footer h3 i.fa {
-      text-rendering: auto !important;
-      font-smoothing: antialiased !important; }
-      .footer h3 i.fa.fa-folder-open, .footer h3 i.fa.fa-tags, .footer h3 i.fa.fa-file {
-        margin-right: 0.5rem; }
+    .footer h3 i.fa.fa-folder-open, .footer h3 i.fa.fa-tags, .footer h3 i.fa.fa-file {
+      margin-right: 0.5rem; }
   .footer__contact {
     width: 100%;
     box-sizing: border-box;
@@ -3824,11 +3794,8 @@ pre {
       border-radius: 5px; }
       .footer__contact a.informacion__boton:hover {
         background-color: #8344CC; }
-      .footer__contact a.informacion__boton i.fa {
-        text-rendering: auto !important;
-        font-smoothing: antialiased !important; }
-        .footer__contact a.informacion__boton i.fa.fa-envelope-o {
-          margin-right: 0.5rem; }
+      .footer__contact a.informacion__boton i.fa.fa-envelope-o {
+        margin-right: 0.5rem; }
     .footer__contact--tech {
       margin: 0.75rem 0; }
       .footer__contact--tech li {
