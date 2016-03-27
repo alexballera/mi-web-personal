@@ -125,11 +125,12 @@ $item: 3;
     }
   }
   &__content{
-    width: 100%;
-    box-sizing: border-box;
-    padding-right: 1rem;
+    display: none;
     @include respond-to(md) {
-        width: 40%;
+      box-sizing: border-box;
+      padding-right: 1rem;
+      width: 40%;
+      display: block;
     }
     @include respond-to(lg) {
         width: 20%;
@@ -151,5 +152,8 @@ $item: 3;
   &__validation{
     margin-top: 1rem;
     text-align: right;
+    & a{
+      margin-left: 1rem;
+    }
   }
 }

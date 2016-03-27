@@ -3793,12 +3793,13 @@ noscript iframe.google-tag {
         .footer__social--redes li i.fa-envelope-o:hover {
           background-color: #8344CC; }
   .footer__content {
-    width: 100%;
-    box-sizing: border-box;
-    padding-right: 1rem; }
+    display: none; }
     @media screen and (min-width: 48em) {
       .footer__content {
-        width: 40%; } }
+        box-sizing: border-box;
+        padding-right: 1rem;
+        width: 40%;
+        display: block; } }
     @media screen and (min-width: 64em) {
       .footer__content {
         width: 20%; } }
@@ -3816,6 +3817,8 @@ noscript iframe.google-tag {
   .footer__validation {
     margin-top: 1rem;
     text-align: right; }
+    .footer__validation a {
+      margin-left: 1rem; }
 
 .indicates-required,
 .clear.response {
