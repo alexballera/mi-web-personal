@@ -1,162 +1,204 @@
 /** Footer */
 $item: 3;
-.footer{
-  background-color: $black;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  color: grey;
-  letter-spacing: 1.1px;
-  font-size: 0.85rem;
-  line-height: 1.2rem;
-  display: flex;
-  flex: 0 1;
-  flex-direction: row;
-  flex-wrap: wrap;
-  & a{
-    color: grey;
-    &:hover{
-      color: $orange;
-    }
-  }
-  & h3{
-    font-weight: 400;
-    font-size: 1rem;
-    padding: 1rem 0;
-    & i.fa{
-      &.fa-folder-open,
-      &.fa-tags,
-      &.fa-file{
-        margin-right: 0.5rem;
-      }
-    }
-  }
-  &__contact{
+
+.footer {
+    background-color: $black;
+    box-sizing: border-box;
     width: 100%;
-    box-sizing: border-box;
-    padding-right: 1rem;
-    @include respond-to(lg) {
-        border-left: 2px solid $orange;
-        padding-left: 2rem;
-        width: 45%;
-    }
-    & a.informacion__boton{
-      padding: 0.4rem;
-      font-size: 1rem;
-      color: $white;
-      background-color: $orange;
-      border-radius: 5px;
-      &:hover{
-        background-color: $purple;
-      }
-      & i {
-          &.fa{
-            &.fa-envelope-o{
-              margin-right: 0.5rem
-            }
-          }
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    color: grey;
+    letter-spacing: 1.1px;
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+    display: flex;
+    flex: 0 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    & a {
+        color: grey;
+
+        &:hover {
+            color: $orange;
         }
     }
-    &--tech {
-      margin: 0.75rem 0;
-      & li{
-        display: inline-block;
-        margin-right: 0.4rem;
-        font-size: 1.25rem;
-      }
-    }
-  }
-  &__social{
-    & p:nth-child(2){
-      margin-bottom: 0.5rem;
-    }
-    &--redes {
-      margin-bottom: 2rem;
-      & li{
-        display: inline-block;
+
+    & h3 {
+        font-weight: 400;
         font-size: 1rem;
-        margin-right: 0.5rem;
-        @include respond-to(mm) {
-          font-size: 1.35rem;
-          margin-right: 0.75rem;
+        padding: 1rem 0;
+
+        & i.fa {
+            &.fa-folder-open,
+            &.fa-tags,
+            &.fa-file {
+                margin-right: 0.5rem;
+            }
         }
-        & i{
-          width: 1.75rem;
-          height: 1.75rem;
-          line-height: 1.75rem;
-          text-align: center;
-          border-radius: 50%;
-          color: $white;
-          background-color: grey;
-          @include respond-to(mm) {
-            width: 2.25rem;
-            height: 2.25rem;
-            line-height: 2.25rem;
-          }
-          @include respond-to(landscape) {
-            width: 2.25rem;
-            height: 2.25rem;
-            line-height: 2.25rem;
-          }
-          &.fa-facebook:hover{
-            background-color: $facebook;
-          }
-          &.fa-twitter:hover{
-            background-color: $twitter;
-          }
-          &.fa-linkedin:hover{
-            background-color: $linkedin;
-          }
-          &.fa-google-plus:hover{
-            background-color: $google;
-          }
-          &.fa-github-alt:hover{
-            background-color: $github;
-          }
-          &.fa-rss:hover{
-            background-color: $rss;
-          }
-          &.fa-envelope-o:hover{
-            background-color: $purple;
-          }
+    }
+
+    &__contact {
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 1rem;
+
+        @include respond-to(lg) {
+            border-left: 2px solid $orange;
+            padding-left: 2rem;
+            width: 45%;
         }
-      }
+
+
+        & a.informacion__boton {
+            padding: 0.4rem;
+            font-size: 1rem;
+            color: $white;
+            background-color: $orange;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: $purple;
+            }
+
+            & i {
+                &.fa {
+                    &.fa-envelope-o {
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        &--tech {
+            margin: 0.75rem 0;
+
+            & li {
+                display: inline-block;
+                margin-right: 0.4rem;
+                font-size: 1.25rem;
+            }
+        }
     }
-  }
-  &__content{
-    display: none;
-    @include respond-to(md) {
-      box-sizing: border-box;
-      padding-right: 1rem;
-      width: 40%;
-      display: block;
+
+    &__social {
+        & p:nth-child(2) {
+            margin-bottom: 0.5rem;
+        }
+
+        &--redes {
+            margin-bottom: 2rem;
+
+            & li {
+                display: inline-block;
+                font-size: 1rem;
+                margin-right: 0.5rem;
+
+                @include respond-to(mm) {
+                    font-size: 1.35rem;
+                    margin-right: 0.75rem;
+                }
+
+
+                & i {
+                    width: 1.75rem;
+                    height: 1.75rem;
+                    line-height: 1.75rem;
+                    text-align: center;
+                    border-radius: 50%;
+                    color: $white;
+                    background-color: grey;
+
+                    @include respond-to(mm) {
+                        width: 2.25rem;
+                        height: 2.25rem;
+                        line-height: 2.25rem;
+                    }
+
+
+                    @include respond-to(landscape) {
+                        width: 2.25rem;
+                        height: 2.25rem;
+                        line-height: 2.25rem;
+                    }
+
+
+                    &.fa-facebook:hover {
+                        background-color: $facebook;
+                    }
+
+                    &.fa-twitter:hover {
+                        background-color: $twitter;
+                    }
+
+                    &.fa-linkedin:hover {
+                        background-color: $linkedin;
+                    }
+
+                    &.fa-google-plus:hover {
+                        background-color: $google;
+                    }
+
+                    &.fa-github-alt:hover {
+                        background-color: $github;
+                    }
+
+                    &.fa-rss:hover {
+                        background-color: $rss;
+                    }
+
+                    &.fa-envelope-o:hover {
+                        background-color: $purple;
+                    }
+                }
+            }
+        }
     }
-    @include respond-to(lg) {
-        width: 20%;
+
+    &__content {
+        display: none;
+
+        @include respond-to(md) {
+            box-sizing: border-box;
+            padding-right: 1rem;
+            width: 40%;
+            display: block;
+        }
+
+
+        @include respond-to(lg) {
+            width: 20%;
+        }
     }
-  }
-  &__articles{
-    box-sizing: border-box;
-    padding-right: 1rem;
-    & ul li{
-      width: 95%;
+
+    &__articles {
+        box-sizing: border-box;
+        padding-right: 1rem;
+
+        & ul li {
+            width: 95%;
+        }
+
+        @include respond-to(md) {
+            width: 60%;
+        }
+
+
+        @include respond-to(lg) {
+            width: 35%;
+        }
     }
-    @include respond-to(md) {
-        width: 60%;
+
+    &__validation {
+        margin-top: 1rem;
+        text-align: right;
+
+        & a {
+            margin-left: 1rem;
+
+            @include respond-to(md) {
+                margin-left: 0;
+            }
+        }
     }
-    @include respond-to(lg) {
-        width: 35%;
-    }
-  }
-  &__validation{
-    margin-top: 1rem;
-    text-align: right;
-    & a{
-      margin-left: 1rem;
-      @include respond-to(md) {
-        margin-left: 0;
-      }
-    }
-  }
 }

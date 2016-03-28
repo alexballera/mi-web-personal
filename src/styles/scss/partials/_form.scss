@@ -1,78 +1,96 @@
-.form{
-  width: 70%;
-  margin: 1rem auto;
-  &__container--purple{
-    background-color: $purpleLight;
-  }
-  &__content{
-    & p{
-      color: grey;
-      letter-spacing: 1.2px;
-      font-size: 1.2rem;
-      line-height: 1.2rem;
-      width: 85%;
-      margin: 0 auto 1rem auto;
+.form {
+    width: 70%;
+    margin: 1rem auto;
+
+    &__container--purple {
+        background-color: $purpleLight;
     }
-    &--purple h2{
-      margin-bottom: 1rem;
-    }
-    &--purple h2,
-    &--purple p{
-      color: $white;
-    }
-  }
-  &__email {
-    display: flex;
-    flex: 0 1;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    & input[type="email"],
-    & input[type="text"] {
-        border-radius: 6px;
-        padding: 0 .5rem;
-        width: 100%;
-        line-height: 40px;
-        height: 100%;
-        margin: .25rem;
-        font-size: 1.1rem;
-        @include respond-to(md) {
-          width: 80%;
+
+    &__content {
+        & p {
+            color: grey;
+            letter-spacing: 1.2px;
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+            width: 85%;
+            margin: 0 auto 1rem auto;
         }
-        @include respond-to(lg) {
-          width: 75%;
+
+        &--purple h2 {
+            margin-bottom: 1rem;
         }
-        @include respond-to(xl) {
-          width: 85%;
+
+        &--purple h2,
+        &--purple p {
+            color: $white;
         }
     }
-    & button[type="submit"] {
-        height: 100%;
-        line-height: 40px;
-        width: 200px;
-        border-radius: 5px;
-        margin: .25rem .25rem .5rem .25rem;
-        color: $white;
-        background-color: $orange;
-        outline: none;
-        border: none;
-        @include respond-to(sm) {
-          margin-bottom: 0;
-        }
-        @include respond-to(mm) {
-          font-size: 22px;
-        }
-        &:hover{
-          background-color: $purple;
-          cursor: pointer;
-        }
-        & i {
-          &.fa{
-            &.fa-envelope-o{
-              margin-right: 0.5rem
+
+    &__email {
+        display: flex;
+        flex: 0 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & input[type="email"],
+        & input[type="text"] {
+            border-radius: 6px;
+            padding: 0 .5rem;
+            width: 100%;
+            line-height: 40px;
+            height: 100%;
+            margin: .25rem;
+            font-size: 1.1rem;
+
+            @include respond-to(md) {
+                width: 80%;
             }
-          }
+
+
+            @include respond-to(lg) {
+                width: 75%;
+            }
+
+
+            @include respond-to(xl) {
+                width: 85%;
+            }
         }
-      }
-  }
+
+        & button[type="submit"] {
+            height: 100%;
+            line-height: 40px;
+            width: 200px;
+            border-radius: 5px;
+            margin: .25rem .25rem .5rem .25rem;
+            color: $white;
+            background-color: $orange;
+            outline: none;
+            border: none;
+
+            @include respond-to(sm) {
+                margin-bottom: 0;
+            }
+
+
+            @include respond-to(mm) {
+                font-size: 22px;
+            }
+
+
+            &:hover {
+                background-color: $purple;
+                cursor: pointer;
+            }
+
+            & i {
+                &.fa {
+                    &.fa-envelope-o {
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
 }

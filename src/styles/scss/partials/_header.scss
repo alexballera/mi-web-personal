@@ -1,114 +1,144 @@
 /** Header */
-.header{
+.header {
     box-sizing: border-box;
     width: 100%;
     text-align: center;
     padding: 3em 0;
     margin-top: $header-height;
-    @include background('http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/02/background-header.jpg?', $background);
+
+    @include background("http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/02/background-header.jpg?", $background);
+
     background-attachment: fixed;
+
     @include respond-to(md) {
-      margin-top: $header-height*$header-mult;
+        margin-top: $header-height * $header-mult;
     }
-    &__picture{
-      height: 0;
-      & img{
-        border-radius: 50%;
-        width: 6rem;
-        height: 6rem;
-        border: .2rem solid $white;
-        transition: all 1.2s ease;
-        @include respond-to(xs) {
-          width: 8rem;
-          height: 8rem;
+
+
+    &__picture {
+        height: 0;
+
+        & img {
+            border-radius: 50%;
+            width: 6rem;
+            height: 6rem;
+            border: 0.2rem solid $white;
+            transition: all 1.2s ease;
+
+            @include respond-to(xs) {
+                width: 8rem;
+                height: 8rem;
+            }
+
+
+            @include respond-to(md) {
+                width: 10rem;
+                height: 10rem;
+            }
+
+
+            &:hover {
+                transform: rotate(45deg);
+                transition: all 1.2s ease;
+                border: 0.2rem solid $orange;
+            }
         }
-        @include respond-to(md) {
-          width: 10rem;
-          height: 10rem;
-        }
-        &:hover{
-          transform: rotate(45deg);
-          transition: all 1.2s ease;
-          border: .2rem solid $orange;
-      }
-    }
-    &--figcaption{
-        font-size: 1.2em;
-        color: $white;
-        margin-top: 1em;
-          display: flex;
-          flex-direction: column;
-          line-height: 2.5rem;
-          transition: all 1.2s ease;
-          & span{
-            &:nth-child(1){
-              & span{
-                &::before{
-                  content: "() => { ";
-                    color: $twitter;
-                  }
-                &::after{
-                  content: " }";
-                  color: $twitter;
+
+        &--figcaption {
+            font-size: 1.2em;
+            color: $white;
+            margin-top: 1em;
+            display: flex;
+            flex-direction: column;
+            line-height: 2.5rem;
+            transition: all 1.2s ease;
+
+            & span {
+                &:nth-child(1) {
+                    & span {
+                        &::before {
+                            content: "() => { ";
+                            color: $twitter;
+                        }
+
+                        &::after {
+                            content: " }";
+                            color: $twitter;
+                        }
+                    }
                 }
-              }
+
+                &:nth-child(2) {
+                    font-size: 80%;
+
+                    &::before {
+                        content: "< ";
+                        color: $twitter;
+                    }
+
+                    &::after {
+                        content: " />";
+                        color: $twitter;
+                    }
+                }
             }
-            &:nth-child(2){
-              font-size: 80%;
-              &::before{
-                content: "< ";
-                color: $twitter;
-              }
-              &::after{
-                content: " />";
-                color: $twitter;
-              }
+
+            @include respond-to(xs) {
+                font-size: 1.5em;
+                font-weight: 400;
             }
-          }
-        @include respond-to(xs) {
-            font-size: 1.5em;
-            font-weight: 400;
-        }
-        @include respond-to(md) {
-            font-size: 2em;
+
+
+            @include respond-to(md) {
+                font-size: 2em;
+            }
         }
     }
-}
-&__languages{
-    &--tech {
-      margin: 0.75rem 0;
-      & li{
-        box-sizing: border-box;
-        display: inline-block;
-        margin-right: 0.5rem;
-        font-size: 1.5rem;
-        transition: all 1.2s ease;
-        @include respond-to(md) {
-            font-size: 2.5em;
+
+    &__languages {
+        &--tech {
+            margin: 0.75rem 0;
+
+            & li {
+                box-sizing: border-box;
+                display: inline-block;
+                margin-right: 0.5rem;
+                font-size: 1.5rem;
+                transition: all 1.2s ease;
+
+                @include respond-to(md) {
+                    font-size: 2.5em;
+                }
+
+
+                & i {
+                    &.fa {
+                        &.fa-wordpress {
+                            color: $wordpress;
+                        }
+
+                        &.fa-git {
+                            color: $git;
+                        }
+
+                        &.fa-html5 {
+                            color: $html;
+                        }
+
+                        &.fa-css3 {
+                            color: $css;
+                        }
+                    }
+
+                    &.icon-javascript-alt {
+                        color: $javascript;
+                    }
+
+                    &.icon-ruby-on-rails {
+                        color: $rails;
+                    }
+                }
+            }
         }
-        & i{
-          &.fa{
-            &.fa-wordpress{
-              color: $wordpress;
-            }
-            &.fa-git{
-              color: $git;
-            }
-            &.fa-html5{
-              color: $html;
-            }
-            &.fa-css3{
-              color: $css;
-            }
-          }
-          &.icon-javascript-alt{
-            color: $javascript;
-          }
-          &.icon-ruby-on-rails{
-            color: $rails;
-          }
-        }
-      }
     }
-  }
 }

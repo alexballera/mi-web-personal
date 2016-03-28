@@ -1,127 +1,156 @@
 /** Responsive & Mobile */
-.main{
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0 auto 1rem auto;
-  text-align: center;
-  background-color: $background;
-  @include respond-to(sm) {
-    width: 90%;
-    padding: 1em;
-    margin-top: 1rem;
-  }
+.main {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+    background-color: $background;
+
+    @include respond-to(sm) {
+        width: 90%;
+        padding: 1em;
+        margin-top: 1rem;
+    }
 }
 
-.content{
-  &__container{
-    @include respond-to(md) {
-      display: flex;
-      flex: 0 1;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-  &__responsive{
-    background-color: white;
-    padding-top: 1rem;
-    & h2{
-      color: grey;
-    }
-    &:nth-child(1),
-    &:nth-child(2){
-      margin-bottom: 1rem;
-      @include respond-to(md) {
-        margin-bottom: 0;
-      }
-    }
-    &:nth-child(2),
-    &:nth-child(3){
-      @include respond-to(md) {
-        margin-left: 1rem;
-      }
-    }
-    @include respond-to(md) {
-      width: 30%;
-    }
-    &--form{
-      padding-top: 1rem;
-      & em{
-        font-weight: 700;
-      }
-      & p{
-        color: grey;
-        width: 75%;
-        margin: 0 auto;
-        letter-spacing: 1.2px;
-        font-size: 1.2rem;
-        line-height: 1.2rem;
-      }
-      & a {
-        display: block;
-        margin: 1rem auto 0.5rem auto;
-        width: 225px;
-        border-radius: 5px;
-        padding: 1rem;
-        color: $white;
-        background-color: $orange;
-        font-size: 1.40rem;
-        @include respond-to(mm) {
-          font-size: 1.75rem;
-        }
-        &:hover{
-          background-color: $purple;
-          cursor: pointer;
-        }
-        & i {
-          &.fa{
-            &.fa-envelope-o{
-              margin-right: 0.5rem
-            }
-          }
-        }
-      }
-    }
-    &--title{
-      padding: 1em 0;
-      color: grey;
-    }
-    &--responsive{
-      padding: 1em;
-      padding-top: 2rem;
-      transition: all 1.2s ease;
-      @include respond-to(md) {
-        transition: all 1.2s ease;
-        box-sizing: border-box;
-        align-items: center;
-      }
-      &--text{
-        color: grey;
-        width: 80%;
-        margin: 0 auto;
-        padding-top: 1em;
-        & h2 {
-          letter-spacing: 1.2px;
-          font-size: 1.2rem;
-          line-height: 1.2rem;
-            & span{
-            font-weight: 700;
-          }
-        }
-        &::first-letter {
-          font-size: 150%;
-        }
+.content {
+    &__container {
         @include respond-to(md) {
-          transition: all 1.2s ease;
-          padding: 1em;
+            display: flex;
+            flex: 0 1;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-      }
     }
-  }
+
+    &__responsive {
+        background-color: white;
+        padding-top: 1rem;
+        @include respond-to(md) {
+            padding-top: 2rem;
+        }
+
+        & h2 {
+            color: grey;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            margin-bottom: 1rem;
+
+            @include respond-to(md) {
+                margin-bottom: 0;
+            }
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            @include respond-to(md) {
+                margin-left: 1rem;
+            }
+        }
+
+        @include respond-to(md) {
+            width: 30%;
+        }
+
+
+        &--form {
+            padding-top: 1rem;
+
+            & em {
+                font-weight: 700;
+            }
+
+            & p {
+                color: grey;
+                width: 75%;
+                margin: 0 auto;
+                letter-spacing: 1.2px;
+                font-size: 1.2rem;
+                line-height: 1.2rem;
+            }
+
+            & a {
+                display: block;
+                margin: 1rem auto 0.5rem auto;
+                width: 225px;
+                border-radius: 5px;
+                padding: 1rem;
+                color: $white;
+                background-color: $orange;
+                font-size: 1.40rem;
+
+                @include respond-to(mm) {
+                    font-size: 1.75rem;
+                }
+
+
+                &:hover {
+                    background-color: $purple;
+                    cursor: pointer;
+                }
+
+                & i {
+                    &.fa {
+                        &.fa-envelope-o {
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--title {
+            padding: 1em 0;
+            color: grey;
+        }
+
+        &--responsive {
+            padding: 1em;
+            padding-top: 2rem;
+            transition: all 1.2s ease;
+
+            @include respond-to(md) {
+                transition: all 1.2s ease;
+                box-sizing: border-box;
+                align-items: center;
+            }
+
+
+            &--text {
+                color: grey;
+                width: 80%;
+                margin: 0 auto;
+                padding-top: 1em;
+
+                & h2 {
+                    letter-spacing: 1.2px;
+                    font-size: 1.2rem;
+                    line-height: 1.2rem;
+
+                    & span {
+                        font-weight: 700;
+                    }
+                }
+
+                &::first-letter {
+                    font-size: 150%;
+                }
+
+                @include respond-to(md) {
+                    transition: all 1.2s ease;
+                    padding: 1em;
+                }
+            }
+        }
+    }
 }
+
 .fa.fa-desktop,
 .fa.fa-tachometer,
-.icon-mobile-device{
-  font-size: 10rem;
-  color: grey;
+.icon-mobile-device {
+    font-size: 10rem;
+    color: grey;
 }

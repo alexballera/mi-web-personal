@@ -6,13 +6,15 @@
     left: 0;
     background: rgba(0, 0, 0, 0.8);
     z-index: 99999;
-    opacity:0;
+    opacity: 0;
     transition: opacity 400ms ease-in;
     pointer-events: none;
+
     &:target {
-        opacity:1;
+        opacity: 1;
         pointer-events: auto;
     }
+
     & > div {
         width: 60%;
         position: relative;
@@ -22,6 +24,7 @@
         border-radius: 10px;
         background: #fff;
         background: linear-gradient(#fff, #999);
+
         @include respond-to(sm-landscape) {
             width: 80%;
             top: -15px;
@@ -29,69 +32,88 @@
             padding: 0.75rem;
         }
     }
-    & picture{
-        & figcaption{
+
+    & picture {
+        & figcaption {
             display: none;
             color: grey;
             margin-top: 1rem;
+
             @include respond-to(xs) {
                 display: block;
             }
-            &:hover{
+
+
+            &:hover {
                 color: grey;
             }
         }
     }
-    & p{
+
+    & p {
         color: grey;
         margin: 1rem 0;
     }
+
     & ul {
         text-align: center;
         margin-bottom: 1rem;
-        & li{
-          display: inline-block;
-          margin-right: 0.5rem;
-          & i{
-            width: 25px;
-            height: 25px;
-            line-height: 25px;
-            text-align: center;
-            border-radius: 50%;
-            color: $white;
-            @include respond-to(sm-landscape) {
-                width: 30px;
-                height: 30px;
-                line-height: 30px;
-            }
-            @include respond-to(md) {
-                width: 35px;
-                height: 35px;
-                line-height: 35px;
-                font-size: 1.2rem;
+
+        & li {
+            display: inline-block;
+            margin-right: 0.5rem;
+
+            & i {
+                width: 25px;
+                height: 25px;
+                line-height: 25px;
+                text-align: center;
+                border-radius: 50%;
+                color: $white;
+
+                @include respond-to(sm-landscape) {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
                 }
-            &.fa-facebook{
-              background-color: $facebook;
+
+
+                @include respond-to(md) {
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                    font-size: 1.2rem;
+                }
+
+
+                &.fa-facebook {
+                    background-color: $facebook;
+                }
+
+                &.fa-twitter {
+                    background-color: $twitter;
+                }
+
+                &.fa-linkedin {
+                    background-color: $linkedin;
+                }
+
+                &.fa-google-plus {
+                    background-color: $google;
+                }
+
+                &.fa-github-alt {
+                    background-color: $github;
+                }
+
+                &:hover {
+                    background-color: $orange;
+                }
             }
-            &.fa-twitter{
-              background-color: $twitter;
-            }
-            &.fa-linkedin{
-              background-color: $linkedin;
-            }
-            &.fa-google-plus{
-              background-color: $google;
-            }
-            &.fa-github-alt{
-              background-color: $github;
-            }
-            &:hover{
-              background-color: $orange;
-            }
-          }
         }
     }
 }
+
 .close {
     background: #606061;
     color: #FFFFFF;
@@ -106,15 +128,21 @@
     font-size: 1.75rem;
     border-radius: 50%;
     box-shadow: 1px 1px 3px #000;
-    &__boton{
+
+    &__boton {
         color: $orange;
     }
-    &:hover { background: $orange; }
+
+    &:hover {
+        background: $orange;
+    }
 }
-.form__modal{
-    & button a{
+
+.form__modal {
+    & button a {
         color: white;
     }
+
     @include respond-to(sm-landscape) {
         & input[type="email"],
         & input[type="text"] {

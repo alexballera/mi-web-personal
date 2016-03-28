@@ -3446,6 +3446,9 @@ noscript iframe.google-tag {
 .content__responsive {
   background-color: white;
   padding-top: 1rem; }
+  @media screen and (min-width: 48em) {
+    .content__responsive {
+      padding-top: 2rem; } }
   .content__responsive h2 {
     color: grey; }
   .content__responsive:nth-child(1), .content__responsive:nth-child(2) {
@@ -3552,7 +3555,6 @@ noscript iframe.google-tag {
   width: 100%;
   box-sizing: border-box;
   background-color: white;
-  transition: all 0.3s ease;
   margin-bottom: 0.5rem;
   text-align: left; }
   .content__articles--post:hover {
@@ -3567,7 +3569,6 @@ noscript iframe.google-tag {
       color: white; }
   @media screen and (min-width: 42.5em) {
     .content__articles--post {
-      transition: all 1.2s ease;
       margin: 0.3rem;
       position: relative;
       border: none;
