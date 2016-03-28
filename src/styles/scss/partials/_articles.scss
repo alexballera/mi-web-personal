@@ -60,7 +60,6 @@
                 color: $orange;
                 display: flex;
 
-                // background-image: url('http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/03/code.jpg');
                 @include background("http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/03/code.jpg", $background);
 
                 justify-content: center;
