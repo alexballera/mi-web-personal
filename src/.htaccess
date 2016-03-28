@@ -30,16 +30,18 @@ ExpiresDefault "access 1 month"
 <IfModule mod_headers.c>
   Header unset ETag
   FileETag None
-  <FilesMatch "\.(ico|jpg|jpe?g|png|gif|swf)$">
+  <FilesMatch "\.(css|jpg|jpeg|png|gif|js|ico|swf|html)$">
       Header set Cache-Control "max-age=2592000, public"
-  </FilesMatch>
-  <FilesMatch "\.(css|js)$">
-      Header set Cache-Control "max-age=604800, public"
   </FilesMatch>
   <FilesMatch "\.(x?html?|php)$">
       Header set Cache-Control "max-age=600, private, must-revalidate"
   </FilesMatch>
 </IfModule>
+
+## NGINX ##
+location ~* \.(css|jpg|jpeg|png|gif|js|ico|swf|html)$ {
+expires 365d;
+}
 
 ## Error 404 ##
 ErrorDocument 404 http://alexballera.com/404.html
