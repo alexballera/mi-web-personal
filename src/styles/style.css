@@ -3581,9 +3581,20 @@ noscript iframe.google-tag {
       width: 385px; } }
   .content__articles--post--picture {
     color: #FFB040;
-    text-align: center; }
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url("http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/03/code.jpg");
+    background-color: #EEEEEE;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .content__articles--post--picture img {
-      width: 100%;
+      width: 50%;
+      height: 50%;
       vertical-align: middle; }
   .content__articles--post h3 {
     color: #FFB040;
