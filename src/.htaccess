@@ -38,11 +38,6 @@ ExpiresDefault "access 1 month"
   </FilesMatch>
 </IfModule>
 
-## NGINX ##
-location ~* \.(css|jpg|jpeg|png|gif|js|ico|swf|html)$ {
-expires 365d;
-}
-
 ## Error 404 ##
 ErrorDocument 404 http://alexballera.com/404.html
 
