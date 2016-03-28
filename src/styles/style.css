@@ -3461,10 +3461,10 @@ noscript iframe.google-tag {
             justify-content: center; } }
 
 .content__responsive {
-  background-color: white; }
+  background-color: white;
+  padding-top: 1rem; }
   .content__responsive h2 {
-    color: grey;
-    margin-top: 2rem; }
+    color: grey; }
   .content__responsive:nth-child(1), .content__responsive:nth-child(2) {
     margin-bottom: 1rem; }
     @media screen and (min-width: 48em) {
@@ -3819,6 +3819,9 @@ noscript iframe.google-tag {
     text-align: right; }
     .footer__validation a {
       margin-left: 1rem; }
+      @media screen and (min-width: 48em) {
+        .footer__validation a {
+          margin-left: 0; } }
 
 .indicates-required,
 .clear.response {
