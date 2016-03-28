@@ -2915,23 +2915,6 @@ table {
 .icon-wordpress:before {
   content: "\f168"; }
 
-/** 
-Spinners
-http://projects.lukehaas.me/css-loaders/ 
-*/
-.loader {
-  margin: 100px auto;
-  /*font-size: 1rem;*/
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  position: relative;
-  text-indent: -9999em;
-  -webkit-animation: load5 1.1s infinite ease;
-  animation: load5 1.1s infinite ease;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0); }
-
 /* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+ruby+git+json+markdown+php+powershell+scss+sql */
 /**
  * okaidia theme for JavaScript, CSS and HTML
@@ -3579,7 +3562,7 @@ noscript iframe.google-tag {
     .content__articles--post:hover i.fa.fa-tags,
     .content__articles--post:hover i.fa.fa-user,
     .content__articles--post:hover i.fa.fa-calendar {
-      color: #9780B2; }
+      color: #B29163; }
     .content__articles--post:hover h3 {
       color: white; }
   @media screen and (min-width: 42.5em) {
