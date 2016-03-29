@@ -37,6 +37,7 @@ const globs = {
     error: './src/404.html',
     cookies: './src/cookies.html',
     legal: './src/legal.html',
+    sitemap: './src/sitemap.html',
     build: './build',
     dist: './dist'
   },
@@ -96,7 +97,7 @@ gulp.task('serve', () => {
 })
 
 // HTML minificado
-gulp.task('build:html', ['html:404', 'html:cookies', 'html:legal'], () => {
+gulp.task('build:html', ['html:404', 'html:cookies', 'html:legal', 'html:sitemap'], () => {
   return gulp.src(globs.html.main)
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(globs.build))
@@ -116,6 +117,12 @@ gulp.task('html:cookies', () => {
 })
 gulp.task('html:legal', () => {
   return gulp.src(globs.html.legal)
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest(globs.build))
+    .pipe(gulp.dest(globs.dist))
+})
+gulp.task('html:sitemap', () => {
+  return gulp.src(globs.html.sitemap)
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(globs.build))
     .pipe(gulp.dest(globs.dist))
