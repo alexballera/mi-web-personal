@@ -3720,8 +3720,7 @@ noscript iframe.google-tag {
       margin-right: 0.5rem; }
   .footer__contact {
     width: 100%;
-    box-sizing: border-box;
-    padding-right: 1rem; }
+    box-sizing: border-box; }
     @media screen and (min-width: 64em) {
       .footer__contact {
         border-left: 2px solid #FFB040;
@@ -3732,7 +3731,15 @@ noscript iframe.google-tag {
       font-size: 1rem;
       color: #F1FFF9;
       background-color: #FFB040;
-      border-radius: 5px; }
+      border-radius: 5px;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      width: 50%; }
+      @media screen and (min-width: 30em) {
+        .footer__contact a.informacion__boton {
+          margin-left: 0;
+          width: 30%; } }
       .footer__contact a.informacion__boton:hover {
         background-color: #8344CC; }
       .footer__contact a.informacion__boton i.fa.fa-envelope-o {
@@ -3810,7 +3817,7 @@ noscript iframe.google-tag {
       .footer__articles {
         width: 35%; } }
   .footer__validation {
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-align: right; }
     .footer__validation a {
       margin-left: 1rem; }
@@ -3827,12 +3834,14 @@ noscript iframe.google-tag {
   left: -5000px; }
 
 .content__legal {
-  width: 60%;
   text-align: justify;
   padding: 3rem;
   padding-bottom: 2rem;
   letter-spacing: 1.1px;
   line-height: 1.2rem; }
+  @media screen and (min-width: 64em) {
+    .content__legal {
+      width: 80%; } }
   .content__legal h1,
   .content__legal h2,
   .content__legal span {
@@ -3849,11 +3858,9 @@ noscript iframe.google-tag {
 
 section.legal {
   text-align: center;
-  height: 1rem;
-  line-height: 1rem;
   background-color: black; }
   section.legal ul li {
-    margin: 0 0.5rem;
+    margin: 0.4rem;
     display: inline-block; }
     section.legal ul li a {
       color: grey; }

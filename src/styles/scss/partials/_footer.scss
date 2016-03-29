@@ -41,7 +41,6 @@ $item: 3;
     &__contact {
         width: 100%;
         box-sizing: border-box;
-        padding-right: 1rem;
 
         @include respond-to(lg) {
             border-left: 2px solid $orange;
@@ -56,6 +55,16 @@ $item: 3;
             color: $white;
             background-color: $orange;
             border-radius: 5px;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            width: 50%;
+
+            @include respond-to(xs) {
+                margin-left: 0;
+                width: 30%;
+            }
+
 
             &:hover {
                 background-color: $purple;
@@ -190,7 +199,7 @@ $item: 3;
     }
 
     &__validation {
-        margin-top: 1rem;
+        margin-top: 2rem;
         text-align: right;
 
         & a {
