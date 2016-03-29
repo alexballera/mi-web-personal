@@ -3849,12 +3849,26 @@ noscript iframe.google-tag {
     font-weight: 700; }
   .content__legal h1,
   .content__legal h2 {
-    line-height: 2.5rem; }
+    line-height: 2.5rem;
+    text-align: left; }
+    @media screen and (min-width: 64em) {
+      .content__legal h1,
+      .content__legal h2 {
+        text-align: justify; } }
+  .content__legal ul li {
+    text-align: left; }
+    @media screen and (min-width: 64em) {
+      .content__legal ul li {
+        text-align: justify; } }
   .content__legal a {
     color: #FFB040;
     font-weight: bold; }
   .content__legal p {
-    margin: 1rem 0; }
+    margin: 1rem 0;
+    text-align: left; }
+    @media screen and (min-width: 64em) {
+      .content__legal p {
+        text-align: justify; } }
 
 section.legal {
   text-align: center;

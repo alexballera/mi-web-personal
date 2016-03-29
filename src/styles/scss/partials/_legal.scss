@@ -18,6 +18,16 @@
     & h1,
     & h2 {
         line-height: 2.5rem;
+        text-align: left;
+        @include respond-to(lg) {
+            text-align: justify;
+        }
+    }
+    & ul li{
+        text-align: left;
+        @include respond-to(lg) {
+            text-align: justify;
+        }
     }
 
     & a {
@@ -27,6 +37,10 @@
 
     & p {
         margin: 1rem 0;
+        text-align: left;
+        @include respond-to(lg) {
+            text-align: justify;
+        }
     }
 }
 
