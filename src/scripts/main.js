@@ -1,4 +1,3 @@
-import $ from 'jquery'
 import modernizr from './vendors/modernizr.js'
 import selectivizr from './vendors/selectivizr.js'
 import validate from './vendors/mc-validate.js'
@@ -12,7 +11,7 @@ import loadJS from './lib/loadJS'
 import loadLeadin from './lib/loadLeadin'
 import showArticles from './lib/showArticles'
 import showCategories from './lib/showCategories'
-import showTags from './lib/showTags'
+import showTag from './lib/showTag'
 
 (() => {
   'use strict'
@@ -32,6 +31,9 @@ import showTags from './lib/showTags'
 
 // Cookies
     cookieConsent()
+
+// Etiquetas
+    showTag()
 
   // Load JS
     var urlJs = [
