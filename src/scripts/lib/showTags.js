@@ -1,10 +1,10 @@
-var showTag = () => {
+var showTags = () => {
   var responseHTML = document.querySelector('#tags')
   var template = ''
   var containerInner = document.createElement('div')
 
-  function renderShows (data) {
-    data.tags.forEach((elem) => {
+  function renderTags (tags) {
+    tags.tags.forEach((elem) => {
       if (elem.post_count) {
         template += `<a href="http://web.alexballera.com/tag/${elem.slug} " target="_blank">
           <i class="fa fa-tag"></i>${elem.name} (${elem.post_count}),
@@ -19,9 +19,9 @@ var showTag = () => {
   .then((response) => {
     return response.json()
   })
-  .then((data) => {
-    localStorage.data = JSON.stringify(data)
-    renderShows(JSON.parse(localStorage.data))
+  .then((tags) => {
+    localStorage.tags = JSON.stringify(tags)
+    renderTags(JSON.parse(localStorage.tags))
   })
 }
-module.exports = showTag
+module.exports = showTags

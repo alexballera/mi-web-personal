@@ -11,7 +11,7 @@ import loadJS from './lib/loadJS'
 import loadLeadin from './lib/loadLeadin'
 import showArticles from './lib/showArticles'
 import showCategories from './lib/showCategories'
-import showTag from './lib/showTag'
+import showTags from './lib/showTags'
 
 (() => {
   'use strict'
@@ -33,7 +33,10 @@ import showTag from './lib/showTag'
     cookieConsent()
 
 // Etiquetas
-    showTag()
+    showTags()
+
+// Categorías
+    showCategories()
 
   // Load JS
     var urlJs = [
