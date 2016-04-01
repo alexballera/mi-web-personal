@@ -32,10 +32,13 @@ import showTags from './lib/showTags'
 // Cookies
     cookieConsent()
 
-// Etiquetas
+// Articles
+    showArticles()
+
+// Tags
     showTags()
 
-// Categorías
+// Categories
     showCategories()
 
   // Load JS
