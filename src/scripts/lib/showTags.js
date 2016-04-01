@@ -1,5 +1,5 @@
 var showTags = () => {
-  var responseHTML = document.querySelector('#tags')
+  var containerTags = document.querySelector('#tags')
   var template = ''
   var containerInner = document.createElement('div')
 
@@ -12,7 +12,7 @@ var showTags = () => {
       }
     })
     containerInner.innerHTML = template
-    responseHTML.appendChild(containerInner)
+    containerTags.appendChild(containerInner)
   }
 
   fetch('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/tags/?order_by=count&order=DESC')

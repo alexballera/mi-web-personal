@@ -1,5 +1,5 @@
 var showCategories = () => {
-  var responseHTML = document.querySelector('#ul-categories')
+  var containerCategories = document.querySelector('#ul-categories')
   var template = ''
   var containerInner = document.createElement('div')
 
@@ -12,7 +12,7 @@ var showCategories = () => {
       }
     })
     containerInner.innerHTML = template
-    responseHTML.appendChild(containerInner)
+    containerCategories.appendChild(containerInner)
   }
 
   fetch('https://public-api.wordpress.com/rest/v1.1/sites/web.alexballera.com/categories/?order_by=count&order=DESC')
