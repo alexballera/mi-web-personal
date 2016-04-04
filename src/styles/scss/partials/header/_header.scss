@@ -1,4 +1,6 @@
 /** Header */
+@import './navbar';
+
 .header {
     box-sizing: border-box;
     width: 100%;
@@ -142,3 +144,5 @@
         }
     }
 }
+
+@import './mailchimp';
