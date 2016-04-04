@@ -3,7 +3,6 @@ var btnMenu = document.getElementById('btnMenu')
 var btnButton = document.getElementById('btnButton')
 
 var showMenu = () => {
-  alert('estoy en showMenu')
   const mql = window.matchMedia('screen and (max-width: 767px')
   if (mql.matches) {
     navbarMenu.classList.toggle('nav__menu--list--show')
