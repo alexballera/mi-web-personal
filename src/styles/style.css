@@ -3537,7 +3537,7 @@ noscript iframe.google-tag {
 .content__articles--container {
   box-sizing: border-box;
   height: 100%;
-  transition: all 2s ease; }
+  transition: all 0.3s ease; }
   @media screen and (min-width: 42.5em) {
     .content__articles--container {
       display: -webkit-flex;
@@ -3562,17 +3562,9 @@ noscript iframe.google-tag {
   background-color: white;
   margin-bottom: 0.5rem;
   text-align: left;
-  transition: all 2s ease; }
+  transition: all 0.2s ease; }
   .content__articles--post:hover {
-    background-color: #FFB040;
-    color: white; }
-    .content__articles--post:hover i.fa.fa-folder-open-o,
-    .content__articles--post:hover i.fa.fa-tags,
-    .content__articles--post:hover i.fa.fa-user,
-    .content__articles--post:hover i.fa.fa-calendar {
-      color: #B29163; }
-    .content__articles--post:hover h3 {
-      color: white; }
+    box-shadow: 0 0 20px #1E1E1E; }
   @media screen and (min-width: 42.5em) {
     .content__articles--post {
       margin: 0.3rem;
@@ -3606,6 +3598,8 @@ noscript iframe.google-tag {
   .content__articles--post h3 {
     color: #FFB040;
     margin: 0.5rem; }
+    .content__articles--post h3:hover {
+      color: #8344CC; }
   .content__articles--post i.fa.fa-folder-open-o, .content__articles--post i.fa.fa-tags, .content__articles--post i.fa.fa-user, .content__articles--post i.fa.fa-calendar {
     font-size: 75%;
     color: grey;
