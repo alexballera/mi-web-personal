@@ -43,27 +43,3 @@
         }
     }
 }
-
-section.legal {
-    text-align: center;
-    background-color: black;
-
-    & ul {
-        & li {
-            margin: 0.4rem;
-            display: inline-block;
-
-            & a {
-                color: grey;
-
-                &:hover {
-                    color: $orange;
-                }
-
-                & h2 {
-                    font-size: 0.8rem;
-                }
-            }
-        }
-    }
-}

@@ -52,10 +52,10 @@
     }
 }
 
-@import './responsive',
-'./articles',
-'./form';
-
 .hide {
     display: none;
 }
+
+@import './header',
+'./responsive',
+'./articles';
