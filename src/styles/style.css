@@ -3560,6 +3560,8 @@ noscript iframe.google-tag {
   transition: all 0.2s ease; }
   .content__articles--post:hover {
     box-shadow: 0 0 20px #1E1E1E; }
+    .content__articles--post:hover picture {
+      opacity: 0.9; }
   @media screen and (min-width: 42.5em) {
     .content__articles--post {
       margin: 0.3rem;
