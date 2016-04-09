@@ -74,10 +74,18 @@
                 &.fa-tags,
                 &.fa-user,
                 &.fa-calendar {
-                    font-size: 75%;
+                    font-size: 0.8rem;
                     color: grey;
-                    margin: 0.5rem;
+                    margin-right: 0.5rem;
                     font-family: $font-awesome;
+                }
+            }
+            &--footer {
+                display: none;
+
+                @include respond-to(md) {
+                    display: block;
+                    margin: 0.5rem;
                 }
             }
         }

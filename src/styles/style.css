@@ -3601,10 +3601,16 @@ noscript iframe.google-tag {
     .content__articles--post h3:hover {
       color: #8344CC; }
   .content__articles--post i.fa.fa-folder-open-o, .content__articles--post i.fa.fa-tags, .content__articles--post i.fa.fa-user, .content__articles--post i.fa.fa-calendar {
-    font-size: 75%;
+    font-size: 0.8rem;
     color: grey;
-    margin: 0.5rem;
+    margin-right: 0.5rem;
     font-family: "FontAwesome", Arial, sans-serif; }
+  .content__articles--post--footer {
+    display: none; }
+    @media screen and (min-width: 48em) {
+      .content__articles--post--footer {
+        display: block;
+        margin: 0.5rem; } }
 
 .form {
   width: 70%;
