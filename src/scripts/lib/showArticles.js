@@ -16,12 +16,12 @@ var showArticles = () => {
               <img src="${elem.post_thumbnail.URL}" alt="${elem.title}" width="300">
           </picture>
           <h3>${elem.title}</h3>
-          <section class="content__articles--post--footer">
+          <span class="content__articles--post--footer">
           <i class="fa fa-user"> ${elem.author.name}</i>
           <i class="fa fa-calendar"> ${elem.date.split('-')[2].split('')[0]}${elem.date.split('-')[2].split('')[1]}/${elem.date.split('-')[1]}/${elem.date.split('-')[0]}</i>
           <i class="fa fa-folder-open-o"> ${Object.keys(elem.categories)}</i>
           <i class="fa fa-tags"> ${Object.keys(elem.tags)} </i>
-          </section>
+          </span>
       </section>
     </a>`
       }
@@ -39,12 +39,12 @@ var showArticles = () => {
               <img src="${elem.post_thumbnail.URL}" alt="${elem.title}" width="300">
           </picture>
           <h3>${elem.title}</h3>
-          <section class="content__articles--post--footer">
+          <span class="content__articles--post--footer">
           <i class="fa fa-user"> ${elem.author.name}</i>
           <i class="fa fa-calendar"> ${elem.date.split('-')[2].split('')[0]}${elem.date.split('-')[2].split('')[1]}/${elem.date.split('-')[1]}/${elem.date.split('-')[0]}</i>
           <i class="fa fa-folder-open-o"> ${Object.keys(elem.categories)}</i>
           <i class="fa fa-tags"> ${Object.keys(elem.tags)} </i>
-          </section>
+          </span>
       </section>
     </a>`
       }
