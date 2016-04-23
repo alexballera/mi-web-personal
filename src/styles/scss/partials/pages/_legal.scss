@@ -1,9 +1,13 @@
 .content__legal {
     text-align: justify;
-    padding: 3rem;
     padding-bottom: 2rem;
     letter-spacing: 1.1px;
     line-height: 1.2rem;
+    @include respond-to(md) {
+        padding-top: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
     @include respond-to(lg) {
         width: 80%;
     }

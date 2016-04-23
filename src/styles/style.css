@@ -3878,10 +3878,14 @@ section.legal {
 
 .content__legal {
   text-align: justify;
-  padding: 3rem;
   padding-bottom: 2rem;
   letter-spacing: 1.1px;
   line-height: 1.2rem; }
+  @media screen and (min-width: 48em) {
+    .content__legal {
+      padding-top: 3rem;
+      padding-left: 3rem;
+      padding-right: 3rem; } }
   @media screen and (min-width: 64em) {
     .content__legal {
       width: 80%; } }
