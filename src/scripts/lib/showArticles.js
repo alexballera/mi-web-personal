@@ -12,17 +12,13 @@ var showArticles = () => {
       if (elem.categories.Proyectos) {
         templateProjects += `<a class="content__articles--post" href="${elem.short_URL}" target="_blank" title="${elem.title}">
       <section>
-          <picture class="content__articles--post--picture">
-              <img src="${elem.post_thumbnail.URL}" alt="${elem.title}" width="300">
-          </picture>
+          <img src="${elem.post_thumbnail.URL}" alt="${elem.title}" width="300">
           <h3>${elem.title}</h3>
-          <span class="content__articles--post--footer">
-          <i class="fa fa-user"> ${elem.author.name}</i>
-          <i class="fa fa-calendar"> ${elem.date.split('-')[2].split('')[0]}${elem.date.split('-')[2].split('')[1]}/${elem.date.split('-')[1]}/${elem.date.split('-')[0]}</i>
-          <i class="fa fa-folder-open-o"> ${Object.keys(elem.categories)}</i>
-          <i class="fa fa-tags"> ${Object.keys(elem.tags)} </i>
-          </span>
       </section>
+      <span class="content__articles--post--footer">
+      <i class="fa fa-user"> ${elem.author.name}</i>
+      <i class="fa fa-calendar"> ${elem.date.split('-')[2].split('')[0]}${elem.date.split('-')[2].split('')[1]}/${elem.date.split('-')[1]}/${elem.date.split('-')[0]}</i>
+      </span>
     </a>`
       }
     })
@@ -35,17 +31,13 @@ var showArticles = () => {
       if (!elem.categories.Proyectos) {
         templateArticles += `<a class="content__articles--post" href="${elem.short_URL}" target="_blank" title="${elem.title}">
       <section>
-          <picture class="content__articles--post--picture">
-              <img src="${elem.post_thumbnail.URL}" alt="${elem.title}" width="300">
-          </picture>
+          <img src="${elem.post_thumbnail.URL}" alt="${elem.title}" width="300">
           <h3>${elem.title}</h3>
-          <span class="content__articles--post--footer">
-          <i class="fa fa-user"> ${elem.author.name}</i>
-          <i class="fa fa-calendar"> ${elem.date.split('-')[2].split('')[0]}${elem.date.split('-')[2].split('')[1]}/${elem.date.split('-')[1]}/${elem.date.split('-')[0]}</i>
-          <i class="fa fa-folder-open-o"> ${Object.keys(elem.categories)}</i>
-          <i class="fa fa-tags"> ${Object.keys(elem.tags)} </i>
-          </span>
       </section>
+      <span class="content__articles--post--footer">
+      <i class="fa fa-user"> ${elem.author.name}</i>
+      <i class="fa fa-calendar"> ${elem.date.split('-')[2].split('')[0]}${elem.date.split('-')[2].split('')[1]}/${elem.date.split('-')[1]}/${elem.date.split('-')[0]}</i>
+      </span>
     </a>`
       }
     })
