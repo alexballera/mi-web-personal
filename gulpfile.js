@@ -33,10 +33,6 @@ const globs = {
   html: {
     main: './src/index.html',
     watch: './src/**/*.html',
-    error: './src/404.html',
-    cookies: './src/cookies.html',
-    legal: './src/legal.html',
-    sitemap: './src/sitemap.html',
     build: './build',
     dist: './dist'
   },
@@ -96,32 +92,8 @@ gulp.task('serve', () => {
 })
 
 // HTML minificado
-gulp.task('build:html', ['html:404', 'html:cookies', 'html:legal', 'html:sitemap'], () => {
-  return gulp.src(globs.html.main)
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest(globs.build))
-    .pipe(gulp.dest(globs.dist))
-})
-gulp.task('html:404', () => {
-  return gulp.src(globs.html.error)
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest(globs.build))
-    .pipe(gulp.dest(globs.dist))
-})
-gulp.task('html:cookies', () => {
-  return gulp.src(globs.html.cookies)
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest(globs.build))
-    .pipe(gulp.dest(globs.dist))
-})
-gulp.task('html:legal', () => {
-  return gulp.src(globs.html.legal)
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest(globs.build))
-    .pipe(gulp.dest(globs.dist))
-})
-gulp.task('html:sitemap', () => {
-  return gulp.src(globs.html.sitemap)
+gulp.task('build:html', () => {
+  return gulp.src(globs.html.watch)
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(globs.build))
     .pipe(gulp.dest(globs.dist))

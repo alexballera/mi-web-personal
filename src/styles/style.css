@@ -3755,6 +3755,8 @@ noscript iframe.google-tag {
         display: inline-block;
         margin-right: 0.4rem;
         font-size: 1.25rem; }
+    .footer__contact--noborder {
+      border-left: none; }
   .footer__social p:nth-child(2) {
     margin-bottom: 0.5rem; }
   .footer__social--redes {

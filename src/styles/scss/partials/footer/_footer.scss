@@ -88,6 +88,9 @@ $item: 3;
                 font-size: 1.25rem;
             }
         }
+        &--noborder{
+          border-left: none;
+        }
     }
 
     &__social {
