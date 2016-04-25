@@ -3910,3 +3910,10 @@ section.legal {
     @media screen and (min-width: 64em) {
       .content__legal p {
         text-align: justify; } }
+
+.pages__title {
+  margin-top: 0;
+  line-height: 2rem; }
+
+.pages__header {
+  padding: 2em 0; }

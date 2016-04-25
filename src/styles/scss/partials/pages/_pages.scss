@@ -1,2 +1,13 @@
-@import './partials/pages/404',
-'./partials/pages/legal';
+@import "./partials/pages/404";
+@import "./partials/pages/legal";
+
+.pages {
+    &__title {
+        margin-top: 0;
+        line-height: 2rem;
+    }
+
+    &__header {
+        padding: 2em 0;
+    }
+}
