@@ -4,7 +4,8 @@ $black: #1E1E1E;
 $white: #F1FFF9;
 $brown: #B29163;
 $green: #65FF92;
-$orange: #FFB040;
+// $orange: #FFB040;
+$orange: #F47B5C;
 $purple: #8344CC;
 $purpleLight: #9780B2;
 $facebook: #3B5998;
@@ -22,7 +23,7 @@ $wordpress: #0087BE;
 $rss: #FF9900;
 
 $socialheigt: 45px;
-$font-awesome: 'FontAwesome', Arial, sans-serif;
+$font-awesome: "FontAwesome", Arial, sans-serif;
 
 // Breakpoints
 // $screen-xs: 30em; // 480px
@@ -36,7 +37,12 @@ $font-awesome: 'FontAwesome', Arial, sans-serif;
 // Images Articles & Projects
 $w: 600px;
 $h: 300px;
-$ratio: ($w/$h);
+$ratio: $w / $h;
 $width: 100px;
-$height: ($width/$ratio);
+$height: $width / $ratio;
 $multip: 3;
+
+// Variables
+$header-height: 3rem;
+$header-mult: 1;
+$items: 

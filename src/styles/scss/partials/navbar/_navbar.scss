@@ -1,10 +1,5 @@
 /** Navbar */
 
-// Variables
-$header-height: 3rem;
-$header-mult: 1;
-$items: 4;
-
 #responsive,
 #projects,
 #articles,
@@ -25,28 +20,24 @@ $items: 4;
     left: 0;
     width: 100%;
     z-index: 11;
-    transition: all 1.2s ease;
     background-color: $black;
 
     @include respond-to(md) {
         height: $header-height * $header-mult;
         line-height: $header-height * $header-mult;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
 
     &__mobile {
         display: flex;
         justify-content: space-between;
-        margin-left: 3em;
-        transition: all 0.3s ease;
         height: $header-height;
 
         @include respond-to(md) {
             height: $header-height * $header-mult;
+            width: 30%;
         }
 
 
@@ -55,13 +46,14 @@ $items: 4;
             height: auto;
             vertical-align: middle;
             display: flex;
+            margin: 0 auto;
             order: 1;
 
             &--picture {
-                transition: all 1.2s ease;
+                margin-right: 5rem;
 
                 @include respond-to(xs) {
-                    display: flex;
+                    margin-right: 0;
                 }
 
 
@@ -97,22 +89,18 @@ $items: 4;
                 margin-left: .5em;
                 font-size: 1.2em;
                 display: none;
-                transition: all 1.2s ease;
 
                 @include respond-to(xs) {
-                    transition: all 1.2s ease;
                     display: block;
                 }
 
 
                 @include respond-to(md) {
-                    transition: all 1.2s ease;
                     display: none;
                 }
 
 
                 @include respond-to(lg) {
-                    transition: all 1.2s ease;
                     display: block;
                 }
 
@@ -169,18 +157,7 @@ $items: 4;
         width: 100%;
 
         @include respond-to(md) {
-            width: 60%;
-            text-align: right;
-        }
-
-
-        @include respond-to(lg) {
-            width: 45%;
-        }
-
-
-        @include respond-to(sm-landscape) {
-            width: 100vw;
+            width: 50%;
         }
     }
 
@@ -188,26 +165,32 @@ $items: 4;
         height: 0;
         overflow: hidden;
         list-style-type: none;
-        margin-right: 2em;
-        transition: all 0.3s ease;
+        display: flex;
+        flex-wrap: wrap;
 
         @include respond-to(md) {
             height: $header-height * $header-mult;
+            text-align: right;
+            justify-content: flex-end;
         }
 
 
         &--show {
             height: 100%;
-            transition: all 2s ease;
+            @include respond-to(sm-landscape) {
+                display: flex;
+            }
         }
 
         &--item {
+            width: 100%;
+            text-align: left;
+
             @include respond-to(md) {
-                display: inline-block;
                 margin: 0;
                 text-align: center;
                 box-sizing: border-box;
-                width: 100% / $items - 1;
+                width: 25%;
 
                 &:nth-child(4) {
                     background-color: rgba(15, 15, 15, 0.75);
@@ -216,7 +199,6 @@ $items: 4;
 
 
             @include respond-to(sm-landscape) {
-                display: inline-block;
                 margin: 0 auto;
                 text-align: center;
                 width: 100% / $items;
@@ -225,45 +207,39 @@ $items: 4;
 
 
             & a {
+                padding-left: 1rem;
                 background-color: rgba(255, 176, 64, 0.75);
                 font-size: 95%;
                 color: $white;
                 width: 100%;
                 display: block;
                 text-align: left;
-                padding-left: 1em;
+                line-height: 3rem;
+                height: 3rem;
                 box-sizing: border-box;
-                border-top: 3px solid $orange;
                 border-bottom: 3px solid transparent;
-                transition: height .3s ease;
 
                 @include respond-to(md) {
                     background-color: transparent;
-                    border-top: 3px solid transparent;
                     box-sizing: border-box;
-                    padding: 0 .5em;
                     text-align: center;
                     font-size: 1.1rem;
-                    height: $header-height * $header-mult;
-                    line-height: $header-height * $header-mult;
                 }
 
 
                 @include respond-to(sm-landscape) {
                     padding: 0;
                     text-align: center;
-                    border-top: 3px solid transparent;
                 }
 
 
                 &:hover {
-                    border-top: 3px solid $orange;
+                    border-bottom: 3px solid $orange;
                     background-color: rgba(30, 30, 30, 0.9);
 
                     @include respond-to(md) {
                         box-sizing: border-box;
                         color: $orange;
-                        border-top: 3px solid $orange;
                     }
                 }
             }

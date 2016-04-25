@@ -58,28 +58,43 @@
                 &:nth-child(1) {
                     & span {
                         &::before {
-                            content: "() => { ";
-                            color: $twitter;
-                        }
-
-                        &::after {
-                            content: " }";
+                            content: " | ";
                             color: $twitter;
                         }
                     }
                 }
-
                 &:nth-child(2) {
-                    font-size: 80%;
+                    display: none;
+                }
 
-                    &::before {
-                        content: "< ";
-                        color: $twitter;
+                @include respond-to(md) {
+                    &:nth-child(1) {
+                        & span {
+                            &::before {
+                                content: "() => { ";
+                                color: $twitter;
+                            }
+
+                            &::after {
+                                content: " }";
+                                color: $twitter;
+                            }
+                        }
                     }
 
-                    &::after {
-                        content: " />";
-                        color: $twitter;
+                    &:nth-child(2) {
+                        display: block;
+                        font-size: 80%;
+
+                        &::before {
+                            content: "< ";
+                            color: $twitter;
+                        }
+
+                        &::after {
+                            content: " />";
+                            color: $twitter;
+                        }
                     }
                 }
             }

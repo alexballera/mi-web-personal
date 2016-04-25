@@ -4,7 +4,7 @@ import validate from './vendors/mc-validate.js'
 import retinajs from './vendors/retina.js'
 import spinner from './vendors/spinner.js'
 import showMenu from './lib/showMenu'
-// import changeButton from './lib/changeButton'
+import changeButton from './lib/changeButton'
 import doTransparentBar from './lib/doTransparentBar'
 import cookieConsent from './lib/cookieConsent'
 import loadJS from './lib/loadJS'
@@ -19,6 +19,7 @@ import showTags from './lib/showTags'
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
+    var navbarMenu = document.getElementById('navbarMenu')
     var btnMenu = document.getElementById('btnMenu')
     var btnButton = document.getElementById('btnButton')
     var navBar = document.getElementById('navBar')
