@@ -3685,6 +3685,25 @@ noscript iframe.google-tag {
   left: -5000px; }
 
 /** Footer */
+.informacion__boton, .footer__contact a.informacion__boton, .content__legal a.informacion__boton {
+  padding: 0.4rem;
+  font-size: 1rem;
+  color: #F1FFF9;
+  background-color: #F47B5C;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 50%; }
+  @media screen and (min-width: 30em) {
+    .informacion__boton, .footer__contact a.informacion__boton, .content__legal a.informacion__boton {
+      margin-left: 0;
+      width: 30%; } }
+  .informacion__boton:hover, .footer__contact a.informacion__boton:hover, .content__legal a.informacion__boton:hover {
+    background-color: #8344CC; }
+  .informacion__boton i.fa.fa-envelope-o {
+    margin-right: 0.5rem; }
+
 .footer {
   background-color: #1E1E1E;
   box-sizing: border-box;
@@ -3725,24 +3744,6 @@ noscript iframe.google-tag {
         border-left: 2px solid #F47B5C;
         padding-left: 2rem;
         width: 45%; } }
-    .footer__contact a.informacion__boton {
-      padding: 0.4rem;
-      font-size: 1rem;
-      color: #F1FFF9;
-      background-color: #F47B5C;
-      border-radius: 5px;
-      display: block;
-      text-align: center;
-      margin: 0 auto;
-      width: 50%; }
-      @media screen and (min-width: 30em) {
-        .footer__contact a.informacion__boton {
-          margin-left: 0;
-          width: 30%; } }
-      .footer__contact a.informacion__boton:hover {
-        background-color: #8344CC; }
-      .footer__contact a.informacion__boton i.fa.fa-envelope-o {
-        margin-right: 0.5rem; }
     .footer__contact--tech {
       margin: 0.75rem 0; }
       .footer__contact--tech li {
@@ -3885,6 +3886,7 @@ section.legal {
       width: 80%; } }
   .content__legal h1,
   .content__legal h2,
+  .content__legal h3,
   .content__legal span {
     color: #1E1E1E;
     font-weight: 700; }
@@ -3896,6 +3898,10 @@ section.legal {
       .content__legal h1,
       .content__legal h2 {
         text-align: justify; } }
+  .content__legal h1 {
+    margin-bottom: 1rem; }
+  .content__legal h3 {
+    color: #55ACEE; }
   .content__legal ul li {
     text-align: left; }
     @media screen and (min-width: 64em) {
@@ -3904,6 +3910,11 @@ section.legal {
   .content__legal a {
     color: #F47B5C;
     font-weight: bold; }
+    .content__legal a.informacion__boton {
+      color: white;
+      font-size: 1.5rem;
+      width: 100%;
+      padding: 1rem 0; }
   .content__legal p {
     margin: 1rem 0;
     text-align: left; }

@@ -1,4 +1,33 @@
 /** Footer */
+.informacion__boton {
+            padding: 0.4rem;
+            font-size: 1rem;
+            color: $white;
+            background-color: $orange;
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            width: 50%;
+
+            @include respond-to(xs) {
+                margin-left: 0;
+                width: 30%;
+            }
+
+
+            &:hover {
+                background-color: $purple;
+            }
+
+            & i {
+                &.fa {
+                    &.fa-envelope-o {
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+        }
 $item: 3;
 
 .footer {
@@ -49,34 +78,8 @@ $item: 3;
         }
 
 
-        & a.informacion__boton {
-            padding: 0.4rem;
-            font-size: 1rem;
-            color: $white;
-            background-color: $orange;
-            border-radius: 5px;
-            display: block;
-            text-align: center;
-            margin: 0 auto;
-            width: 50%;
-
-            @include respond-to(xs) {
-                margin-left: 0;
-                width: 30%;
-            }
-
-
-            &:hover {
-                background-color: $purple;
-            }
-
-            & i {
-                &.fa {
-                    &.fa-envelope-o {
-                        margin-right: 0.5rem;
-                    }
-                }
-            }
+        & a.informacion__boton{
+            @extend .informacion__boton
         }
 
         &--tech {
