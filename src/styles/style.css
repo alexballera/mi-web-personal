@@ -3684,6 +3684,10 @@ noscript iframe.google-tag {
   position: absolute;
   left: -5000px; }
 
+.response {
+  color: white;
+  line-height: 1.5rem; }
+
 /** Footer */
 .informacion__boton, .footer__contact a.informacion__boton, .content__legal a.informacion__boton {
   padding: 0.4rem;
