@@ -3552,7 +3552,8 @@ noscript iframe.google-tag {
     margin-bottom: 0.5rem;
     text-align: left; }
     .content__articles--post:hover {
-      box-shadow: 0 0 20px #1E1E1E; }
+      box-shadow: 0 0 20px #1E1E1E;
+      z-index: 10; }
       .content__articles--post:hover picture {
         opacity: 0.8; }
     @media screen and (min-width: 37.5em) {
