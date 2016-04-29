@@ -3934,3 +3934,7 @@ section.legal {
 
 .pages__header {
   padding: 2em 0; }
+
+/* Contactame */
+.poweredWrapper {
+  display: none !important; }
