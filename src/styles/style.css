@@ -3246,7 +3246,8 @@ noscript iframe.google-tag {
             background-color: transparent;
             box-sizing: border-box;
             text-align: center;
-            font-size: 1.1rem; } }
+            font-size: 1.1rem;
+            padding: 0; } }
         @media screen and (max-width: 767px) and (orientation: landscape) {
           .nav__menu--list--item a {
             padding: 0;
