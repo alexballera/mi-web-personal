@@ -44,8 +44,7 @@
     "imagemin-svgo": "^4.2.0",
     "psi": "^2.0.3",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0",
-    "wiredep": "^2.2.2"
+    "vinyl-source-stream": "^1.1.0"
   },
   "standard": {
     "ignore": [

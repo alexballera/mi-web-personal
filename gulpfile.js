@@ -20,7 +20,7 @@ const imageminJpegtran = require('imagemin-jpegtran')
 const cache = require('gulp-cache')
 const del = require('del')
 const inject = require('gulp-inject')
-const wiredep = require('wiredep').stream
+// const wiredep = require('wiredep').stream
 const deploy = require('gulp-gh-pages')
 // Para que babelify trabaje se debe instalar babel-preset-es2015
 // sudo npm install --save-dev babel-preset-es2015
@@ -222,12 +222,12 @@ gulp.task('watch', () => {
   gulp.watch(globs.styles.watch, ['build:styles'])
   gulp.watch(globs.scripts.watch, ['build:scripts'])
   gulp.watch(globs.images.watch, ['build:images'])
-  gulp.watch(['./bower.json'], ['wiredep', 'copy'])
+  gulp.watch(['./bower.json'], ['copy'])
 })
 
 // Build
 gulp.task('build', ['copy'], () => {
-  gulp.start('build:html', 'build:scripts', 'build:images', 'inject', 'wiredep', 'build:styles')
+  gulp.start('build:html', 'build:scripts', 'build:images', 'inject', 'build:styles')
 })
 
 // Default
