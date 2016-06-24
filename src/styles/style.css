@@ -3050,6 +3050,10 @@ noscript iframe.google-tag {
 .hide {
   display: none; }
 
+#gpt-overlay-0 .ad-screen {
+  background-color: transparent !important;
+  width: 100% !important; }
+
 /** Navbar */
 #responsive,
 #projects,
@@ -3894,5 +3898,5 @@ section.legal {
   padding: 2em 0; }
 
 /* Contactame */
-.poweredWrapper {
+iframe #document html body.gorgias-loaded .poweredWrapper span.poweredBy {
   display: none !important; }
