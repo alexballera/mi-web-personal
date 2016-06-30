@@ -12,6 +12,7 @@ import loadLeadin from './lib/loadLeadin'
 import showArticles from './lib/showArticles'
 import showCategories from './lib/showCategories'
 import showTags from './lib/showTags'
+import fireBase from './lib/fireBase'
 
 (() => {
   'use strict'
@@ -42,6 +43,9 @@ import showTags from './lib/showTags'
 // Categories
     showCategories()
 
+// fireBase
+  fireBase()
+
   // Load JS
     var urlJs = [
       '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56db8556594705cc',
@@ -54,4 +58,3 @@ import showTags from './lib/showTags'
     loadLeadin(leadIn)
   }
 })()
-
