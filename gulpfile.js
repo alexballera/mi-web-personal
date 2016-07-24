@@ -30,48 +30,48 @@ const deploy = require('gulp-gh-pages')
 // Variables
 const globs = {
   build: './build',
-  dist: './dist',
+  public: './public',
   src: './src',
   html: {
     main: './src/index.html',
     watch: './src/**/*.html',
     build: './build',
-    dist: './dist'
+    public: './public'
   },
   styles: {
     main: './src/styles/scss/style.scss',
     watch: './src/styles/scss/**/*.scss',
     src: './src/styles',
     build: './build/styles',
-    dist: './dist/styles'
+    public: './public/styles'
   },
   scripts: {
     main: './src/scripts/main.js',
     watch: './src/scripts/main.js',
     src: './src/scripts',
     build: './build/scripts',
-    dist: './dist/scripts'
+    public: './public/scripts'
   },
   images: {
     main: './src/images/**',
     watch: './src/images/**/*.*',
     src: './src/images',
     build: './build/images',
-    dist: './dist/images'
+    public: './public/images'
   },
   videos: {
     main: './src/videos/**',
     watch: './src/videos/**/*.*',
     src: './src/videos',
     build: './build/videos',
-    dist: './dist/videos'
+    public: './public/videos'
   },
   fonts: {
     main: './src/styles/fonts/**',
     watch: './src/styles/fonts/**/*.*',
     src: './src/styles/fonts',
     build: './build/styles/fonts',
-    dist: './dist/styles/fonts'
+    public: './public/styles/fonts'
   }
 }
 
@@ -81,7 +81,7 @@ gulp.task('serve', () => {
     notify: true,
     logPrefix: 'BS',
     server: {
-      baseDir: [globs.dist]
+      baseDir: [globs.public]
     },
     port: 8000,
     ui: {
@@ -99,7 +99,7 @@ gulp.task('build:html', () => {
   return gulp.src(globs.html.watch)
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(globs.build))
-    .pipe(gulp.dest(globs.dist))
+    .pipe(gulp.dest(globs.public))
 })
 
 // Styles: CSS  Minificado
@@ -124,7 +124,7 @@ gulp.task('uncss', () => {
     .pipe(cssnano())
     .pipe(gulp.dest(globs.styles.src))
     .pipe(gulp.dest(globs.styles.build))
-    .pipe(gulp.dest(globs.styles.dist))
+    .pipe(gulp.dest(globs.styles.public))
 })
 
 // Scripts: todos los archivos JS concatenados en uno solo minificado
@@ -139,7 +139,7 @@ gulp.task('build:scripts', () => {
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(globs.scripts.src))
     .pipe(gulp.dest(globs.scripts.build))
-    .pipe(gulp.dest(globs.scripts.dist))
+    .pipe(gulp.dest(globs.scripts.public))
 })
 
 // Images
@@ -163,7 +163,7 @@ gulp.task('build:images', () => {
       ]
     })))
     .pipe(gulp.dest(globs.images.build))
-    .pipe(gulp.dest(globs.images.dist))
+    .pipe(gulp.dest(globs.images.public))
 })
 
 // Inyectando css y js al index.html
@@ -184,12 +184,12 @@ gulp.task('wiredep', () => {
 
 // Clean
 gulp.task('clean', (cb) => {
-  return del([globs.build, globs.dist], cb)
+  return del([globs.build, globs.public], cb)
 })
 
 // Deploy to gh-pages
 gulp.task('deploy', () => {
-  return gulp.src('./dist/**/*')
+  return gulp.src('./public/**/*')
     .pipe(deploy())
 })
 
@@ -199,17 +199,22 @@ gulp.task('copy', () => {
     .pipe(gulp.dest('./'))
   gulp.src(['./src/bower_components/**'])
     .pipe(gulp.dest('./build/bower_components'))
-    .pipe(gulp.dest('./dist/bower_components'))
+    .pipe(gulp.dest('./public/bower_components'))
   gulp.src(globs.fonts.src + '/fonts-mfizz/**/*.*')
-    .pipe(gulp.dest(globs.fonts.dist + '/fonts-mfizz'))
+    .pipe(gulp.dest(globs.fonts.
+    public + '/fonts-mfizz'))
   gulp.src(globs.fonts.src + '/fontawesome/**/*.*') // Comentar si se va a usar el cdnjs
-    .pipe(gulp.dest(globs.fonts.dist + '/fontawesome')) // Comentar si se va a usar el cdnjs
+    .pipe(gulp.dest(globs.fonts.
+    public + '/fontawesome')) // Comentar si se va a usar el cdnjs
   gulp.src(globs.src + '/robots.txt')
-    .pipe(gulp.dest(globs.dist))
+    .pipe(gulp.dest(globs.
+                    public))
   gulp.src(globs.src + '/sitemap.xml')
-    .pipe(gulp.dest(globs.dist))
+    .pipe(gulp.dest(globs.
+                    public))
   gulp.src(globs.src + '/.htaccess')
-    .pipe(gulp.dest(globs.dist))
+    .pipe(gulp.dest(globs.
+                    public))
 })
 
 // Reload
