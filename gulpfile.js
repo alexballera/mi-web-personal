@@ -1,34 +1,34 @@
-const gulp = require('gulp')
-const browserSync = require('browser-sync')
-const reload = browserSync.reload
-const htmlmin = require('gulp-htmlmin')
-const sass = require('gulp-sass')
-const sassGlob = require('gulp-sass-glob')
-const autoprefixer = require('gulp-autoprefixer')
-const cssnano = require('gulp-cssnano')
-const rename = require('gulp-rename')
-const uncss = require('gulp-uncss')
-const browserify = require('browserify')
-const source = require('vinyl-source-stream')
-const buffer = require('vinyl-buffer')
-const uglify = require('gulp-uglify')
-const babelify = require('babelify')
-const imagemin = require('gulp-imagemin')
-const pngquant = require('imagemin-pngquant')
-const imageminSvgo = require('imagemin-svgo')
-const imageminOptipng = require('imagemin-optipng')
-const imageminJpegtran = require('imagemin-jpegtran')
-const cache = require('gulp-cache')
-const del = require('del')
-const inject = require('gulp-inject')
-// const wiredep = require('wiredep').stream
-const deploy = require('gulp-gh-pages')
+var gulp = require('gulp')
+var browserSync = require('browser-sync')
+var reload = browserSync.reload
+var htmlmin = require('gulp-htmlmin')
+var sass = require('gulp-sass')
+var sassGlob = require('gulp-sass-glob')
+var autoprefixer = require('gulp-autoprefixer')
+var cssnano = require('gulp-cssnano')
+var rename = require('gulp-rename')
+var uncss = require('gulp-uncss')
+var browserify = require('browserify')
+var source = require('vinyl-source-stream')
+var buffer = require('vinyl-buffer')
+var uglify = require('gulp-uglify')
+var babelify = require('babelify')
+var imagemin = require('gulp-imagemin')
+var pngquant = require('imagemin-pngquant')
+var imageminSvgo = require('imagemin-svgo')
+var imageminOptipng = require('imagemin-optipng')
+var imageminJpegtran = require('imagemin-jpegtran')
+var cache = require('gulp-cache')
+var del = require('del')
+var inject = require('gulp-inject')
+// var wiredep = require('wiredep').stream
+var deploy = require('gulp-gh-pages')
 // Para que babelify trabaje se debe instalar babel-preset-es2015
 // sudo npm install --save-dev babel-preset-es2015
 // sudo npm install --save-dev gulp-sass-glob
 
 // Variables
-const globs = {
+var globs = {
   build: './build',
   public: './public',
   src: './src',
