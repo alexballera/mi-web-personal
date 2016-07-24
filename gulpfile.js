@@ -203,9 +203,9 @@ gulp.task('copy', () => {
   gulp.src(globs.fonts.src + '/fonts-mfizz/**/*.*')
     .pipe(gulp.dest(globs.fonts.
     public + '/fonts-mfizz'))
-  gulp.src(globs.fonts.src + '/fontawesome/**/*.*') // Comentar si se va a usar el cdnjs
+  gulp.src(globs.fonts.src + '/fonts/**/*.*') // Comentar si se va a usar el cdnjs
     .pipe(gulp.dest(globs.fonts.
-    public + '/fontawesome')) // Comentar si se va a usar el cdnjs
+    public + '/fonts')) // Comentar si se va a usar el cdnjs
   gulp.src(globs.src + '/robots.txt')
     .pipe(gulp.dest(globs.
                     public))
