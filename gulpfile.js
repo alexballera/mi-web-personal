@@ -3,6 +3,7 @@ const browserSync = require('browser-sync')
 const reload = browserSync.reload
 const htmlmin = require('gulp-htmlmin')
 const sass = require('gulp-sass')
+const sassGlob = require('gulp-sass-glob')
 const autoprefixer = require('gulp-autoprefixer')
 const cssnano = require('gulp-cssnano')
 const rename = require('gulp-rename')
@@ -24,6 +25,7 @@ const inject = require('gulp-inject')
 const deploy = require('gulp-gh-pages')
 // Para que babelify trabaje se debe instalar babel-preset-es2015
 // sudo npm install --save-dev babel-preset-es2015
+// sudo npm install --save-dev gulp-sass-glob
 
 // Variables
 const globs = {
@@ -76,7 +78,7 @@ const globs = {
 // Servidor - Browsersync
 gulp.task('serve', () => {
   browserSync.init({
-    notify: false,
+    notify: true,
     logPrefix: 'BS',
     server: {
       baseDir: [globs.dist]
@@ -85,8 +87,9 @@ gulp.task('serve', () => {
     ui: {
       port: 8001
     },
-    browser: ['google-chrome'
-    // 'firefox'
+    browser: [//'chromium-browser'
+    // 'google-chrome'
+    'firefox'
     ]
   })
 })
@@ -105,6 +108,7 @@ gulp.task('build:styles', ['styles'], () => {
 })
 gulp.task('styles', () => {
   return gulp.src(globs.styles.main)
+    .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 version'))
     .pipe(gulp.dest(globs.styles.build))

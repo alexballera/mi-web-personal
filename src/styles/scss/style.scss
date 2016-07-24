@@ -1,13 +1,8 @@
 @charset "UTF-8";
 
-@import './vendors/normalize',
-'./vendors/reset',
-'./vendors/prism',
-'../fonts/src/font-awesome',
-'../fonts/src/font-mfizz',
-'./customs/customs',
-'./partials/navbar/navbar',
-'./partials/content/content',
-'./partials/form/form',
-'./partials/footer/footer',
-'./partials/pages/pages';
+@import 'vendors/**/*';
+@import 'utils/**/*';
+@import '../fonts/src/**/*';
+@import '../fonts/scss/font-awesome';
+@import 'customs/**/*';
+@import 'components/**/*';

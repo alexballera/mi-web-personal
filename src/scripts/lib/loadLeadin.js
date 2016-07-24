@@ -6,7 +6,6 @@ var loadLeadin = (url) => {
     elem.defer = 'defer'
     elem.crossorigin = 'use-credentials'
     elem.id = 'LeadinEmbed-2056572'
-    elem.type = 'text/javascript'
     document.body.appendChild(elem)
   }
 }
