@@ -1,34 +1,33 @@
-var gulp = require('gulp'),
-browserSync = require('browser-sync'),
-reload = browserSync.reload,
-htmlmin = require('gulp-htmlmin'),
-sass = require('gulp-sass'),
-sassGlob = require('gulp-sass-glob'),
-autoprefixer = require('gulp-autoprefixer'),
-cssnano = require('gulp-cssnano'),
-rename = require('gulp-rename'),
-uncss = require('gulp-uncss'),
-browserify = require('browserify'),
-source = require('vinyl-source-stream'),
-buffer = require('vinyl-buffer'),
-uglify = require('gulp-uglify'),
-babelify = require('babelify'),
-imagemin = require('gulp-imagemin'),
-pngquant = require('imagemin-pngquant'),
-imageminSvgo = require('imagemin-svgo'),
-imageminOptipng = require('imagemin-optipng'),
-imageminJpegtran = require('imagemin-jpegtran'),
-cache = require('gulp-cache'),
-del = require('del'),
-inject = require('gulp-inject'),
-deploy = require('gulp-gh-pages'),
-notify = require('gulp-notify'),
-plumber = require('gulp-plumber');
+var gulp = require('gulp');
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
+var htmlmin = require('gulp-htmlmin');
+var sass = require('gulp-sass');
+var sassGlob = require('gulp-sass-glob');
+var autoprefixer = require('gulp-autoprefixer');
+var cssnano = require('gulp-cssnano');
+var rename = require('gulp-rename');
+var uncss = require('gulp-uncss');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
+var uglify = require('gulp-uglify');
+var babelify = require('babelify');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
+var imageminSvgo = require('imagemin-svgo');
+var imageminOptipng = require('imagemin-optipng');
+var imageminJpegtran = require('imagemin-jpegtran');
+var cache = require('gulp-cache');
+var del = require('del');
+var inject = require('gulp-inject');
+var deploy = require('gulp-gh-pages');
+var notify = require('gulp-notify');
+var plumber = require('gulp-plumber');
 
 // var wiredep = require('wiredep').stream
-// Para que babelify trabaje se debe instalar babel-preset-es2015
-// sudo npm install --save-dev babel-preset-es2015
-// sudo npm install --save-dev gulp-sass-glob
+// Para que babelify trabaje se debe instalar babel-preset-latest
+// sudo npm i -D babel-preset-es2015 gulp-sass-glob
 
 var onError = function(err) {
   notify.onError({
@@ -159,7 +158,7 @@ gulp.task('uncss', () => {
 // Scripts: todos los archivos JS concatenados en uno solo minificado
 gulp.task('build:scripts', () => {
   var presets = {
-    presets: 'es2015'
+    presets: 'latest'
   }
 
   return browserify(globs.scripts.main)
@@ -239,15 +238,11 @@ gulp.task('copy', () => {
   gulp.src(globs.fonts.src + '/fonts/**/*.*') // Comentar si se va a usar el cdnjs
     .pipe(gulp.dest(globs.fonts.
     public + '/fonts')) // Comentar si se va a usar el cdnjs
-  gulp.src(globs.src + '/robots.txt')
-    .pipe(gulp.dest(globs.
-                    public))
-  gulp.src(globs.src + '/sitemap.xml')
-    .pipe(gulp.dest(globs.
-                    public))
-  gulp.src(globs.src + '/.htaccess')
-    .pipe(gulp.dest(globs.
-                    public))
+  gulp.src([
+    globs.src + '/robots.txt',
+    globs.src + '/sitemap.xml',
+    globs.src + '/.htaccess'
+  ]).pipe(gulp.dest(globs.public))
 })
 
 // Reload

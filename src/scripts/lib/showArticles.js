@@ -46,7 +46,7 @@ var showArticles = () => {
 
   // Show Lasts Articles
   function renderLastsArticles (articles) {
-    for (var i = 0; i < 6; i++) {
+    for (var i = 0; i < 9; i++) {
         templateLasts += `<li>
       <a href="${articles.posts[i].short_URL}" target="_blank">
         <i class="fa fa-file-text-o"></i> ${articles.posts[i].title} - ${articles.posts[i].date.split('-')[2].split('')[0]}${articles.posts[i].date.split('-')[2].split('')[1]}/${articles.posts[i].date.split('-')[1]}/${articles.posts[i].date.split('-')[0]}
