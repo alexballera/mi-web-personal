@@ -158,8 +158,12 @@ gulp.task('uncss', () => {
 
 // Scripts: todos los archivos JS concatenados en uno solo minificado
 gulp.task('build:scripts', () => {
+  var presets = {
+    presets: 'es2015'
+  }
+
   return browserify(globs.scripts.main)
-    .transform(babelify, {presets: 'es2015'})
+    .transform(babelify, {presets})
     .bundle()
     .pipe(source('main.js'))
     .pipe(buffer())

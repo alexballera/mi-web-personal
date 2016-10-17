@@ -21,7 +21,7 @@
         width: 100%;
         box-sizing: border-box;
         background-color: white;
-        margin-bottom: 0.5rem;
+        margin: 0.25rem;
         text-align: left;
 
         &:hover {
@@ -42,12 +42,12 @@
             position: relative;
             border: none;
             padding-right: 0;
-            width: 25%;
+            width: 23%;
         }
 
 
         @include respond-to(lg) {
-            width: (100%/5);
+            width: 30%;
         }
 
         @include respond-to(xl) {

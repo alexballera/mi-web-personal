@@ -12,48 +12,48 @@ import loadLeadin from './lib/loadLeadin'
 import showArticles from './lib/showArticles'
 import showCategories from './lib/showCategories'
 import showTags from './lib/showTags'
-import fireBase from './lib/fireBase'
+//import fireBase from './lib/fireBase'
 
 (() => {
-  'use strict'
+  'use strict';
 
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
-  function onDOMLoad () {
+  function onDOMLoad() {
     var navbarMenu = document.getElementById('navbarMenu')
     var btnMenu = document.getElementById('btnMenu')
     var btnButton = document.getElementById('btnButton')
     var navBar = document.getElementById('navBar')
 
-// Menú
+    // Menú
     btnMenu.addEventListener('click', showMenu)
     navbarMenu.addEventListener('click', showMenu)
     btnButton.addEventListener('click', showMenu)
     btnButton.addEventListener('click', changeButton)
 
-// Cookies
+    // Cookies
     cookieConsent()
 
-// Articles
+    // Articles
     showArticles()
 
-// Tags
+    // Tags
     showTags()
 
-// Categories
+    // Categories
     showCategories()
 
-// fireBase
-  fireBase()
+    // fireBase
+    // fireBase()
 
-  // Load JS
+    // Load JS
     var urlJs = [
       '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56db8556594705cc',
       '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js'
     ]
     loadJS(urlJs)
 
-  // Load LeadIn
+    // Load LeadIn
     var leadIn = ['//js.leadin.com/js/v1/2056572.js']
     loadLeadin(leadIn)
   }
