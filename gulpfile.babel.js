@@ -1,33 +1,34 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
-var htmlmin = require('gulp-htmlmin');
-var sass = require('gulp-sass');
-var sassGlob = require('gulp-sass-glob');
-var autoprefixer = require('gulp-autoprefixer');
-var cssnano = require('gulp-cssnano');
-var rename = require('gulp-rename');
-var uncss = require('gulp-uncss');
-var browserify = require('browserify');
-var source = require('vinyl-source-stream');
-var buffer = require('vinyl-buffer');
-var uglify = require('gulp-uglify');
-var babelify = require('babelify');
-var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant');
-var imageminSvgo = require('imagemin-svgo');
-var imageminOptipng = require('imagemin-optipng');
-var imageminJpegtran = require('imagemin-jpegtran');
-var cache = require('gulp-cache');
-var del = require('del');
-var inject = require('gulp-inject');
-var deploy = require('gulp-gh-pages');
-var notify = require('gulp-notify');
-var plumber = require('gulp-plumber');
+import gulp from 'gulp';
+import browserSync from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
+import sass from 'gulp-sass';
+import sassGlob from 'gulp-sass-glob';
+import autoprefixer from 'gulp-autoprefixer';
+import cssnano from 'gulp-cssnano';
+import rename from 'gulp-rename';
+import uncss from 'gulp-uncss';
+import browserify from 'browserify';
+import source from 'vinyl-source-stream';
+import buffer from 'vinyl-buffer';
+import uglify from 'gulp-uglify';
+import babelify from 'babelify';
+import imagemin from 'gulp-imagemin';
+import pngquant from 'imagemin-pngquant';
+import imageminSvgo from 'imagemin-svgo';
+import imageminOptipng from 'imagemin-optipng';
+import imageminJpegtran from 'imagemin-jpegtran';
+import cache from 'gulp-cache';
+import del from 'del';
+import inject from 'gulp-inject';
+import deploy from 'gulp-gh-pages';
+import notify from 'gulp-notify';
+import plumber from 'gulp-plumber';
 
 // var wiredep = require('wiredep').stream
 // Para que babelify trabaje se debe instalar babel-preset-latest
 // sudo npm i -D babel-preset-es2015 gulp-sass-glob
+
+var reload = browserSync.reload;
 
 var onError = function(err) {
   notify.onError({
