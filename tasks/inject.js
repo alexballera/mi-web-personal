@@ -1,5 +1,5 @@
-import gulp from 'gulp';
-import inject from 'gulp-inject';
+import gulp from 'gulp'
+import inject from 'gulp-inject'
 
 gulp.task('inject', () => {
   gulp.src('./src/index.html')
@@ -7,13 +7,13 @@ gulp.task('inject', () => {
       './src/styles/style.min.css',
       './src/scripts/main.min.js'
     ],
-    {
-      read: false
-    }
+      {
+        read: false
+      }
   ),
-    {
-      relative: true
-    }
+      {
+        relative: true
+      }
   ))
     .pipe(gulp.dest('./src'))
 })

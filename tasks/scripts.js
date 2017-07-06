@@ -1,10 +1,10 @@
-import gulp from 'gulp';
-import browserify from 'browserify';
-import source from 'vinyl-source-stream';
-import buffer from 'vinyl-buffer';
-import uglify from 'gulp-uglify';
-import babelify from 'babelify';
-import rename from 'gulp-rename';
+import gulp from 'gulp'
+import browserify from 'browserify'
+import source from 'vinyl-source-stream'
+import buffer from 'vinyl-buffer'
+import uglify from 'gulp-uglify'
+import babelify from 'babelify'
+import rename from 'gulp-rename'
 
 gulp.task('build:scripts', () => {
   var presets = {

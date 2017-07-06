@@ -1,4 +1,4 @@
-import gulp from 'gulp';
+import gulp from 'gulp'
 require('require-dir')('./tasks')
 
 // Para que babelify trabaje se debe instalar babel-preset-latest

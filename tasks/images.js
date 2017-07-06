@@ -1,10 +1,10 @@
-import gulp from 'gulp';
-import cache from 'gulp-cache';
-import imagemin from 'gulp-imagemin';
-import pngquant from 'imagemin-pngquant';
-import imageminSvgo from 'imagemin-svgo';
-import imageminOptipng from 'imagemin-optipng';
-import imageminJpegtran from 'imagemin-jpegtran';
+import gulp from 'gulp'
+import cache from 'gulp-cache'
+import imagemin from 'gulp-imagemin'
+import pngquant from 'imagemin-pngquant'
+import imageminSvgo from 'imagemin-svgo'
+import imageminOptipng from 'imagemin-optipng'
+import imageminJpegtran from 'imagemin-jpegtran'
 
 gulp.task('build:images', () => {
   return gulp.src('./src/images/**')

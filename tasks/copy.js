@@ -1,4 +1,4 @@
-import gulp from 'gulp';
+import gulp from 'gulp'
 
 gulp.task('copy', () => {
   gulp.src('./src/index.html')

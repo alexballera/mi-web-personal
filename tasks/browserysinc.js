@@ -1,5 +1,5 @@
-import gulp from 'gulp';
-import browserSync from 'browser-sync';
+import gulp from 'gulp'
+import browserSync from 'browser-sync'
 
 gulp.task('serve', () => {
   browserSync.init({
@@ -13,9 +13,9 @@ gulp.task('serve', () => {
       port: 8001
     },
     browser: [
-    //'chromium-browser'
+    // 'chromium-browser'
     // 'google-chrome'
-    'firefox'
+      'firefox'
     ]
   })
 })

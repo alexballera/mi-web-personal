@@ -1,5 +1,5 @@
-import gulp from 'gulp';
-import htmlmin from 'gulp-htmlmin';
+import gulp from 'gulp'
+import htmlmin from 'gulp-htmlmin'
 
 gulp.task('build:html', () => {
   return gulp.src('./src/**/*.html')

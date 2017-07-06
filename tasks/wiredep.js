@@ -1,4 +1,4 @@
-import gulp from 'gulp';
+import gulp from 'gulp'
 // var wiredep = require('wiredep').stream
 
 gulp.task('wiredep', () => {
