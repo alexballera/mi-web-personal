@@ -4,7 +4,8 @@
   "description": "Proyecto Responsive Design",
   "main": "index.js",
   "scripts": {
-    "test": "standard && node my-tests.js"
+    "test": "standard && node my-tests.js",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",

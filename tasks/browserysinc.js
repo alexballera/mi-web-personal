@@ -14,8 +14,8 @@ gulp.task('serve', () => {
     },
     browser: [
     // 'chromium-browser'
-    // 'google-chrome'
-      'firefox'
+      'google-chrome'
+    //  'firefox'
     ]
   })
 })
