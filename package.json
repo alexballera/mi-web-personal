@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "standard && node my-tests.js",
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gulp deploy"
   },
   "repository": {
     "type": "git",
