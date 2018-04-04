@@ -3,16 +3,15 @@ import './vendors/selectivizr.js'
 import './vendors/mc-validate.js'
 import './vendors/retina.js'
 import './vendors/spinner.js'
+import './lib/doTransparentBar'
 import showMenu from './lib/showMenu'
 import changeButton from './lib/changeButton'
-import doTransparentBar from './lib/doTransparentBar'
 import cookieConsent from './lib/cookieConsent'
 import loadJS from './lib/loadJS'
 import loadLeadin from './lib/loadLeadin'
 import showArticles from './lib/showArticles'
 import showCategories from './lib/showCategories'
 import showTags from './lib/showTags'
-//import fireBase from './lib/fireBase'
 
 (() => {
   'use strict'
@@ -23,7 +22,6 @@ import showTags from './lib/showTags'
     var navbarMenu = document.getElementById('navbarMenu')
     var btnMenu = document.getElementById('btnMenu')
     var btnButton = document.getElementById('btnButton')
-    var navBar = document.getElementById('navBar')
 
     // Menú
     btnMenu.addEventListener('click', showMenu)
