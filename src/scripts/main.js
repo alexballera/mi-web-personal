@@ -1,8 +1,8 @@
-import modernizr from './vendors/modernizr.js'
-import selectivizr from './vendors/selectivizr.js'
-import validate from './vendors/mc-validate.js'
-import retinajs from './vendors/retina.js'
-import spinner from './vendors/spinner.js'
+import './vendors/modernizr.js'
+import './vendors/selectivizr.js'
+import './vendors/mc-validate.js'
+import './vendors/retina.js'
+import './vendors/spinner.js'
 import showMenu from './lib/showMenu'
 import changeButton from './lib/changeButton'
 import doTransparentBar from './lib/doTransparentBar'
@@ -15,11 +15,11 @@ import showTags from './lib/showTags'
 //import fireBase from './lib/fireBase'
 
 (() => {
-  'use strict';
+  'use strict'
 
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
-  function onDOMLoad() {
+  function onDOMLoad () {
     var navbarMenu = document.getElementById('navbarMenu')
     var btnMenu = document.getElementById('btnMenu')
     var btnButton = document.getElementById('btnButton')
