@@ -8,10 +8,11 @@ import showMenu from './lib/showMenu'
 import changeButton from './lib/changeButton'
 import cookieConsent from './lib/cookieConsent'
 import loadJS from './lib/loadJS'
-import loadLeadin from './lib/loadLeadin'
+// import loadLeadin from './lib/loadLeadin'
 import showArticles from './lib/showArticles'
 import showCategories from './lib/showCategories'
 import showTags from './lib/showTags'
+import Home from './views/home'
 
 (() => {
   'use strict'
@@ -28,6 +29,8 @@ import showTags from './lib/showTags'
     navbarMenu.addEventListener('click', showMenu)
     btnButton.addEventListener('click', showMenu)
     btnButton.addEventListener('click', changeButton)
+
+    Home()
 
     // Cookies
     cookieConsent()
@@ -52,7 +55,7 @@ import showTags from './lib/showTags'
     loadJS(urlJs)
 
     // Load LeadIn
-    var leadIn = ['//js.leadin.com/js/v1/2056572.js']
-    loadLeadin(leadIn)
+    /* var leadIn = ['//js.leadin.com/js/v1/2056572.js']
+    loadLeadin(leadIn) */
   }
 })()

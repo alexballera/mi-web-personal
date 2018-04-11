@@ -8,7 +8,7 @@ import rename from 'gulp-rename'
 
 gulp.task('build:scripts', () => {
   var presets = {
-    presets: 'latest'
+    presets: 'env'
   }
 
   return browserify('./src/scripts/main.js')
