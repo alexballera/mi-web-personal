@@ -19,7 +19,7 @@
     <meta property="og:image" content="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/08/alexballera300x300.jpg?w=400"/>
     <meta property="og:image:width" content="400"/>
     <meta property="og:image:height" content="400"/>
-    <meta property="article:publisher" content="https://www.facebook.com/AlexBallera.Dev"/>
+    <meta property="article:publisher" content="https://www.facebook.com/AlexBallera"/>
     <meta property="article:author" content="https://www.facebook.com/alexballera"/>
     <!-- Twitter Card -->
     <meta name="twitter:title" content="Alex Ballera | FrontEnd Developer, Mobile Friendly"/>
@@ -88,8 +88,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="http://i0.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-ipad.png?w=72" />
     <link rel="apple-touch-icon" sizes="114x114" href="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-iphone-retina.png?w=114" />
     <link rel="apple-touch-icon" sizes="152x152" href="http://i1.wp.com/web.alexballera.com/wp-content/uploads/2016/02/touch-icon-ipad-retina.png?w=152">
-    <!-- bower:css -->
-    <!-- endbower -->
+
     <!-- inject:css -->
     <link rel="stylesheet" href="styles/style.min.css">
     <!-- endinject -->
@@ -97,16 +96,15 @@
     <script type="text/javascript" src="scripts/main.min.js"></script>
     <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
     <![endif]-->
-  </head>
-  <body>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-1689752734604820",
-      enable_page_level_ads: true
-      });
+        (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-1689752734604820",
+          enable_page_level_ads: true
+        });
     </script>
-
+  </head>
+  <body>
     <!--[if lt  IE  8]>
     <p  class="browsehappy">
       Est&#225;s usando  un  navegador <strong>desactualizado</strong>.
@@ -139,6 +137,8 @@
           <li class="nav__menu--list--item"><a href="http://web.alexballera.com/portafolio/" target="_blank">Portafolio</a></li>
           <li class="nav__menu--list--item"><a href="#articles">&#218;ltimos Art&#237;culos</a></li>
           <li class="nav__menu--list--item"><a href="http://web.alexballera.com/blog/" target="_blank">Blog</a></li>
+          <li class="nav__menu--list--item"><a href="https://api.whatsapp.com/send?phone=584120172898&text=Hola%2C%20deseo%20adquirir%20un%20soporte%20con%20ustedes" target="_blank">Whatsapp</a></li>
+          <li class="nav__menu--list--item"><a href="https://m.me/alexballera" target="_blank">Messenger</a></li>
           <li class="nav__menu--list--item"><a href="#contactame">Cont&#225;ctame</a></li>
         </ul>
       </nav>
@@ -395,10 +395,10 @@
           <a class="informacion__boton" href="#contactame"> <i class="fa fa-envelope-o"></i> Cont&#225;ctame</a>
           <div class="footer__validation">
             <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Falexballera.com%2F" target="_blank">
-              <img src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/03/W3C_HTML5_certified.png?w=65" alt="Valid HTML" title="Validate HTML5" />
+              <img src="images/W3C_HTML5_certified.png" alt="Valid HTML" title="Validate HTML5" />
             </a>
             <a href="https://validator.w3.org/unicorn/check?ucn_uri=alexballera.com&doctype=Inline&charset=(detect%20automatically)&ucn_lang=es&ucn_task=conformance#" target="_blank">
-              <img src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/03/W3C_CSS_certified.png?w=65" alt="Valid CSS" title="Validate CSS3" />
+              <img src="images/W3C_CSS_certified.png" alt="Valid CSS" title="Validate CSS3" />
             </a>
             <!--<a href="http://validator.w3.org/feed/check.cgi?url=http%3A//web.alexballera.com/feed/" target="_blank">
               <img src="http://i2.wp.com/web.alexballera.com/wp-content/uploads/2016/03/valid-rss-rogers.png?w=65" alt="Valid Atom" title="Validate RSS" />
@@ -416,23 +416,53 @@
       </ul>
     </section>
     <!-- Scripts -->
+
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        page_id="642799695789084" 
+        theme_color="#0084ff"
+        logged_in_greeting="Hola! ¿Cómo puedo ayudarte?"
+        logged_out_greeting="Hola! ¿Cómo puedo ayudarte?">
+      </div>
+    <!-- End Facebook SDK for JavaScript -->
+
+    <!--Start of Zendesk Chat Script-->
+      <script type="text/javascript">
+        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+        _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+        $.src="https://v2.zopim.com/?5E879kmqtPJVIGugy5IJqWuTOfnMrPCV";z.t=+new Date;$.
+        type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+      </script>
+    <!--End of Zendesk Chat Script-->
+
     <!-- Google Analytics -->
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.type = 'text/javascript';m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-75053955-1', 'auto');
-    ga('send', 'pageview');
-    // alexballera.com UA-75053955-1;
-    // portafolio.alexballera.com UA-75045977-1;
-    // web.alexballera.com UA-75041866-1
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.type = 'text/javascript';m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-75053955-1', 'auto');
+      ga('send', 'pageview');
     </script>
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    <!-- 
+      ID Google Analytics
+      alexballera.com UA-75053955-1;
+      portafolio.alexballera.com UA-75045977-1;
+      web.alexballera.com UA-75041866-1
+    -->
     <!-- End Google Analytics -->
-    <!-- bower:js -->
-    <!-- endbower -->
+
     <!-- inject:js -->
     <script src="scripts/main.min.js"></script>
     <!-- endinject -->

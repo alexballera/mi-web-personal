@@ -190,9 +190,9 @@
                 margin: 0;
                 text-align: center;
                 box-sizing: border-box;
-                width: 25%;
+                width: 100% / $items;
 
-                &:nth-child(4) {
+                &:last-child {
                     background-color: rgba(15, 15, 15, 0.75);
                 }
             }
