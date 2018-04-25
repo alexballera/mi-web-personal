@@ -1,13 +1,20 @@
 import gulp from 'gulp'
 
 gulp.task('copy', () => {
-  gulp.src('./src/styles/fonts/fonts-mfizz/**/*.*')
-    .pipe(gulp.dest('./public/styles/fonts/fonts-mfizz'))
-  gulp.src('./src/styles/fonts/fonts/**/*.*') // Comentar si se va a usar el cdnjs
-    .pipe(gulp.dest('./public/styles/fonts/fonts')) // Comentar si se va a usar el cdnjs
+  gulp.src('./src/index.html')
+    .pipe(gulp.dest('./build'))
+  gulp.src([
+    './src/scripts/vendors/**'
+  ]).pipe(gulp.dest('./public/scripts/vendors'))
+  gulp.src([
+    './src/scripts/lib/**'
+  ]).pipe(gulp.dest('./public/scripts/lib'))
   gulp.src([
     './src/*.txt',
-    './src/sitemap.xml',
+    './src/sitemap.*',
+    './src/404.html',
+    './src/*.php',
+    './src/*.xml',
     './src/.htaccess'
   ]).pipe(gulp.dest('./public'))
 })

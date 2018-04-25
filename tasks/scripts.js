@@ -7,19 +7,18 @@ import babelify from 'babelify'
 import rename from 'gulp-rename'
 
 gulp.task('build:scripts', () => {
-  var presets = {
-    presets: 'env'
-  }
-
-  return browserify('./src/scripts/main.js')
-    .transform(babelify, {presets})
+  return browserify('./src/scripts/index.js')
+    .transform(babelify)
     .bundle()
-    .pipe(source('main.js'))
+    .on('error', (err) => {
+      console.log(err)
+      this.emit('end')
+    })
+    .pipe(source('index.js'))
     .pipe(buffer())
     .pipe(gulp.dest('./build/scripts'))
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./src/scripts'))
-    .pipe(gulp.dest('./build/scripts'))
     .pipe(gulp.dest('./public/scripts'))
 })

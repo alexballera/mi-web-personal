@@ -39,7 +39,7 @@ ExpiresDefault "access 1 month"
 </IfModule>
 
 ## Error 404 ##
-ErrorDocument 404 http://alexballera.com/404.html
+ErrorDocument 404 http://www.alenta.com.co/web/404.html
 
 ## GZIP COMPRESSION ##
 <ifModule mod_gzip.c>

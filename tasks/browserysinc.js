@@ -9,9 +9,11 @@ gulp.task('serve', () => {
       baseDir: ['./public']
     },
     port: 8000,
-    browser: 'google-chrome-stable',
     ui: {
       port: 8001
-    }
+    },
+    browser: [
+      'google-chrome-stable'
+    ]
   })
 })

@@ -4,7 +4,11 @@ import browserSync from 'browser-sync'
 gulp.watch([
   './src/**/*.html',
   './src/styles/scss/**/*.scss',
-  './src/scripts/main.js',
+  './src/components/**/*.scss',
+  './src/views/**/*.scss',
+  './src/index.scss',
+  './src/index.js',
   './src/scripts/lib/*.js',
-  './bower.json'
+  './src/components/**/*.js',
+  './src/views/**/*.js'
 ]).on('change', browserSync.reload)

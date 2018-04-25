@@ -1,0 +1,55 @@
+// Background
+@mixin background(
+                  $imgpath,
+                  $color,
+                  $size:cover,
+                  $position:center,
+                  $repeat:no-repeat) {
+background: {
+        image: url($imgpath);
+        color: $color;
+        size: $size;
+        position: $position;
+        repeat: $repeat;
+    }
+}
+
+@mixin transition-all($duration) {
+  transition: all $duration ease;
+}
+
+// Breakpoints
+$screen-xs: 30em; // 480px
+$screen-sm: 37.5em; // 600px
+$screen-mm: 42.5em; // 680px
+$screen-md: 48em; // 768px
+$screen-lg: 64em; // 1024px
+$screen-xl: 80em; // 1280px
+$screen-landscape: landscape; // landscape
+
+@mixin respond-to($media) {
+  @if $media == xs {
+    @media screen and (min-width: $screen-xs) { @content; }
+  }
+  @else if $media == sm {
+    @media screen and (min-width: $screen-sm) { @content; }
+  }
+  @else if $media == mm {
+    @media screen and (min-width: $screen-mm) { @content; }
+  }
+  @else if $media == md {
+    @media screen and (min-width: $screen-md) { @content; }
+  }
+  @else if $media == lg {
+    @media screen and (min-width: $screen-lg) { @content; }
+  }
+  @else if $media == xl {
+    @media screen and (min-width: $screen-xl) { @content; }
+  }
+  @else if $media == landscape {
+    @media screen and (orientation: $screen-landscape) { @content; }
+  }
+  @else if $media == sm-landscape {
+    @media screen and (max-width: 767px) and (orientation: $screen-landscape) { @content; }
+  }
+}

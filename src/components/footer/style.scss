@@ -1,0 +1,26 @@
+.footer {
+
+  &-content {
+    padding: 1rem;
+  }
+
+  &-logo {
+    img {
+      width: 80%;
+    }
+  }
+
+  h2 {
+    @media #{$medium-and-up} {
+      font-size: 3rem;
+    }
+    color: $color-primary;
+    font-size: 1.5rem;
+  }
+
+  .page-footer {
+    background-color: $background-color-footer;
+    padding-top: 0;
+  }
+
+}

@@ -1,0 +1,66 @@
+.navbar-top {
+  background-color: $background-color-topnav;
+  box-shadow: none;
+
+  .material-icons {
+    float: right !important;
+  }
+
+  .button-collapse {
+    .material-icons {
+      color: $primary-color;
+      &:hover {
+        color: $color-hover;
+      }
+    }
+  }
+
+  .brand-logo {
+    img {
+      height: $navbar-height;
+
+      @media #{$small-and-down} {
+        height: $navbar-height-mobile;
+      }
+
+      @media #{$large-and-up} {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  &-desktop {
+    line-height: $navbar-height;
+
+    li {
+      a {
+        color: $navbar-font-color;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &:hover {
+        background-color: $primary-hover;
+      }
+    }
+  }
+}
+
+.side-nav {
+
+  .divider {
+    margin: 0;
+  }
+
+  li {
+    width: 100%;
+
+
+    > a> .material-icons {
+      float: right !important;
+    }
+  }
+}

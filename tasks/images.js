@@ -1,7 +1,6 @@
 import gulp from 'gulp'
 import cache from 'gulp-cache'
 import imagemin from 'gulp-imagemin'
-import pngquant from 'imagemin-pngquant'
 import imageminSvgo from 'imagemin-svgo'
 import imageminOptipng from 'imagemin-optipng'
 import imageminJpegtran from 'imagemin-jpegtran'
@@ -14,7 +13,6 @@ gulp.task('build:images', () => {
       interlaced: true,
       multipass: true,
       use: [
-        pngquant(),
         imageminSvgo(),
         imageminOptipng({optimizationLevel: 7}),
         imageminJpegtran({progressive: true})
@@ -25,6 +23,5 @@ gulp.task('build:images', () => {
         { removeEmptyAttrs: false } // don't remove Empty Attributes from the SVG
       ]
     })))
-    .pipe(gulp.dest('./build/images'))
     .pipe(gulp.dest('./public/images'))
 })
